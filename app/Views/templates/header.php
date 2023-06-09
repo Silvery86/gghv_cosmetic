@@ -4,262 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/settings.css'); ?>"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/owl-slider.css'); ?>"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/custombox.min.css'); ?>"/>
-        <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png'); ?>" />
+
+    <!-- favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+
+    <!-- CSS files
+    ============================================ -->
+
+    <!-- Boostrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/ionicons.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/pe-icon-7-stroke.css'); ?>">
+
+    <!-- Plugins stylesheet -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/plugins.css'); ?>">
+
+    <!-- Master stylesheet -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
+
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.css'); ?>">
+
+    <!-- Customs stylesheet -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/landing-page.css'); ?>">
+
+    <!-- modernizr JS
+    ============================================ -->
+    <script src="<?php echo base_url('assets/js/modernizr-2.8.3.min.js'); ?>"></script>
+    
     <title><?= esc($title) ?></title>
 </head>
 <body>
-<header id="header" class="header-v2">
-                                <div id="topbar">
-                                    <div class="container">
-                                        <div class="float-left">
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <a class="navbar-brand" href="#">Wednesday,July 18</a>
-                            </div>
-                                <ul class="nav navbar-nav">
-                                <li><a href="#">Sign in/join</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forums</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    </div>
-                    <div class="float-right">
-                        <div class="social">
-                            <a href="#" title="title"><i class="fa fa-facebook"></i></a>
-                            <a href="#" title="title"><i class="fa fa-vimeo"></i></a>
-                            <a href="#" title="title"><i class="fa fa-pinterest-p"></i></a>
-                            <a href="#" title="title"><i class="fa fa-vk"></i></a>
-                            <a href="#" title="title"><i class="fa fa-youtube"></i></a>
+<body>
 
-                        </div>
-                    </div>
-                </div>
-                <!-- End container -->
-                <div class="container-fluid full-home2">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-lg-2">
-                            <div class="post-item ver2"  data-videosite="youtube">
-                                <div class="images"><img class='img-responsive' src="assets/images/blog/fashion-v1.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span class="ver1">Fashion pretty sweet young woman enjoying  a taste lollipop.</span></h2>
-                                    <div class="tag">
-                                        <p class="date ver1">By Anna Lih</p>
-                                        <p class="date ver1"><i class="fa fa-heart"></i>10</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>3</a>
-                                    </div>
+    <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Start of Whole Site Wrapper with mobile menu support -->
+    <div id="whole" class="whole-site-wrapper">
+
+        <!-- Start of Newsletter Popup 
+        <div id="newsletter_popup" class="newsletter-popup">
+            <div class="popup-container">
+                <div class="popup-close">
+                    <span class="p-close"><span>X</span></span>
+                </div>  end of popup-close 
+
+                <div class="popup-area text-center">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <div class="popup-body">
+                        <p>Subscribe to the Pebona mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+                        <div class="subscribe-form-group">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Enter your email address" required>
+                                    <button class="default-btn secondary" type="submit">Subscribe</button>
                                 </div>
-                            </div>
-                <!-- End item -->
-            </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2">
-                            <div class="post-item ver2"  data-videosite="youtube">
-                                <div class="images"><img class='img-responsive' src="assets/images/blog/header-v1.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span class="ver1">How to find the perfect sunglasses for your face shape.</span></h2>
-                                    <div class="tag">
-                                        <p class="date ver1">By Katherine</p>
-                                        <p class="date ver1"><i class="fa fa-heart"></i>10</p>
-                                        <a class="comments ver1 " href="#" title="comments"><i class="fa fa-comment"></i>3</a>
-                                    </div>
-                                </div>
-                            </div>
-                <!-- End item -->
-            </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2">
-                            <div class="post-item ver2"  data-videosite="youtube">
-                                <div class="images"><img class='img-responsive' src="assets/images/blog/fashion-v6.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span class="ver1">Expert Review: The most natural  looking eyelashes.</span></h2>
-                                    <div class="tag">
-                                        <p class="date ver1">By Rose Beauty</p>
-                                        <p class="date ver1"><i class="fa fa-heart"></i>50</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>9</a>
-                                    </div>
-                                </div>
-                            </div>
-                <!-- End item -->
-            </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2">
-                            <div class="post-item ver2"  data-videosite="youtube">
-                                <div class="images"><img class='img-responsive' src="assets/images/blog-header-v1.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span class="ver1">If you’re nervous about your first  time traveling, read this.</span></h2>
-                                    <div class="tag">
-                                        <p class="date ver1">By Richard Roe  </p>
-                                        <p class="date ver1" ><i class="fa fa-heart"></i>15</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>4</a>
-                                    </div>
-                                </div>
-                            </div>
-                <!-- End item -->
-            </div>
-                        <div class="col-md-2 col-sm-2 col-lg-2">
-                            <div class="post-item ver2"  data-videosite="youtube">
-                                <div class="images"><img class='img-responsive' src="assets/images/blog/wellness-v2.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span class="ver1">A complete guide to finding the  best Spa in the world.</span></h2>
-                                    <div class="tag">
-                                        <p class="date ver1">By Yoo Na</p>
-                                        <p class="date ver1"><i class="fa fa-heart"></i>45</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>13</a>
-                                    </div>
-                                </div>
-                            </div>
-                <!-- End item -->
-            </div>
-                    </div>
-                </div>
-            </div>
-                <!-- End header-top -->
-
-                <div class="container header-padding">
-                    <div class="row">
-                        <div class="icon-menu-mobile col-sm-1 col-xs-3 ">
-                                <span class="child1"></span>
-                                <span class="child2"></span>
-                                <span class="child3"></span>
+                            </form>
                         </div>
-                        <div class="col-md-2 col-sm-10 col-xs-7">
-                            <div class="logo"><a href="#" title="Uno">
-                        <img src="assets/images/logo.png" alt="images">
-                        </a></div>
+                    </div>  end of popup-body 
+
+                    <div class="popup-footer">
+                        <div class="form-check">
+                            <div class="custom-checkbox">
+                                <input class="form-check-input" type="checkbox" id="cancel_popup">
+                                <span class="checkmark"></span>
+                                <label class="form-check-label" for="cancel_popup">Don't show this popup again</label>
+                            </div>
                         </div>
-                        <div class="col-md-2 col-md-push-8 col-sm-1 col-xs-2 searc">
-                            <div class="icon-menu-table pull-right">
-                                <span class="child1"></span>
-                                <span class="child2"></span>
-                                <span class="child3"></span>
-                        </div>
-                <div class=" search-popup pull-right margin_20">
-
-                    <div class="search-popup dropdown" data-toggle="modal" data-target="#myModall"><i class="icon-magnifier icons"></i>
-                    </div>
-                </div>
-                
-
-            </div>
-
-                        <div class="col-md-8 col-md-pull-1 position-inher-1024">
-                <nav class="mega-menu ">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                  <ul class="nav navbar-nav ver1" id="navbar">
-                    <li class="level1 active hover-menu no-paddingleft hassub"><a class="active" href="home" title="Home">HOME</a>
-                        <ul class="menu-level-1 list-menu">
-                           <li class="level2"><a  href="home_v1.html" title="Home 1">Home 1</a></li>
-                            <li class="level2"><a href="home_v2.html" title="Home 2">Home 2</a></li>
-                            <li class="level2"><a href="home_v3.html" title="Home 3">Home 3</a></li>
-                            <li class="level2"><a href="home_v4.html" title="Home 4">Home 4</a></li>
-                            <li class="level2"><a href="home_v5.html" title="Home 5">Home 5</a></li>
-                        </ul>
-                    </li>
-                                    <li class="level1 hover-menu images hassub">
-                        <a href="#1" title="Page" >PAGES</a>
-                        <div class="sub-menu list-menu container container-ver2">
-                          <div class="main-sub-menu ">
-                            <div class="col-md-2 col-sm-6 col-xs-3 width-568">
-                                <div class="bottom-submenu">
-                                <h4 class="ver1">Blog pages</h4>
-                                <a href="grid_post_full_width.html" title="Grid full">Grid post full width</a>
-                                <a href="grid_layout_sidebar_left.html" title="Grild left">Grild layout sidebar left</a>
-                                <a href="grid_layout_sidebar_right.html" title="Grild right">Grild layout sidebar right</a>
-                                <a href="list_post_sidebar_left.html" title="List left 1">List post sidebar left 1</a>
-                                <a href="list_post_sidebar_left2.html" title="List left 2">List post sidebar left 2</a>
-                          </div>
-                            </div>
-                            <div class="col-md-2 col-sm-6 col-xs-3 width-568">
-                                <div class="bottom-submenu">
-                                <h4 class="ver1">Blog detail</h4>
-                                <a href="post_sidebar_left.html" title="Post left">Post sidebar left</a>
-                                <a href="post_sidebar_right.html" title="Post right">Post sidebar right</a>
-                                <a href="post_full_width.html" title="Post full">Post full width</a>
-                          </div>
-                            </div>
-                            <!-- End col-md-2 -->
-                            <div class="col-md-8  col-sm-6 col-xs-9 width-568 ">
-                                  <div class=" upsell-product  size-18 nav-ver2 nav-white box padding-top">
-                <div class="post-item ver3 cat-1 overlay col-md-6 ">
-                    <div class="wrap-images">
-                        <a class="images" href="#" title="images"><img class='img-responsive' src="assets/images/blog/most-v4.jpg" alt="images"></a>
-                    </div>
-                    <div class="text">
-                       
-                       <h2><a href="#" title="title">Fashion pretty sweet young  woman enjoying  a taste lollipop.</a></h2>
-                       <p class="descrip">August 08, 2018</p>
-                    </div>
-                </div>
-                <!-- End item -->
-                 <div class="post-item ver3 cat-1 overlay col-md-6 ">
-                    <div class="wrap-images">
-                        <a class="images" href="#" title="images"><img class='img-responsive' src="assets/images/blog/fashion-v14.jpg" alt="images"></a>
-                    </div>
-                    <div class="text">
-                       
-                       <h2><a href="#" title="title">The top trends we loved from fall 2018 Paris fashion week.</a></h2>
-                       <p class="descrip">August 01, 2018</p>
-                    </div>
-                </div>
-            </div>
-                            </div>
-                            <!-- End col-md-10 -->
-                          </div>
-                          <!-- End main-submenu -->
-                          
-                          <!-- End bottom-sub -->
-                      </div>
-                      <!-- End Sub Menu -->
-                    </li>
-                    <li class="level1 hover-menu">
-                       <a href="about" title="About">ABOUT US</a><i class="fa fa-plus"></i>
-                    </li>
-                    <li class="level1 hover-menu">
-                       <a href="contact" title="Contact">CONTACT</a><i class="fa fa-plus"></i>
-                    </li>
-                    <li class="level1 hover-menu">
-                        <a href="#" title="Photography">PHOTOGRAPHY</a><i class="fa fa-plus"></i>
-                    </li>
-                    <li class="level1 hover-menu">
-                        <a href="#" title="Lifestyle">LIFESTYLE</a><i class="fa fa-plus"></i>
-                    </li>
-                   
-
-                  </ul>
-                </nav>
-            </div>
-            
-            <div class="sear">
-        <div class="modal fade" id="myModall" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="submit" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">WHAT ARE  YOUR <br>LOOKING FOR ?</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="input-group">
-                        <form method="get" class="searchform" action="https://landing.engotheme.com/search" role="search">
-                            <input type="hidden" name="type" value="product">
-                            <input type="text" name="q" placeholder="Enter search..." class="form-control control-search">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default button_search" type="submit" >SEARCH</button>
-                            </span>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                    </div>  end of popup-footer 
+                </div>  end of popup-area 
+            </div>  end of popup-container 
         </div>
-    </div>
-    </div>
-                </div>
-            
+        End of Newsletter Popup -->
+
+        <!-- Start of Header -->
+        <header class="header header-type-2 black-scheme">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 order-2 col-sm-12 order-sm-2 col-md-8 order-md-1 align-self-center">
+                            <p>With FREESHIPPING, orders of $500+ get free shipping</p>
+                        </div>
+                    </div>
+                </div> <!-- end of container -->
+            </div> <!-- end of top-bar -->
+
+            <div class="header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 order-2 col-sm-6 order-sm-2 col-md-4 order-md-1 col-lg-3">
+                            <div class="header-search-area">
+                                <form action="#">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search entire store here ...">
+                                        <div class="input-group-append">
+                                            <button class="header-search-btn" type="submit"><i class="pe-7s-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-6">
+                            <div class="logo">
+                                <a href="index.html"><img src="./favicon.ico" alt="Logo" class="img-fluid"><h1>Pea Fashion</h1></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div> <!-- end of container -->
+            </div> <!-- end of header-top -->
+
+
+
+            <!-- Start of Main and Mobile Navigation -->
+            <div class="main-nav-area">
+                <div class="container">
+                    <nav id="main_nav" class="stellarnav black-scheme">
+                        <ul>
+                            <li><a href="index.php"><span>Home</span></a></li>
+                            <li><a href="products.php"><span>Products</span></a></li>
+                            <!-- <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Products</span></a>
+                                <ul class="mega-container">
+                                    <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
+                                        <ul>
+                                            <li><a href="cart.html">Cart Page</a><li>
+                                            <li><a href="checkout.html">Checkout Page</a></li>
+                                            <li><a href="wishlist.html">Wishlist Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="last"><a href="#" class="mega-menu-title"><h3>Shop pages 04</h3></a>
+                                        <ul>
+                                            <li><a href="my-account.html">My Account</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="register.html">Register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fullwidth-banner">
+                                        <a href="#"><img src="assets/images/banners/menu-banner.jpg" alt="Menu Banner"></a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li><a href="aboutus.php"><span>About Us</span></a></li>
+                            <li><a href="contact.php"><span>Contact Us</span></a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end of container -->
             </div>
-                <!-- End megamenu -->
-        </header><!-- /header -->
+            <!-- End of Main and Mobile Navigation -->
+        </header>

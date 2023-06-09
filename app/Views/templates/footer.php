@@ -1,94 +1,378 @@
-<footer id="footer" class="footer-v1 ver2">         
-          <div class="container border-bottom ">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                    <a class="logo-footer space-20" href="#" title="logo"><img src="assets/images/logo-footer.png" alt="Logo-footer"></a>
-                    <div class="widget ">
-                        <p class="padding-10">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veriatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <p>Address: <span> Grant Programs 1145 17th Street N.W. </span></p><br>
-                            <p>Phone: <span>888-557-4450</span> </p><br>
-                            <p>Email: <span><a href="https://landing.engotheme.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="551f3c382c313a153238343c397b363a38">[email&#160;protected]</a></span> </p><br>
-                            <p>Support:<span><a target="_blank" href="https://themeforest.net/user/engotheme/portfolio"> EngoTheme</a> </span> </p>
-                        </div>
-                    <!-- End widget -->
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                    <div class=" recent-posts ">
-                        <h3 class="widget-title">ADVERTISEMENT</h3>
-                        <div class="post-item ver3 overlay max-width-700 video" data-videourl="https://www.youtube.com/watch?v=8NOSxK9XEkQ" data-videosite="youtube" >
-                                    <div class="wrap-images">
-                                        <a class="images" href="#" title="images"><img class="img-responsive" src="assets/images/videos/video-footer-v1.jpg" alt="images"></a>
-                                    </div>
-                                    <div class="text  text-video">
-                                      <p class="date mos">Share: <i class="fa fa-facebook-f"></i><i class="fa fa-vimeo"></i><i class="fa fa-pinterest-p"></i><i class="fa fa-vk"></i><i class="fa fa-youtube"></i></p>
-                                        
-                                    </div>
+<footer id="colophon" class="bgc-secondary pt-full">
 
+            <!-- Footer Widgets Area -->
+            <div class="footer-widgets-area">
+                <div class="container">
+                    <div class="footer-inner">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                <aside class="widget-container">
+                                    <div class="widget-content">
+                                        <div class="footer-logo mb-half">
+                                            <img src="./favicon.ico" alt="Footer Logo">
+                                        </div>
+                                        <p>Fulfilling your ideas on demand</p>
+                                        <div class="footer-contact">
+                                            <p><span>Address:</span></p>
+                                            <p><span>Phone:</span><a href="#"></a></p>
+                                            <p><span>Email:</span><a href="#">pea-shop@gmail.com</a></p>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 order-md-3 col-lg-2 order-lg-2">
+                                <aside class="widget-container">
+                                    <h4 class="widgettitle">Products</h4>
+                                    <div class="widget-content">
+                                        <div class="widgetized-menu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Prices drop</a></li>
+                                                <li><a href="#">New Products</a></li>
+                                                <li><a href="#">Best Sales</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Login</a></li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 order-md-4 col-lg-2 order-lg-3">
+                                <aside class="widget-container">
+                                    <h4 class="widgettitle">Our Company</h4>
+                                    <div class="widget-content">
+                                        <div class="widgetized-menu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Site Map</a></li>
+                                                <li><a href="#">Stores</a></li>
+                                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                                <li><a href="#">My Account</a></li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 order-md-2 col-lg-4 order-lg-4">
+                                <aside class="widget-container">
+                                    <h4 class="widgettitle">Sign up for our newsletter</h4>
+                                    <div class="widget-content">
+                                        <div class="newsletter-widget">
+                                            <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+                                            <form class="mc-subscribe-form">
+                                                <div class="input-group">
+                                                    <input type="email" autocomplete="off" placeholder="Your Email Address" required>
+                                                    <button class="default-btn" type="submit">Sign Up</button>
+                                                </div>
+                                            </form> <!-- end of form -->
+
+                                            <div class="mailchimp-alerts">
+                                                <div class="mailchimp-submitting"></div>
+                                                <div class="mailchimp-success"></div>
+                                                <div class="mailchimp-error"></div>
+                                            </div><!-- end of mailchimp-alerts -->
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+
+                                <aside class="widget-container">
+                                    <div class="widget-content">
+                                        <div class="social-widget mt-half">
+                                            <div class="socials d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#" class="bg-facebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-twitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-gplus" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-pinterest" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-instagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-linkedin" title="Linked In" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+                        </div> <!-- end of row -->
+                    </div> <!-- end of footer-inner -->
+                </div> <!-- end of container -->
+            </div> <!-- end of footer-widgets-area -->
+
+            <!-- Footer Copyright -->
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">Pea Fashion</a>. All Right Reserved.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="footer-payment">
+                                <a href="#"><img src="assets/images/icons/payment.png" alt="Payment Icons"></a>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of footer-copyright -->
+        </footer>
+        <!-- End of Footer -->
+
+        <!-- Quick View Content Start -->
+        <div class="product-quick-view">
+            <div class="container">
+                <!-- Start of Modal -->
+                <div class="modal fade" id="product_quick_view">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                            </div> <!-- end of modal-header -->
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-7">
+                                        <div class="product-gallery">
+                                            <div class="gallery-with-thumbs" data-nav-center="false">
+                                                <div class="product-image-container">
+                                                    <div class="product-full-image main-slider image-popup">
+
+                                                        <!-- Slides -->
+                                                        <div class="swiper-wrapper">
+                                                            <figure class="swiper-slide">
+                                                                <a href="assets/images/products/single/product-1.jpg" data-size="600x600">
+                                                                    <img src="assets/images/products/single/product-1.jpg" alt="Product Image">
+                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Product Image</span>
+                                                                </figcaption>
+                                                            </figure>
+                                                            <figure class="swiper-slide">
+                                                                <a href="assets/images/products/single/product-2.jpg" data-size="600x600">
+                                                                    <img src="assets/images/products/single/product-2.jpg" alt="Product Image">
+                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Product Image</span>
+                                                                </figcaption>
+                                                            </figure>
+                                                            <figure class="swiper-slide">
+                                                                <a href="assets/images/products/single/product-3.jpg" data-size="600x600">
+                                                                    <img src="assets/images/products/single/product-3.jpg" alt="Product Image">
+                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Product Image</span>
+                                                                </figcaption>
+                                                            </figure>
+                                                            <figure class="swiper-slide">
+                                                                <a href="assets/images/products/single/product-4.jpg" data-size="600x600">
+                                                                    <img src="assets/images/products/single/product-4.jpg" alt="Product Image">
+                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Product Image</span>
+                                                                </figcaption>
+                                                            </figure>
+                                                            <figure class="swiper-slide">
+                                                                <a href="assets/images/products/single/product-5.jpg" data-size="600x600">
+                                                                    <img src="assets/images/products/single/product-5.jpg" alt="Product Image">
+                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Product Image</span>
+                                                                </figcaption>
+                                                            </figure>
+                                                            <figure class="swiper-slide">
+                                                                <a href="assets/images/products/single/product-6.jpg" data-size="600x600">
+                                                                    <img src="assets/images/products/single/product-6.jpg" alt="Product Image">
+                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Product Image</span>
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div> <!-- end of product-full-image -->
+                                                </div>
+                                                
+                                                <div class="product-thumb-container">
+                                                    <div class="product-thumb-image pos-r">
+                                                        <div class="nav-slider">
+                                                            <!-- Slides -->
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <img src="assets/images/products/single/product-thumb-1.jpg" alt="Product Thumbnail Image">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img src="assets/images/products/single/product-thumb-2.jpg" alt="Product Thumbnail Image">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img src="assets/images/products/single/product-thumb-3.jpg" alt="Product Thumbnail Image">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img src="assets/images/products/single/product-thumb-4.jpg" alt="Product Thumbnail Image">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img src="assets/images/products/single/product-thumb-5.jpg" alt="Product Thumbnail Image">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img src="assets/images/products/single/product-thumb-6.jpg" alt="Product Thumbnail Image">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Navigation -->
+                                                            <div class="swiper-arrow next"><i class="fa fa-angle-down"></i></div>
+                                                            <div class="swiper-arrow prev"><i class="fa fa-angle-up"></i></div>
+                                                        </div>
+                                                    </div> <!-- end of product-thumb-image -->
+                                                </div>
+                                            </div> <!-- end of gallery-with-thumbs -->
+                                        </div> <!-- end of product-gallery -->
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <div class="product-details">
+                                            <h3 class="product-name">Cas Meque Metus</h3>
+                                            <div class="product-ratings">
+                                                <ul class="rating d-flex">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-price">
+                                                <p class="d-flex align-items-center">
+                                                    <span class="price-old">$54.65</span>
+                                                    <span class="price-new">$43.72</span>
+                                                    <span class="price-discount">-20%</span>
+                                                </p>
+                                            </div>
+                                            <div class="product-description">
+                                                <p>Regular fit, round neckline, short sleeves. Made of extra long staple pima cotton.</p>
+                                            </div>
+                                            <form action="#" class="product-actions">
+                                                <h3>Available Options</h3>
+                                                <div class="product-size-color d-flex">
+                                                    <div class="product-size">
+                                                        <label>Size</label>
+                                                        <select class="nice-select">
+                                                            <option>S</option>
+                                                            <option>M</option>
+                                                            <option>L</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="product-color">
+                                                        <label>color</label>
+                                                        <ul class="color-list">
+                                                           <li>
+                                                                <a class="white" href="#"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="orange active" href="#"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="paste" href="#"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-stock">
+                                                    <label>Quantity</label>
+                                                    <ul class="d-flex flex-wrap align-items-center">
+                                                        <li class="box-quantity">
+                                                            <div class="cart-input">
+                                                                <input class="cart-input-box" type="text" value="0">
+                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <button type="button" class="default-btn">Add to Cart</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wishlist-compare">
+                                                    <button class="btn-wishlist" type="button" title="Add to Wishlist">Add to Wishlist</button>
+                                                    <button class="btn-compare" type="button" title="Add to Compare">Add to Compare</button>
+                                                </div>
+                                            </form>
+                                        </div> <!-- end of product-details -->
+                                    </div>
+                                </div> <!-- end of row -->
+                            </div> <!-- end of modal-body -->
+
+                            <div class="modal-footer justify-content-start">
+                                <div class="social-sharing d-flex align-items-center">
+                                    <span>Share</span>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="#" class="bg-facebook" data-bs-toggle="tooltip" data-position="top" data-original-title="Facebook" target="_blank"><i class="fa fa-facebook"></i><span>Share</span></a></li>
+                                        <li class="list-inline-item"><a href="#" class="bg-twitter" data-bs-toggle="tooltip" data-position="top" data-original-title="Twitter" target="_blank"><i class="fa fa-twitter"></i><span>Tweet</span></a></li>
+                                        <li class="list-inline-item"><a href="#" class="bg-gplus" data-bs-toggle="tooltip" data-position="top" data-original-title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i><span>Google+</span></a></li>
+                                        <li class="list-inline-item"><a href="#" class="bg-pinterest" data-bs-toggle="tooltip" data-position="top" data-original-title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
+                                    </ul>
                                 </div>
+                            </div> <!-- end of modal-footer -->
+                        </div> <!-- end of modal-content -->
+                    </div> <!-- end of modal-dialog -->
+                </div> <!-- end of modal -->
+            </div> <!-- end of container -->
+        </div>
+        <!-- Quick View Content End -->
+
+        <!-- Start of Scroll to Top -->
+        <div id="to_top">
+            <i class="ion ion-ios-arrow-forward"></i>
+            <i class="ion ion-ios-arrow-forward"></i>
+        </div>
+        <!-- End of Scroll to Top -->
+    </div>
+    <!-- End of Whole Site Wrapper -->
+
+    <!-- Initializing Photoswipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12  blog-beauty post-item ver2">
-                        <div class="widget categories">
-                         <h3 class="widget-title">EDITOR PICKS</h3>
-                         
-                         <div class="fashion footer-blog">
-                                <div class="images"><img class="img-responsive" src="assets/images/blog/fashion-v6.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span>How to match your leather hat  with your summer dress.</span></h2>
-                                    <div class="tag">
-                                        <p class="date date1">By Anna Lih</p>
-                                        <p class="date date1"><i class="fa fa-heart"></i>10</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>3</a>
-                                    </div>
-                                </div>
-                                </div> 
-                        <div class="fashion footer-blog">
-                                <div class="images"><img class="img-responsive" src="assets/images/blog/fashion-v1.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span>The most amazing silver accessories  to buy this fall.</span></h2>
-                                    <div class="tag">
-                                        <p class="date date1">By Ema Ruly</p>
-                                        <p class="date date1"><i class="fa fa-heart"></i>90</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>60</a>
-                                    </div>
-                                </div>
-                                </div>
-                        <div class="fashion footer-blog">
-                                <div class="images"><img class="img-responsive" src="assets/images/blog/eritor-v1.jpg" alt="images"></div>
-                                <div class="text">
-                                    <h2><span>15 of the most popular make up  tips on Pinterest.</span></h2>
-                                    <div class="tag">
-                                        <p class="date date1">By Gong Yoo</p>
-                                        <p class="date date1"><i class="fa fa-heart"></i>45</p>
-                                        <a class="comments ver1" href="#" title="comments"><i class="fa fa-comment"></i>15</a>
-                                    </div>
-                                </div>
-                             
-                             </div>  
-                              </div>
-                    </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
             </div>
-            <!-- End row -->
-          </div>
-          <!-- End container -->
-          <div class="footer-bottom footer-home2">
-            <div class="container">
-                <p > Copyright © 2018 Engo - Creative All Rights Reserved. JIMYDO | Blog & Magazine</p>
-                
-            </div>
-          </div>
-        </footer>
-    <!-- End wrappage -->
+        </div>
     </div>
     
-    <script  src="<?php echo base_url('assets/js/jquery-3.1.1.min.js'); ?>"></script>
+    <script  src="<?php echo base_url('assets/js/jquery.1.12.4.min.js'); ?>"></script>
+    <script  src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
     <script  src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/owl.carousel.min.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/jquery.themepunch.revolution.min.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/jquery.themepunch.plugins.min.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/engo-plugins.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/custombox.min.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/legacy.min.js'); ?>"></script>
-    <script  src="<?php echo base_url('assets/js/store.js'); ?>"></script>
+    <script  src="<?php echo base_url('assets/js/plugins.js'); ?>"></script>
+    <script  src="<?php echo base_url('assets/js/main.js'); ?>"></script>
+
     </body>
 </html>
