@@ -128,8 +128,8 @@
                 <div class="container">
                     <nav id="main_nav" class="stellarnav black-scheme">
                         <ul>
-                            <li><a href="index.php"><span>Home</span></a></li>
-                            <li><a href="products.php"><span>Products</span></a></li>
+                            <li><a href="home"><span>Home</span></a></li>
+                            <li><a href="products"><span>Products</span></a></li>
                             <!-- <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Products</span></a>
                                 <ul class="mega-container">
                                     <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
@@ -151,8 +151,8 @@
                                     </li>
                                 </ul>
                             </li> -->
-                            <li><a href="aboutus.php"><span>About Us</span></a></li>
-                            <li><a href="contact.php"><span>Contact Us</span></a></li>
+                            <li><a href="about"><span>About Us</span></a></li>
+                            <li><a href="contact"><span>Contact Us</span></a></li>
                         </ul>
                     </nav>
                 </div> <!-- end of container -->

@@ -1,166 +1,165 @@
 
 
-        <div class=" home4_sileshow float-left box">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="banner-contact-v1" style="width: 100%;">
-                         <div class="text-contact text ">
-                                    <h2><a class="bannerr" href="#" title="title"><span>WINTER</span> SKIN CARE ROUTINE</a></h2>
-                                    <h4>Sale up to 50%</h4>
+<main id="content" class="main-content-wrapper page-about">
+            
+            <!-- Start of Contact Section -->
+            <section class="contact-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://sites.google.com/view/maps-api-v2/mapv2"></a>
                                 </div>
                             </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container  brea-contac">
-             <ul class="breadcrumb">
-                <li><a href="#">HOME</a></li>
-                <li class="active">CONTACT US</li>
-            </ul>
-        </div>
-        
-        <div class="container our space-padding-tb-30 ">
-            <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12 address">
-                <div class="img">
-                  <i class="fa fa-home"></i>  
-                </div>
-                <div class="text">
-                    <h2>
-                    <a href="#">OUR ADDRESS</a>
-                </h2>
-                <p>225 Broadway Floor 23 New York NY 10007.</p>
-                </div>
-                
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 number">
-                <div class="img">
-                  <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="contact-form-wrapper">
+                                <div class="section-title left-aligned with-border">
+                                    <h2>get In Touch</h2>
+                                </div>
+                                <form id="contact-form" action="https://whizthemes.com/nazmul/php/mail.php" method="post">
+                                    <div class="form-row mb-2">
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            <input type="text" name="name" class="form-control" id="com-name" placeholder="Your Name *" required>
+                                        </div>
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            <input type="email" name="email" class="form-control" id="com-email" placeholder="Your Email *" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-2">
+                                        <div class="form-group col-12 col-sm-12 col-md-12">
+                                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Your Subject">
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-2">
+                                        <div class="form-group col-12 col-sm-12 col-md-12">
+                                            <textarea id="comment" placeholder="Type Your Message....." name="message" class="form-control" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-12 col-sm-12 col-md-12">
+                                            <button name="send_message" type="submit" class="btn btn-secondary">Send Your Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <p class="form-messege"></p>
+                            </div> <!-- end of contact-form-wrapper -->
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of Contact Section -->
 
-                </div>
-                <div class="text">
-                    <h2>
-                    <a href="#">PHONE NUMBER</a>
-                </h2>
-                <p>Office: (800) 123 456 789</p>
-                </div>
-                
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 email">
-                <div class="img">
-                    <i class="fa fa-envelope"></i>
-                </div>
-                <div class="text">
-                    <h2>
-                    <a href="#">EMAIL ADDRESS</a>
-                </h2>
-                <p><a href="https://landing.engotheme.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="62210d0c1603011622080b0f1b060d4c0d1005">[email&#160;protected]</a></p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-        <!-- End container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                     <a href="#" title="images"><img class="img-responsive" src="assets/images/send-v1.jpg" alt="images"></a>
-                </div>
-                <div class="col-md-8 col-sm-8">
-                    <div class="single-post">
-                        
-                        <!-- End googlemap -->
-                        <div class="blog-post-item cat-1 box">
-                            <div class="title-v1">
-                                <h3>SEND US A MASSAGE</h3>
+            <!-- Start of Team Section -->
+            <section class="team-section pt-full pb-half bgc-offset">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="info-box">
+                                <div class="info-icon">
+                                    <i class="ion ion-md-locate"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Our Location</h4>
+                                    <p>123 North Avenue, Santa Rosa</p>
+                                    <p>California</p>
+                                </div>
                             </div>
-                            <!-- End title -->
-                            <div class="box">
-                                <form class="form-horizontal space-30">
-                                    <div class="head">
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-6 space-15">
-                                            <label class="control-label" for="inputName"  >Name *</label>
-                                            <input type="text" id="inputName" placeholder="Search" class="form-control">
-                                        </div>
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-6 space-15">
-                                            <label class="control-label" for="inputemail" >Email *</label>
-                                            <input type="text" id="inputemail" placeholder="Angle Vera" class="form-control">
-                                        </div>
-                                        <div class="form-group col-md-12 space-15">
-                                            <label class="control-label" for="inputwebsite">Website</label>
-                                            <input type="text" id="inputwebsite" class="form-control">
-                                        </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="info-box">
+                                <div class="info-icon">
+                                    <i class="ion ion-ios-call"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Contact Us Anytime</h4>
+                                    <p>Mobile: <a href="#">(+1) 800 555 888</a></p>
+                                    <p>Fax: (+1) 800 666 999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="info-box">
+                                <div class="info-icon">
+                                    <i class="ion ion-md-mail-open"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Write Some Words</h4>
+                                    <p><a href="#">support24/7@example.com</a></p>
+                                    <p><a href="#">contact@example.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of Team Section -->
+            
+
+            <!-- Start of Client Section -->
+            <div class="client-section mb-full">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="clients element-carousel" data-visible-slide="5" data-visible-xl-slide="5" data-visible-lg-slide="5" data-visible-md-slide="4" data-visible-sm-slide="3" data-visible-xs-slide="2" data-loop="true" data-autoplay-delay="3000" data-space-between="0" data-effect="slide">
+
+                                <!-- Slides -->
+                                <div class="swiper-wrapper">
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-1.jpg" alt="Client Logo">
                                     </div>
-                                    <!-- End head -->
-                                    <div class="form-group">
-                                        <label class="control-label" for="message" >Your message *</label>
-                                        <textarea name="Comment" id="message" placeholder="Your massage" class="form-control"></textarea>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-2.jpg" alt="Client Logo">
                                     </div>
-                                    <a title="add tags" href="#" class="button">SUBMIT</a>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-3.jpg" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-4.jpg" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-5.jpg" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-6.jpg" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-7.jpg" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/images/brand/client-logo-8.jpg" alt="Client Logo">
+                                    </div>
+                                </div>
+                            </div> <!-- end of element-carousel -->
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div>
+            <!-- End of Client Section -->
+
+            <!-- Start of Newsletter Section -->
+            <section class="newsletter-section vpadding bgc-offset">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                            <div class="newsletter-title d-lg-flex justify-content-lg-start">
+                                <h6>Subscribe to our Newsletter</h6>
+                                <h3>Subscribe to our newsletter and know first about all the promotions and discounts. Be always trendy.</h3>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                            <div class="newsletter-form-wrapper">
+                                <form action="https://htmldemo.net/pebona/pebona/index.html" method="post">
+                                    <input type="email" name="email" placeholder="Enter you email address here..." value="" required> 
+                                    <input type="submit" class="default-btn" name="contact" value="Subscribe">
                                 </form>
                             </div>
-                            <!-- End box -->
                         </div>
-                    </div>
-                    <!-- End signle-post -->
-                </div>
-            <div class="col-md-12">
-                <div id="googleMap"></div>
-            </div>
-            </div>
-        </div>
-        <!-- End container -->
-        <div class="instagram box margin_10">
-            <div class="width-50">
-                <div class="col-md-2 left">
-                    <img class="img-responsive" src="assets/images/instagram/instagram-v10.jpg" alt="images">
-                    <div class="hover">
-                        <img src="assets/images/instagram/icon.png" alt="">
-                        <h4>INSTAGRAM</h4>
-                    </div>
-                </div>
-                <div class="col-md-2 left">
-                    <img class="img-responsive" src="assets/images/instagram/instagram-v11.jpg" alt="images">
-                    <div class="hover">
-                        <img src="assets/images/instagram/icon.png" alt="">
-                        <h4>INSTAGRAM</h4>
-                    </div>
-                </div>
-                <div class="col-md-2 left">
-                    <img class="img-responsive" src="assets/images/instagram/instagram-v12.jpg" alt="images">
-                    <div class="hover">
-                        <img src="assets/images/instagram/icon.png" alt="">
-                        <h4>INSTAGRAM</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="width-50">
-                <div class="col-md-2 left">
-                    <img class="img-responsive" src="assets/images/instagram/instagram-v13.jpg" alt="images">
-                    <div class="hover">
-                        <img src="assets/images/instagram/icon.png" alt="">
-                        <h4>INSTAGRAM</h4>
-                    </div>
-                </div>
-                <div class="col-md-2 left">
-                    <img class="img-responsive" src="assets/images/instagram/instagram-v14.jpg" alt="images">
-                    <div class="hover">
-                        <img src="assets/images/instagram/icon.png" alt="">
-                        <h4>INSTAGRAM</h4>
-                    </div>
-                </div>
-                <div class="col-md-2 left">
-                    <img class="img-responsive" src="assets/images/instagram/instagram-v15.jpg" alt="images">
-                    <div class="hover">
-                        <img src="assets/images/instagram/icon.png" alt="">
-                        <h4>INSTAGRAM</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="back-to-top">
-            <i class="fa fa-long-arrow-up"></i>
-        </div>
-       
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of Newsletter Section -->
+        </main>
+        <!-- End of Main Content Wrapper -->
