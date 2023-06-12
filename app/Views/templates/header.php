@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +41,7 @@
     <title><?= esc($title) ?></title>
 </head>
 <body>
-<body>
+<header>
 
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
@@ -113,7 +114,7 @@
                         </div>
                         <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-6">
                             <div class="logo">
-                                <a href="index.html"><img src="./favicon.ico" alt="Logo" class="img-fluid"><h1>Pea Fashion</h1></a>
+                                <a href="/"><img src="./favicon.ico" alt="Logo" class="img-fluid"><h1>Pea Fashion</h1></a>
                             </div>
                         </div>
                         </div>

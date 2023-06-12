@@ -4,7 +4,7 @@ namespace Config;
 
 use App\Controllers\Home;
 use App\Controllers\News;
-
+use App\Controllers\User;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -33,7 +33,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('home', 'Home::index');
+$routes->get('/', 'Home::index');
+$routes->get('login', [User::class,'index']);
 $routes->get('(:segment)', [Home::class, 'view']);
 // $routes->match(['get', 'post'], 'news/create', [News::class, 'create']);
 

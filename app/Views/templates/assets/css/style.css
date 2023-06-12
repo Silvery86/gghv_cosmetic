@@ -2762,7 +2762,7 @@ header .list-inline .dropdown-menu ul li:last-child a {
     text-align: center;
     width: 50px;
     height: 7px;
-    background: url("../images/icons/title.png");
+    background: url("title.png");
 }
 
 .section-title .subtitle {
@@ -3545,7 +3545,7 @@ header .list-inline .dropdown-menu ul li:last-child a {
 
 .testimonial-container .testimonial-content::before {
     content: '';
-    background: url(../images/icons/icon-testimonials.png) no-repeat 0 0;
+    background: url(icon-testimonials.png) no-repeat 0 0;
     left: 0;
     top: 16px;
     right: 0;
@@ -5176,12 +5176,12 @@ header .list-inline .dropdown-menu ul li:last-child a {
 }
 
 .follow-link::before {
-    background: url(../images/backgrounds/left-bg.png);
+    background: url(left-bg.png);
     left: 0;
 }
 
 .follow-link::after {
-    background: url(../images/backgrounds/right-bg.png);
+    background: url(right-bg.png);
     right: 0;
     width: 41%;
 }
