@@ -6,7 +6,7 @@ class Database{
     protected $servername = "localhost";
     protected $username = "root";
     protected $password = "mysql";
-    protected $dbname = "gghv_cosmetic";
+    protected $dbname = "test";
 
     function __construct(){
         try
@@ -29,10 +29,6 @@ class Database{
             else
                 $ketqua = $this->pdo_stm->execute();
             return $ketqua;
-        }
-
-   
-
-    
+        }    
 }
 ?>

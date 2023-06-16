@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Homepage</h1>
+    <?php
+    
+    
+     foreach ($data["product"] as $product_item)
+    {
+    ?>
+    <h1><?=$product_item['name'] ?></h1>
+    <?php
+    } 
+    ?>
 </body>
 </html>
