@@ -9,33 +9,16 @@
     ============================================ -->
 <!--    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">-->
 
-
-    <!-- CSS files
-    ============================================ -->
-   
-    <!-- Boostrap stylesheet -->
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/bootstrap.min.css">
+    <?php 
+    use app\core\View;
+    $assets = new View();
+    $cssTags = $assets -> registerCSS('frontend');
+    ?>
     
-    <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/pe-icon-7-stroke.css">
-
-    <!-- Plugins stylesheet -->
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/plugins.css">
-
-    <!-- Master stylesheet -->
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/style.css">
-
-    <!-- Responsive stylesheet -->
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/responsive.css">
-
-    <!-- Customs stylesheet -->
-    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/landing-page.css">
 
     <!-- modernizr JS
     ============================================ -->
-    <script src="../../gghv_cosmetic/public/assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- <script src="../../gghv_cosmetic/public/assets/js/modernizr-2.8.3.min.js"></script> -->
 </head>
 
 <body>
@@ -543,25 +526,27 @@
         </div>
     </div>
     <!-- End of Photoswipe -->
-
+    <?php 
+    $jsTags = $assets -> registerJS('frontend');
+    ?>
 
     <!-- JS
     ============================================ -->
 
     <!-- jQuery JS -->
-    <script src="../../gghv_cosmetic/public/assets/js/jquery.1.12.4.min.js"></script>
+    <!-- <script src="../../gghv_cosmetic/public/assets/js/jquery.1.12.4.min.js"></script> -->
 
     <!-- Popper JS -->
-    <script src="../../gghv_cosmetic/public/assets/js/popper.min.js"></script>
+    <!-- <script src="../../gghv_cosmetic/public/assets/js/popper.min.js"></script> -->
 
     <!-- Bootstrap JS -->
-    <script src="../../gghv_cosmetic/public/assets/js/bootstrap.min.js"></script>
+    <!-- <script src="../../gghv_cosmetic/public/assets/js/bootstrap.min.js"></script> -->
 
     <!-- Plugins JS -->
-    <script src="../../gghv_cosmetic/public/assets/js/plugins.js"></script>
+    <!-- <script src="../../gghv_cosmetic/public/assets/js/plugins.js"></script> -->
 
     <!-- Main JS -->
-    <script src="../../gghv_cosmetic/public/assets/js/main.js"></script>
+    <!-- <script src="../../gghv_cosmetic/public/assets/js/main.js"></script> -->
 
 </body>
 
