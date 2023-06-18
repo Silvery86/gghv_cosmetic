@@ -1,57 +1,41 @@
-
-<?php
-/**
- * @project pea-fashion
- * @author  Im A Feature
- * @email   im.not.a.bug.173@gmail.com
- * @date    5/25/2023
- * @time    8:56 PM
- **/
-
-?>
 <!DOCTYPE html>
-<html lang="zxx">
-
-<!-- Mirrored from htmldemo.net/pebona/pebona/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Apr 2023 14:58:36 GMT -->
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pea Fashion</title>
-    <meta name="description" content="">
-    <meta name="robots" content="noindex, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <!-- favicon
     ============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+<!--    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">-->
 
 
     <!-- CSS files
     ============================================ -->
    
     <!-- Boostrap stylesheet -->
-    <link rel="stylesheet" href="../../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/bootstrap.min.css">
     
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../../public/assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="../../public/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../public/assets/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/pe-icon-7-stroke.css">
 
     <!-- Plugins stylesheet -->
-    <link rel="stylesheet" href="../../public/assets/css/plugins.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/plugins.css">
 
     <!-- Master stylesheet -->
-    <link rel="stylesheet" href="../../public/assets/css/style.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/style.css">
 
     <!-- Responsive stylesheet -->
-    <link rel="stylesheet" href="../../public/assets/css/responsive.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/responsive.css">
 
     <!-- Customs stylesheet -->
-    <link rel="stylesheet" href="../../public/assets/css/landing-page.css">
+    <link rel="stylesheet" href="../../gghv_cosmetic/public/assets/css/landing-page.css">
 
     <!-- modernizr JS
     ============================================ -->
-    <script src="../../public/assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="../../gghv_cosmetic/public/assets/js/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -127,7 +111,7 @@
                         </div>
                         <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-6">
                             <div class="logo">
-                                <a href="index.html"><img src="./favicon.ico" alt="Logo" class="img-fluid"><h1>Pea Fashion</h1></a>
+                                <a href="../../index.php"><img src="./favicon.ico" alt="Logo" class="img-fluid"><h1>Pea Fashion</h1></a>
                             </div>
                         </div>
                         </div>
@@ -180,6 +164,35 @@
         <!-- Start of Main Content Wrapper -->
         <main id="content" class="main-content-wrapper">
 
+         <!-- Slider Section -->
+         <?php 
+            include __DIR__."./default-content/slider.php";
+            ?>
+            
+            <!-- Sale Banner Section -->
+            <?php 
+            include __DIR__."./default-content/sale-banner.php";
+            ?>
+
+            <!-- Trending Product Section -->
+            <?php 
+            include __DIR__."./default-content/trending-product.php";
+            ?>
+
+            <!-- Promo Banner Section -->
+            <?php 
+            include __DIR__."./default-content/promo-banner.php";
+            ?>
+
+            <!-- Categories Section -->
+            <?php 
+            include __DIR__."./default-content/categories.php";
+            ?>
+            
+            <!-- Instagram Section -->
+            <?php 
+            include __DIR__."./default-content/instagram.php";
+            ?>
             
            
             
@@ -563,19 +576,19 @@
     ============================================ -->
 
     <!-- jQuery JS -->
-    <script src="../../public/assets/js/jquery.1.12.4.min.js"></script>
+    <script src="../../gghv_cosmetic/public/assets/js/jquery.1.12.4.min.js"></script>
 
     <!-- Popper JS -->
-    <script src="../../public/assets/js/popper.min.js"></script>
+    <script src="../../gghv_cosmetic/public/assets/js/popper.min.js"></script>
 
     <!-- Bootstrap JS -->
-    <script src="../../public/assets/js/bootstrap.min.js"></script>
+    <script src="../../gghv_cosmetic/public/assets/js/bootstrap.min.js"></script>
 
     <!-- Plugins JS -->
-    <script src="../../public/assets/js/plugins.js"></script>
+    <script src="../../gghv_cosmetic/public/assets/js/plugins.js"></script>
 
     <!-- Main JS -->
-    <script src="../../public/assets/js/main.js"></script>
+    <script src="../../gghv_cosmetic/public/assets/js/main.js"></script>
 
 </body>
 

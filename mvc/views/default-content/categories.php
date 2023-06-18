@@ -23,7 +23,7 @@
                         <!-- Step Intruction -->
                             <div class="category col-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center row">
                                 <div class="category-thumbnail d-flex justify-content-center align-items-center col-12">                                  
-                                        <img src="assets/images/categories/category-1.jpg" alt="Blog Image">                                    
+                                        <img src="../../gghv_cosmetic/public/assets/images/categories/category-1.jpg" alt="Blog Image">                                    
                                 </div>
 
                                 <div class="category-content text-center col-12 row">
@@ -36,7 +36,7 @@
                                     
                             <div class="category col-12 col-sm-12 col-md-4 col-lg-4 row">
                                 <div class="category-thumbnail d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-12 col-lg-12">                                    
-                                    <img src="assets/images/categories/category-2.jpg" alt="Blog Image">
+                                    <img src="../../gghv_cosmetic/public/assets/images/categories/category-2.jpg" alt="Blog Image">
                                 </div>
 
                                 <div class="category-content text-center col-12 row">
@@ -49,7 +49,7 @@
                                        
                             <div class="category col-12 col-sm-12 col-md-4 col-lg-4 row">
                                 <div class="category-thumbnail d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-12 col-lg-12">               
-                                    <img src="assets/images/categories/category-3.jpg" alt="Blog Image">
+                                    <img src="../../gghv_cosmetic/public/assets/images/categories/category-3.jpg" alt="Blog Image">
                                 </div>
 
                                 <div class="category-content text-center col-12 row">

@@ -14,7 +14,7 @@
             <div class="swiper-wrapper">
                         <div class="swiper-slide bg-img-wrapper">
                             <div class="slide-inner image-placeholder">
-                                <img src="assets/images/slider/slide1.png" class="visually-hidden" alt="Slider Image">                          
+                                <img src="../../gghv_cosmetic/public/assets/images/slider/slide1.png" class="visually-hidden" alt="Slider Image">                          
                                 <div class="slide-progress"></div>
                                 <div class="container">
                                     <div class="row">
@@ -37,7 +37,7 @@
 
                         <div class="swiper-slide bg-img-wrapper">
                             <div class="slide-inner image-placeholder">
-                                <img src="assets/images/slider/slide2.png" class="visually-hidden" alt="Slider Image">
+                                <img src="../../gghv_cosmetic/public/assets/images/slider/slide2.png" class="visually-hidden" alt="Slider Image">
                                 <div class="slide-progress"></div>
                                 <div class="container">
                                     <div class="row">
@@ -60,7 +60,7 @@
 
                         <div class="swiper-slide bg-img-wrapper">
                             <div class="slide-inner image-placeholder">
-                                <img src="assets/images/slider/slide3.png" class="visually-hidden" alt="Slider Image">
+                                <img src="../../gghv_cosmetic/public/assets/images/slider/slide3.png" class="visually-hidden" alt="Slider Image">
                                 <div class="slide-progress"></div>
                                 <div class="container">
                                     <div class="row">

@@ -36,7 +36,7 @@
                                                             <div class="label-product label-sale">-20%</div>
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-1.jpg" alt="Compete Track Tote" title="Compete Track Tote">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-1.jpg" alt="Compete Track Tote" title="Compete Track Tote">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -79,7 +79,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-9.jpg" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-9.jpg" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -123,7 +123,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-2.jpg" alt="Fusion Backpack" title="Fusion Backpack">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-2.jpg" alt="Fusion Backpack" title="Fusion Backpack">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -166,7 +166,7 @@
                                                             <div class="label-product label-sale">-7%</div>
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-10.jpg" alt="Strive Shoulder Pack" title="Strive Shoulder Pack">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-10.jpg" alt="Strive Shoulder Pack" title="Strive Shoulder Pack">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -211,7 +211,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-3.jpg" alt="Rival Field Messenger 6" title="Rival Field Messenger 6">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-3.jpg" alt="Rival Field Messenger 6" title="Rival Field Messenger 6">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -253,7 +253,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-11.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-11.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -297,7 +297,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-4.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-4.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -339,7 +339,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-12.jpg" alt="Crown Summit Backpack" title="Crown Summit Backpack">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-12.jpg" alt="Crown Summit Backpack" title="Crown Summit Backpack">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -383,7 +383,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-5.jpg" alt="Crown Summit Backpack" title="Crown Summit Backpack">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-5.jpg" alt="Crown Summit Backpack" title="Crown Summit Backpack">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -425,7 +425,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-13.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-13.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -469,7 +469,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-6.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-6.jpg" alt="Rival Field Messenger" title="Rival Field Messenger">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -511,7 +511,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-14.jpg" alt="Rival Field Messenger 6" title="Rival Field Messenger 6">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-14.jpg" alt="Rival Field Messenger 6" title="Rival Field Messenger 6">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -556,7 +556,7 @@
                                                             <div class="label-product label-sale">-7%</div>
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-7.jpg" alt="Strive Shoulder Pack" title="Strive Shoulder Pack">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-7.jpg" alt="Strive Shoulder Pack" title="Strive Shoulder Pack">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -643,7 +643,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-8.jpg" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-8.jpg" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -686,7 +686,7 @@
                                                             <div class="label-product label-sale">-20%</div>
                                                             <div class="label-product label-new">New</div>
                                                             <a href="single-product.html">
-                                                                <img src="assets/images/products/new/product-16.jpg" alt="Compete Track Tote" title="Compete Track Tote">
+                                                                <img src="../../gghv_cosmetic/public/assets/images/products/new/product-16.jpg" alt="Compete Track Tote" title="Compete Track Tote">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>

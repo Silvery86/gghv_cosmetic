@@ -14,7 +14,7 @@
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="banner-with-text">
-                                    <img src="assets/images/backgrounds/bg-banner.jpg" class="visually-hidden" alt="Promo Banner">
+                                    <img src="../../gghv_cosmetic/public/assets/images/backgrounds/bg-banner.jpg" class="visually-hidden" alt="Promo Banner">
                                     <div class="promo-text">
                                         <h1>Hurry Up!</h1>
                                         <h2><span>Hurry Up!</span> Unique T-shirts designed by artists</h2>
