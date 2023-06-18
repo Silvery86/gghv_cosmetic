@@ -27,7 +27,9 @@
                                 
                                 </div> <!-- end of swiper-wrapper -->
                             </div> <!-- end of instagram-carousel -->
-                            
+                            <div class="follow-link">
+                                <a href="https://www.instagram.com/themeitems/" target="_blank">Follow us On Instagram</a>
+                            </div>
                         </div>
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->

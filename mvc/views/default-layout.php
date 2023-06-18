@@ -126,8 +126,8 @@
                 <div class="container">
                     <nav id="main_nav" class="stellarnav black-scheme">
                         <ul>
-                            <li><a href="index.php"><span>Home</span></a></li>
-                            <li><a href="products.php"><span>Products</span></a></li>
+                            <li><a href="home"><span>Home</span></a></li>
+                            <li><a href="products"><span>Products</span></a></li>
                             <!-- <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Products</span></a>
                                 <ul class="mega-container">
                                     <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
@@ -149,8 +149,8 @@
                                     </li>
                                 </ul>
                             </li> -->
-                            <li><a href="aboutus.php"><span>About Us</span></a></li>
-                            <li><a href="contact.php"><span>Contact Us</span></a></li>
+                            <li><a href="aboutus"><span>About Us</span></a></li>
+                            <li><a href="contact"><span>Contact Us</span></a></li>
                         </ul>
                     </nav>
                 </div> <!-- end of container -->
@@ -165,35 +165,8 @@
         <main id="content" class="main-content-wrapper">
 
          <!-- Slider Section -->
-         <?php 
-            include __DIR__."./default-content/slider.php";
-            ?>
-            
-            <!-- Sale Banner Section -->
-            <?php 
-            include __DIR__."./default-content/sale-banner.php";
-            ?>
-
-            <!-- Trending Product Section -->
-            <?php 
-            include __DIR__."./default-content/trending-product.php";
-            ?>
-
-            <!-- Promo Banner Section -->
-            <?php 
-            include __DIR__."./default-content/promo-banner.php";
-            ?>
-
-            <!-- Categories Section -->
-            <?php 
-            include __DIR__."./default-content/categories.php";
-            ?>
-            
-            <!-- Instagram Section -->
-            <?php 
-            include __DIR__."./default-content/instagram.php";
-            ?>
-            
+      
+        <?php include __DIR__."./pages/".$data["page"].".php" ?>
            
             
         </main>
@@ -246,8 +219,8 @@
                                     <div class="widget-content">
                                         <div class="widgetized-menu">
                                             <ul class="list-unstyled">
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">Site Map</a></li>
+                                                <li><a href="aboutus">About Us</a></li>
+                                                <li><a href="home">Site Map</a></li>
                                                 <li><a href="#">Stores</a></li>
                                                 <li><a href="#">Terms &amp; Conditions</a></li>
                                                 <li><a href="#">My Account</a></li>
