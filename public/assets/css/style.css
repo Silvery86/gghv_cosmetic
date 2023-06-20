@@ -5208,7 +5208,7 @@ header .top-bar p {
 }
 
 header .header-area {
-    padding: 30px 0;
+    padding: 5px 0;
 }
 
 header .logo {
@@ -5273,7 +5273,7 @@ header.header-type-2 {
 }
 
 header.header-type-2 .header-area {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 header.header-type-2 #main_nav {

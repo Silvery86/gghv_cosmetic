@@ -92,10 +92,91 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-6">
-                            <div class="logo">
-                                <a href="../../index.php"><img src="./favicon.ico" alt="Logo" class="img-fluid"><h1>Pea Fashion</h1></a>
+                        <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-6 d-flex align-items-center justify-content-center">
+                            <div class="logo " style="width: 150px; height: 150px;">
+                                <a href="home"><img src="../../../gghv_cosmetic/public/assets/images/gghv-logo.png" alt="Logo" class="img-fluid"></a>
                             </div>
+                        </div>
+                        <div class="col-6 order-3 col-sm-6 col-md-4 col-lg-3">
+                            <div class="header-cart-area">
+                                <div class="header-cart">
+                                    <div class="btn-group">
+                                        <button class="btn-link dropdown-toggle icon-cart">
+                                            <i class="pe-7s-shopbag"></i>
+                                            <span class="count-style">2</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <div class="shopping-cart-content">
+                                                <ul class="list-unstyled">
+                                                    <li class="single-cart-item media">
+                                                        <div class="shopping-cart-img me-4">
+                                                            <a href="#">
+                                                                <img class="img-fluid" alt="Cart Item" src="../../../gghv_cosmetic/public/assets/images/cart/cart-1.jpg">
+                                                                <span class="product-quantity">1x</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="shopping-cart-title flex-grow-1">
+                                                            <h4><a href="#">Rival Field Messenger</a></h4>
+                                                            <p class="cart-price">$120.00</p>
+                                                            <div class="product-attr">
+                                                                <span>Size: S</span>
+                                                                <span>Color: Black</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="shopping-cart-delete">
+                                                            <a href="#"><i class="ion ion-md-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="single-cart-item media">
+                                                        <div class="shopping-cart-img me-4">
+                                                            <a href="#">
+                                                                <img class="img-fluid" alt="Cart Item" src="../../../gghv_cosmetic/public/assets/images/cart/cart-2.jpg">
+                                                                <span class="product-quantity">2x</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="shopping-cart-title flex-grow-1">
+                                                            <h4><a href="#">Fusion Backpack</a></h4>
+                                                            <p class="cart-price">$200.00</p>
+                                                            <div class="product-attr">
+                                                                <span>Color: White</span>
+                                                                <span>Accessories: Yes</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="shopping-cart-delete">
+                                                            <a href="#"><i class="ion ion-md-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="shopping-cart-total">
+                                                    <h4>Sub-Total : <span>$320.00</span></h4>
+                                                    <h4>Total : <span>$320.00</span></h4>
+                                                </div>
+                                                <div class="shopping-cart-btn">
+                                                    <a class="default-btn" href="cart.html">view cart</a>
+                                                    <a class="default-btn" href="checkout.html">checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="list-inline">
+                                    <li class="top-links list-inline-item">
+                                        <div class="btn-group">
+                                            <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                   <li><a href="register.html">Register</a></li>
+                                                   <li><a href="login.html">Login</a></li>
+                                                   <li><a href="my-account.html">My Account</a></li>
+                                                   <li><a href="wishlist.html">Wishlist</a></li>
+                                                   <li><a href="checkout.html">Checkout</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of header-cart-area -->
                         </div>
                         </div>
                     </div>
@@ -166,14 +247,14 @@
                             <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                 <aside class="widget-container">
                                     <div class="widget-content">
-                                        <div class="footer-logo mb-half">
-                                            <img src="./favicon.ico" alt="Footer Logo">
+                                        <div class="logo mb-half" style="width: 150px; height: 150px;">
+                                            <img src="../../../gghv_cosmetic/public/assets/images/gghv-logo.png" alt="Footer Logo">
                                         </div>
                                         <p>Fulfilling your ideas on demand</p>
                                         <div class="footer-contact">
-                                            <p><span>Address:</span></p>
-                                            <p><span>Phone:</span><a href="#"></a></p>
-                                            <p><span>Email:</span><a href="#">pea-shop@gmail.com</a></p>
+                                            <p><span>Address: Ha Noi, Viet Nam</span></p>
+                                            <p><span>Phone: 090.999.999.999</span><a href="#"></a></p>
+                                            <p><span>Email:</span><a href="#">gghv-cosmetic@gmail.com</a></p>
                                         </div>
                                     </div> <!-- end of widget-content -->
                                 </aside> <!-- end of widget-container -->
@@ -262,11 +343,11 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">Pea Fashion</a>. All Right Reserved.</p>
+                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. All Right Reserved.</p>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="footer-payment">
-                                <a href="#"><img src="assets/images/icons/payment.png" alt="Payment Icons"></a>
+                                <a href="#"><img src="../../../gghv_cosmetic/public/assets/images/icons/payment.png" alt="Payment Icons"></a>
                             </div>
                         </div>
                     </div> <!-- end of row -->
@@ -297,8 +378,8 @@
                                                         <!-- Slides -->
                                                         <div class="swiper-wrapper">
                                                             <figure class="swiper-slide">
-                                                                <a href="assets/images/products/single/product-1.jpg" data-size="600x600">
-                                                                    <img src="assets/images/products/single/product-1.jpg" alt="Product Image">
+                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-1.jpg" data-size="600x600">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-1.jpg" alt="Product Image">
                                                                     <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                 </a>
                                                                 <figcaption class="visually-hidden">
@@ -306,8 +387,8 @@
                                                                 </figcaption>
                                                             </figure>
                                                             <figure class="swiper-slide">
-                                                                <a href="assets/images/products/single/product-2.jpg" data-size="600x600">
-                                                                    <img src="assets/images/products/single/product-2.jpg" alt="Product Image">
+                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-2.jpg" data-size="600x600">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-2.jpg" alt="Product Image">
                                                                     <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                 </a>
                                                                 <figcaption class="visually-hidden">
@@ -315,8 +396,8 @@
                                                                 </figcaption>
                                                             </figure>
                                                             <figure class="swiper-slide">
-                                                                <a href="assets/images/products/single/product-3.jpg" data-size="600x600">
-                                                                    <img src="assets/images/products/single/product-3.jpg" alt="Product Image">
+                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-3.jpg" data-size="600x600">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-3.jpg" alt="Product Image">
                                                                     <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                 </a>
                                                                 <figcaption class="visually-hidden">
@@ -324,8 +405,8 @@
                                                                 </figcaption>
                                                             </figure>
                                                             <figure class="swiper-slide">
-                                                                <a href="assets/images/products/single/product-4.jpg" data-size="600x600">
-                                                                    <img src="assets/images/products/single/product-4.jpg" alt="Product Image">
+                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-4.jpg" data-size="600x600">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-4.jpg" alt="Product Image">
                                                                     <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                 </a>
                                                                 <figcaption class="visually-hidden">
@@ -333,8 +414,8 @@
                                                                 </figcaption>
                                                             </figure>
                                                             <figure class="swiper-slide">
-                                                                <a href="assets/images/products/single/product-5.jpg" data-size="600x600">
-                                                                    <img src="assets/images/products/single/product-5.jpg" alt="Product Image">
+                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-5.jpg" data-size="600x600">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-5.jpg" alt="Product Image">
                                                                     <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                 </a>
                                                                 <figcaption class="visually-hidden">
@@ -342,8 +423,8 @@
                                                                 </figcaption>
                                                             </figure>
                                                             <figure class="swiper-slide">
-                                                                <a href="assets/images/products/single/product-6.jpg" data-size="600x600">
-                                                                    <img src="assets/images/products/single/product-6.jpg" alt="Product Image">
+                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-6.jpg" data-size="600x600">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-6.jpg" alt="Product Image">
                                                                     <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                 </a>
                                                                 <figcaption class="visually-hidden">
@@ -360,22 +441,22 @@
                                                             <!-- Slides -->
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
-                                                                    <img src="assets/images/products/single/product-thumb-1.jpg" alt="Product Thumbnail Image">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-1.jpg" alt="Product Thumbnail Image">
                                                                 </div>
                                                                 <div class="swiper-slide">
-                                                                    <img src="assets/images/products/single/product-thumb-2.jpg" alt="Product Thumbnail Image">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-2.jpg" alt="Product Thumbnail Image">
                                                                 </div>
                                                                 <div class="swiper-slide">
-                                                                    <img src="assets/images/products/single/product-thumb-3.jpg" alt="Product Thumbnail Image">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-3.jpg" alt="Product Thumbnail Image">
                                                                 </div>
                                                                 <div class="swiper-slide">
-                                                                    <img src="assets/images/products/single/product-thumb-4.jpg" alt="Product Thumbnail Image">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-4.jpg" alt="Product Thumbnail Image">
                                                                 </div>
                                                                 <div class="swiper-slide">
-                                                                    <img src="assets/images/products/single/product-thumb-5.jpg" alt="Product Thumbnail Image">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-5.jpg" alt="Product Thumbnail Image">
                                                                 </div>
                                                                 <div class="swiper-slide">
-                                                                    <img src="assets/images/products/single/product-thumb-6.jpg" alt="Product Thumbnail Image">
+                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-6.jpg" alt="Product Thumbnail Image">
                                                                 </div>
                                                             </div>
 
