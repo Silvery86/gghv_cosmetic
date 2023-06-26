@@ -13,12 +13,9 @@
     use app\core\View;
     $assets = new View();
     $cssTags = $assets -> registerCSS('frontend');
-    ?>
     
+    ?>
 
-    <!-- modernizr JS
-    ============================================ -->
-    <!-- <script src="../../gghv_cosmetic/public/assets/js/modernizr-2.8.3.min.js"></script> -->
 </head>
 
 <body>
@@ -611,25 +608,8 @@
     $jsTags = $assets -> registerJS('frontend');
     ?>
 
-    <!-- JS
-    ============================================ -->
-
-    <!-- jQuery JS -->
-    <!-- <script src="../../gghv_cosmetic/public/assets/js/jquery.1.12.4.min.js"></script> -->
-
-    <!-- Popper JS -->
-    <!-- <script src="../../gghv_cosmetic/public/assets/js/popper.min.js"></script> -->
-
-    <!-- Bootstrap JS -->
-    <!-- <script src="../../gghv_cosmetic/public/assets/js/bootstrap.min.js"></script> -->
-
-    <!-- Plugins JS -->
-    <!-- <script src="../../gghv_cosmetic/public/assets/js/plugins.js"></script> -->
-
-    <!-- Main JS -->
-    <!-- <script src="../../gghv_cosmetic/public/assets/js/main.js"></script> -->
+   
 
 </body>
 
-<!-- Mirrored from htmldemo.net/pebona/pebona/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Apr 2023 14:58:39 GMT -->
 </html>

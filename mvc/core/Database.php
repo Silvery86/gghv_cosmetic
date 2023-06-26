@@ -6,7 +6,7 @@ class Database{
     protected $servername = "localhost";
     protected $username = "root";
     protected $password = "mysql";
-    protected $dbname = "test";
+    protected $dbname = "gghv_cosmetic";
 
     function __construct(){
         try
