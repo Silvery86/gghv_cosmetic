@@ -64,7 +64,7 @@
                                                                         <div class="product-image">
                                                                             <div class="label-product label-sale">-20%</div>
                                                                             <div class="label-product label-new">New</div>
-                                                                            <a href="product/index/<?=$product["id"]?>">
+                                                                            <a href="products/product/<?=$product["id"]?>">
                                                                                 <img src="<?=$product["image"]?>" alt="Compete Track Tote" title="Compete Track Tote">
                                                                             </a>
                                                                             <div class="action-links">
