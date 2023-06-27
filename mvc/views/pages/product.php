@@ -149,13 +149,13 @@
                                             <div class="product-info mt-half">
                                                  <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
                                                     <li class="nav-item">
-                                                        <a class="nav-link active" id="nav_desctiption" data-bs-toggle="pill" href="#tab_description" role="tab" aria-controls="tab_description" aria-selected="true">Description</a>
+                                                        <a class="nav-link active" id="nav_desctiption" data-bs-toggle="pill" href="#tab_description" role="tab" aria-controls="tab_description" aria-selected="true">Mô tả sản phẩm - Description</a>
                                                     </li>
                                                    
                                                 </ul>
                                                 <div class="tab-content">
                                                     <div class="tab-pane fade show active" id="tab_description" role="tabpanel" aria-labelledby="nav_desctiption">
-                                                        <p><?=$data['product'][0]['description']?></p>
+                                                        <p><?=$data['product'][0]['long_description']?></p>
                                                     </div>
                                                    
                                                 </div>
@@ -170,8 +170,9 @@
             </div>
             <!-- End of Main Product Wrapper -->
 <?php
-$product = $this -> model("ProductModel");
-$related_products = $product -> getRelatedProduct($data['product'][0]['brand_id'],$data['product'][0]['category_id']);
+$related_products = $this -> model("ProductModel");
+$result = $related_products -> getRelatedProduct($data['product'][0]['brand_id'],$data['product'][0]['category_id']);
+$related_product_data = $related_products -> data;
 ?>
             <!-- Start of Related Products -->
             <section class="related-products">
@@ -187,7 +188,7 @@ $related_products = $product -> getRelatedProduct($data['product'][0]['brand_id'
                                     <!-- Slides -->
                                     <div class="swiper-wrapper">
                                     <?php
-                                    foreach($related_products as $related_product)
+                                    foreach($related_product_data as $related_product)
                                     {
                                     ?>
                                         <article class="swiper-slide product-layout">
@@ -195,13 +196,13 @@ $related_products = $product -> getRelatedProduct($data['product'][0]['brand_id'
                                                 <div class="product-inner">
                                                     <div class="product-image">
                                                         
-                                                        <a href="single-product.html">
+                                                        <a href="<?=$related_product["id"]?>">
                                                             <img src="<?=$related_product["image"]?>" alt="Fusion Backpack" title="Fusion Backpack">
                                                         </a>
                                                         <div class="action-links">
                                                             <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
                                                             <a class="action-btn btn-wishlist" href="#" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                                            <a class="action-btn btn-compare" href="#" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>
+                                                            
                                                         </div>
                                                     </div> <!-- end of product-image -->
 

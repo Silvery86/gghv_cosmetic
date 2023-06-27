@@ -37,6 +37,12 @@ class App{
             return ["Home"];
         }
     }
+    function goToHome(){
+        if (isset($_GET["url"])){
+            unset($_GET["url"]);
+            return "home";
+        }
+    }
 };
 
 ?>

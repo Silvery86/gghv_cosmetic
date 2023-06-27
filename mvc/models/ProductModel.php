@@ -1,6 +1,7 @@
 <?php
     class ProductModel extends Database{
     public $data;
+   
         
     // Get all record from table and store in $data
      function getProduct()
@@ -12,8 +13,8 @@
 
          $this->data=NULL;
          if($result==TRUE)
-            $result_data = $this->pdo_stm->fetchAll();
-         return $result_data;
+            $this->data = $this->pdo_stm->fetchAll();
+         return $result;
          
         }
         
@@ -29,8 +30,8 @@
 
          $this->data=NULL;
          if($result==TRUE)
-            $result_data = $this->pdo_stm->fetchAll();
-         return $result_data;
+            $this->data = $this->pdo_stm->fetchAll();
+         return $result;
          
         }
 
@@ -46,8 +47,8 @@
 
          $this->data=NULL;
          if($result==TRUE)
-            $result_data = $this->pdo_stm->fetchAll();
-         return $result_data;
+            $this->data = $this->pdo_stm->fetchAll();
+         return $result;
          
         }
        
