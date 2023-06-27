@@ -11,9 +11,10 @@
         }
         function product($param){
             
-         
+            
             $product = $this -> model("ProductModel");
             $result = $product -> getSingleProduct($param);
+            
             
             $this -> view("product-layout",
             ["page" => "product","product" => $result]

@@ -169,7 +169,10 @@
                 </div> <!-- end of container -->
             </div>
             <!-- End of Main Product Wrapper -->
-
+<?php
+$product = $this -> model("ProductModel");
+$related_products = $product -> getRelatedProduct($data['product'][0]['brand_id'],$data['product'][0]['category_id']);
+?>
             <!-- Start of Related Products -->
             <section class="related-products">
                 <div class="container">
@@ -183,13 +186,17 @@
 
                                     <!-- Slides -->
                                     <div class="swiper-wrapper">
+                                    <?php
+                                    foreach($related_products as $related_product)
+                                    {
+                                    ?>
                                         <article class="swiper-slide product-layout">
                                             <div class="product-thumb">
                                                 <div class="product-inner">
                                                     <div class="product-image">
-                                                        <div class="label-product label-new">New</div>
+                                                        
                                                         <a href="single-product.html">
-                                                            <img src="assets/images/products/new/product-10.jpg" alt="Fusion Backpack" title="Fusion Backpack">
+                                                            <img src="<?=$related_product["image"]?>" alt="Fusion Backpack" title="Fusion Backpack">
                                                         </a>
                                                         <div class="action-links">
                                                             <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -201,7 +208,7 @@
                                                     <div class="product-caption">
                                                     	<div class="product-meta d-flex justify-content-between align-items-center">
 	                                                    	<div class="product-manufacturer">
-	                                                    		<a href="#">Graphic Corner</a>
+	                                                    		<a href="#"><?=$related_product["brand_name"]?></a>
 	                                                    	</div>
 	                                                        <div class="product-ratings">
 	                                                            <div class="rating-box">
@@ -215,16 +222,19 @@
 	                                                            </div>
 	                                                        </div>
 	                                                    </div>
-                                                        <h4 class="product-name"><a href="single-product.html">Fusion Backpack</a></h4>
+                                                        <h4 class="product-name"><a href="single-product.html"><?=$related_product["name"]?></a></h4>
                                                         <p class="product-price">
-                                                            <span class="price-new">$55.70</span>
+                                                            <span class="price-new"><?=$related_product["price"]?></span>
                                                         </p>
                                                     </div><!-- end of product-caption -->
                                                 </div><!-- end of product-inner -->
                                             </div><!-- end of product-thumb -->
-                                        </article> <!-- end of product-layout -->                                       
+                                        </article> <!-- end of product-layout --> 
+                                        <?php
+                                        }
+                                        ?>                                      
                                     </div> <!-- end of swiper-wrapper -->
-
+                                    
                                     <!-- Slider Navigation -->
                                     <div class="swiper-arrow next"><i class="fa fa-angle-right"></i></div>
                                     <div class="swiper-arrow prev"><i class="fa fa-angle-left"></i></div>
@@ -234,5 +244,6 @@
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
             </section>
+
             <!-- End of Related Products -->
         </div>

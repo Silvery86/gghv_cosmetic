@@ -184,41 +184,7 @@
 
 
 
-            <!-- Start of Main and Mobile Navigation -->
-            <div class="main-nav-area">
-                <div class="container">
-                    <nav id="main_nav" class="stellarnav black-scheme">
-                        <ul>
-                            <li><a href="home"><span>Home</span></a></li>
-                            <li><a href="products"><span>Products</span></a></li>
-                            <!-- <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Products</span></a>
-                                <ul class="mega-container">
-                                    <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
-                                        <ul>
-                                            <li><a href="cart.html">Cart Page</a><li>
-                                            <li><a href="checkout.html">Checkout Page</a></li>
-                                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="last"><a href="#" class="mega-menu-title"><h3>Shop pages 04</h3></a>
-                                        <ul>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="fullwidth-banner">
-                                        <a href="#"><img src="assets/images/banners/menu-banner.jpg" alt="Menu Banner"></a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li><a href="aboutus"><span>About Us</span></a></li>
-                            <li><a href="contact"><span>Contact Us</span></a></li>
-                        </ul>
-                    </nav>
-                </div> <!-- end of container -->
-            </div>
-            <!-- End of Main and Mobile Navigation -->
+            
         </header>
         <!-- End of Header -->
 
