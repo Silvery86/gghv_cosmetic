@@ -163,11 +163,9 @@
                                             <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
                                             <div class="dropdown-menu">
                                                 <ul>
-                                                   <li><a href="register.html">Register</a></li>
-                                                   <li><a href="login.html">Login</a></li>
-                                                   <li><a href="my-account.html">My Account</a></li>
-                                                   <li><a href="wishlist.html">Wishlist</a></li>
-                                                   <li><a href="checkout.html">Checkout</a></li>
+                                                   <li><a href="register">Register</a></li>
+                                                   <li><a href="login">Login</a></li>
+                                                   
                                                 </ul>
                                             </div>
                                         </div>
