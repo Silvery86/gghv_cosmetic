@@ -41,7 +41,7 @@
                                                     <li><a class="nav-link" data-bs-toggle="tab" href="#downloads">Downloads</a></li>
                                                     <li><a class="nav-link" data-bs-toggle="tab" href="#address">Addresses</a></li>
                                                     <li><a class="nav-link" data-bs-toggle="tab" href="#account-details">Account details</a></li>
-                                                    <li><a class="nav-link" href="login.html">logout</a></li>
+                                                    <li><a class="nav-link" href="logout">logout</a></li>
                                                 </ul> <!-- end of dashboard-list -->
                                             </div>
 
