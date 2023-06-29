@@ -85,17 +85,6 @@
                                                 }
                                         ?>
 
-                                        
-
-                                        
-
-                                        
-
-                                        
-
-                                        
-
-                                        
                                     </div> <!-- end of swiper-wrapper -->
 
                                     <!-- Slider Navigation -->

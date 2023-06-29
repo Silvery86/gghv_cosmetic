@@ -23,12 +23,12 @@ class Database{
     function ProcessSQL($sql, $data=NULL)
         {
             $this->pdo_stm = $this->conn->prepare($sql);
-            $ketqua=false;
+            $result=false;
             if($data!=NULL)
-                $ketqua = $this->pdo_stm->execute($data);
+                $result = $this->pdo_stm->execute($data);
             else
-                $ketqua = $this->pdo_stm->execute();
-            return $ketqua;
+                $result = $this->pdo_stm->execute();
+            return $result;
         }    
 }
 ?>
