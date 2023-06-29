@@ -164,13 +164,26 @@
                                         <div class="btn-group">
                                             <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
                                             <div class="dropdown-menu">
+                                            <?php
+                                            if(isset($_SESSION["logined"])==false ||$_SESSION["logined"]=="")
+                                            {
+                                            ?>
                                                 <ul>
-                                                   <li><a href="register.html">Register</a></li>
-                                                   <li><a href="login.html">Login</a></li>
-                                                   <li><a href="my-account.html">My Account</a></li>
-                                                   <li><a href="wishlist.html">Wishlist</a></li>
-                                                   <li><a href="checkout.html">Checkout</a></li>
+                                                   <li><a href="register">Register</a></li>
+                                                   <li><a href="login">Login</a></li>
+                                                   
                                                 </ul>
+                                            <?php
+                                            }else{
+                                            ?>
+                                                <ul>
+                                                   <li><a href="user">My Account</a></li>
+                                                   <li><a href="logout">Logout</a></li>
+                                                   
+                                                </ul>
+                                            <?php
+                                            }
+                                            ?>
                                             </div>
                                         </div>
                                     </li>

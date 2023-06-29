@@ -4,7 +4,7 @@ use app\core\View;
         function index(){
             $product = $this -> model("ProductModel");
             $result = $product -> getProduct();
-            session_start();
+            
             
             
             $this -> view("default-layout",

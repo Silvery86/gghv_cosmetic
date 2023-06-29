@@ -3,7 +3,7 @@
     public $user_name;
     function getUser($username, $password)
         {
-        session_start();
+        
          $sql = "SELECT * FROM user
          LEFT JOIN role ON user.role_id = role.id
          where user.name = '$username' AND user.password = '$password'

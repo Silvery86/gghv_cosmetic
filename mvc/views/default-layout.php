@@ -175,7 +175,7 @@
                                             }else{
                                             ?>
                                                 <ul>
-                                                   <li><a href="myaccount">My Account</a></li>
+                                                   <li><a href="user">My Account</a></li>
                                                    <li><a href="logout">Logout</a></li>
                                                    
                                                 </ul>
