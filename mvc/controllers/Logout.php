@@ -6,7 +6,7 @@
             
            
             $this -> view("default-layout",
-            ["page" => "logout"]
+            ["page" => "home"]
             );
                         
         }
