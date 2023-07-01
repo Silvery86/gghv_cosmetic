@@ -4,12 +4,13 @@ use app\core\View;
         function index(){
             $product = $this -> model("ProductModel");
             $result = $product -> getProduct();
-            
-            
-            
+            if($result){
+            $result_data = $product -> data;
             $this -> view("default-layout",
-            ["product" => $result, "page" => "home"]
-            );
+                        ["product" => $result_data, "page" => "home"]
+                        );
+            }
+            
             
         }
     }

@@ -5353,7 +5353,7 @@ header.header-type-4 .header-text span:first-child {
  */
 
 .main-nav-area {
-    z-index: 99;
+    z-index: 1;
 }
 
 .main-nav-area.nav-with-search .header-search-area {
@@ -5362,7 +5362,7 @@ header.header-type-4 .header-text span:first-child {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: 9901;
+    z-index: 1;
 }
 
 .main-nav-area.nav-with-search input {

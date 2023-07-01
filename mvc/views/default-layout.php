@@ -20,49 +20,9 @@
 
 <body>
 
-    <!--[if lt IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Start of Whole Site Wrapper with mobile menu support -->
+    
     <div id="whole" class="whole-site-wrapper">
-
-        <!-- Start of Newsletter Popup 
-        <div id="newsletter_popup" class="newsletter-popup">
-            <div class="popup-container">
-                <div class="popup-close">
-                    <span class="p-close"><span>X</span></span>
-                </div>  end of popup-close 
-
-                <div class="popup-area text-center">
-                    <h2>Subscribe to our Newsletter</h2>
-                    <div class="popup-body">
-                        <p>Subscribe to the Pebona mailing list to receive updates on new arrivals, special offers and other discount information.</p>
-                        <div class="subscribe-form-group">
-                            <form action="#">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Enter your email address" required>
-                                    <button class="default-btn secondary" type="submit">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>  end of popup-body 
-
-                    <div class="popup-footer">
-                        <div class="form-check">
-                            <div class="custom-checkbox">
-                                <input class="form-check-input" type="checkbox" id="cancel_popup">
-                                <span class="checkmark"></span>
-                                <label class="form-check-label" for="cancel_popup">Don't show this popup again</label>
-                            </div>
-                        </div>
-                    </div>  end of popup-footer 
-                </div>  end of popup-area 
-            </div>  end of popup-container 
-        </div>
-        End of Newsletter Popup -->
-
-        <!-- Start of Header -->
+ <!-- Start of Header -->
         <header class="header header-type-2 black-scheme">
             <div class="top-bar">
                 <div class="container">
@@ -94,101 +54,44 @@
                                 <a href="home"><img src="../../../gghv_cosmetic/public/assets/images/gghv-logo.png" alt="Logo" class="img-fluid"></a>
                             </div>
                         </div>
-                        <div class="col-6 order-3 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-6 order-3 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center">
                             <div class="header-cart-area">
-                                <div class="header-cart">
-                                    <div class="btn-group">
-                                        <button class="btn-link dropdown-toggle icon-cart">
-                                            <i class="pe-7s-shopbag"></i>
-                                            <span class="count-style">2</span>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <div class="shopping-cart-content">
-                                                <ul class="list-unstyled">
-                                                    <li class="single-cart-item media">
-                                                        <div class="shopping-cart-img me-4">
-                                                            <a href="#">
-                                                                <img class="img-fluid" alt="Cart Item" src="../../../gghv_cosmetic/public/assets/images/cart/cart-1.jpg">
-                                                                <span class="product-quantity">1x</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="shopping-cart-title flex-grow-1">
-                                                            <h4><a href="#">Rival Field Messenger</a></h4>
-                                                            <p class="cart-price">$120.00</p>
-                                                            <div class="product-attr">
-                                                                <span>Size: S</span>
-                                                                <span>Color: Black</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="shopping-cart-delete">
-                                                            <a href="#"><i class="ion ion-md-close"></i></a>
-                                                        </div>
-                                                    </li>
-                                                    <li class="single-cart-item media">
-                                                        <div class="shopping-cart-img me-4">
-                                                            <a href="#">
-                                                                <img class="img-fluid" alt="Cart Item" src="../../../gghv_cosmetic/public/assets/images/cart/cart-2.jpg">
-                                                                <span class="product-quantity">2x</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="shopping-cart-title flex-grow-1">
-                                                            <h4><a href="#">Fusion Backpack</a></h4>
-                                                            <p class="cart-price">$200.00</p>
-                                                            <div class="product-attr">
-                                                                <span>Color: White</span>
-                                                                <span>Accessories: Yes</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="shopping-cart-delete">
-                                                            <a href="#"><i class="ion ion-md-close"></i></a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="shopping-cart-total">
-                                                    <h4>Sub-Total : <span>$320.00</span></h4>
-                                                    <h4>Total : <span>$320.00</span></h4>
-                                                </div>
-                                                <div class="shopping-cart-btn">
-                                                    <a class="default-btn" href="cart.html">view cart</a>
-                                                    <a class="default-btn" href="checkout.html">checkout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                <?php include __DIR__."./pages/cart.php" ?>
+                            </div>
+                            <div class="function-area">
                                 <ul class="list-inline">
                                     <li class="top-links list-inline-item">
                                         <div class="btn-group">
-                                            <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
-                                            <div class="dropdown-menu">
-                                            <?php
-                                            if(isset($_SESSION["logined"])==false ||$_SESSION["logined"]=="")
-                                            {
-                                            ?>
-                                                <ul>
-                                                   <li><a href="register">Register</a></li>
-                                                   <li><a href="login">Login</a></li>
-                                                   
-                                                </ul>
-                                            <?php
-                                            }else{
-                                            ?>
-                                                <ul>
-                                                   <li><a href="user">My Account</a></li>
-                                                   <li><a href="logout">Logout</a></li>
-                                                   
-                                                </ul>
-                                            <?php
-                                            }
-                                            ?>
-                                                
-                                            </div>
+                                                    <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
+                                                    <div class="dropdown-menu">
+                                                    <?php
+                                                    if(isset($_SESSION["logined"])==false ||$_SESSION["logined"]=="")
+                                                    {
+                                                    ?>
+                                                        <ul>
+                                                     <li><a href="register">Register</a></li>
+                                                        <li><a href="login">Login</a></li>
+                                                        
+                                                        </ul>
+                                                    <?php
+                                                    }else{
+                                                    ?>
+                                                        <ul>
+                                                        <li><a href="user">My Account</a></li>
+                                                        <li><a href="logout">Logout</a></li>
+                                                        
+                                                        </ul>
+                                                    <?php
+                                                    }
+                                                    ?>                                                        
+                                                </div>
                                         </div>
                                     </li>
                                 </ul>
-                            </div> <!-- end of header-cart-area -->
-                        </div>
+                            </div> 
+                                
+                            
+                        
                         </div>
                     </div>
                 </div> <!-- end of container -->
