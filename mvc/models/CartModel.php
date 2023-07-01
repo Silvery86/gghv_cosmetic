@@ -7,7 +7,8 @@ class CartModel extends Database{
 
     function addCart($productId)
     {
-        //lấy thông tin sản phẩm từ CSDL và lưu vào giỏ hàng
+        
+            //lấy thông tin sản phẩm từ CSDL và lưu vào giỏ hàng
             $sql = "SELECT product.*, brand.name as brand_name, category.name as category_name FROM product  
             LEFT JOIN brand ON product.brand_id = brand.id 
             LEFT JOIN category ON product.category_id = category.id 
@@ -27,8 +28,8 @@ class CartModel extends Database{
                 'price' => $this->cart_item[0]['price'],
                 
             );
-            return $this -> cart_item;   
-        
+            return $this -> cart_item;
+              
     }
 
 }

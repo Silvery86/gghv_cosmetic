@@ -28,7 +28,7 @@
                 ?>
                 <ul class="list-unstyled">
                 <?php
-                $total =0;
+                $total = 0;
                 foreach($_SESSION["cart"] as $productId)
                 {
                     
@@ -58,7 +58,7 @@
                 }
                 ?>
                 <div class="shopping-cart-total">
-                    <h4>Sub-Total : <span>$320.00</span></h4>
+                    <h4>Sub-Total : <span><?=number_format($total)?></span></h4>
                     <h4>Total : <span><?=number_format($total)?></span></h4>
                 </div>
                 <div class="shopping-cart-btn">

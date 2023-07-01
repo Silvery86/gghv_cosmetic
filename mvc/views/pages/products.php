@@ -68,10 +68,10 @@
                                                                                 <img src="<?=$product["image"]?>" alt="Compete Track Tote" title="Compete Track Tote">
                                                                             </a>
                                                                             <div class="action-links">
-                                                                                <form action="cart/add/<?php echo $product["id"]; ?>" method="post">
-                                                                                    <a class="action-btn btn-cart" href="cart/add/<?php echo $product["id"]?>" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
-                                                                                </form>    
+                                                                                <a class="action-btn btn-cart" href="cart/addtocart/<?=$product["id"]?>" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
+                                                                        
                                                                             </div>
+                                                                           
                                                                         </div>  
 
                                                                         <div class="product-caption">

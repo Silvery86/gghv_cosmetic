@@ -25,6 +25,7 @@ class App{
 
         // Params process
         $this -> params = $arr? array_values($arr):[];
+            unset($arr);
         
         call_user_func_array([ $this->controller, $this->action ], $this->params );
     }
@@ -34,13 +35,13 @@ class App{
             return explode("/", filter_var(trim($_GET["url"],"/")));
         }
         else{
-            return ["Home"];
+            return ["error404"];
         }
     }
-    function goToHome(){
+    function redirectUrl(){
         if (isset($_GET["url"])){
             unset($_GET["url"]);
-            return "home";
+            return "home" ;
         }
     }
 };
