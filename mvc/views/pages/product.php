@@ -112,15 +112,12 @@
                                                         <form action="#">
                                                             <label>Quantity</label>
                                                             <ul class="d-flex flex-wrap align-items-center">
-                                                                <li class="box-quantity">
-                                                                    <div class="cart-input">
-                                                                        <input class="cart-input-box" type="text" value="0">
-                                                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                        <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
-                                                                    </div>
-                                                                </li>
+                                                                
                                                                 <li>
-                                                                    <button type="button" class="default-btn">Add to Cart</button>
+                                                                    <a href="addtocart=<?=$data['product'][0]['id']?>">
+                                                                        <button type="button" class="default-btn">Add to Cart</button>
+                                                                    </a>
+                                                                    
                                                                 </li>
                                                             </ul>
                                                         </form>
@@ -200,8 +197,8 @@ $related_product_data = $related_products -> data;
                                                             <img src="<?=$related_product["image"]?>" alt="Fusion Backpack" title="Fusion Backpack">
                                                         </a>
                                                         <div class="action-links">
-                                                            <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
-                                                            <a class="action-btn btn-wishlist" href="#" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                                                            <a class="action-btn btn-cart" href="addtocart=<?=$related_product["id"]?>" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
+                                                            
                                                             
                                                         </div>
                                                     </div> <!-- end of product-image -->

@@ -45,10 +45,8 @@
                                                                 <img src="<?=$product["image"]?>" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
                                                             </a>
                                                             <div class="action-links">
-                                                                <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
-                                                                <a class="action-btn btn-wishlist" href="#" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                                                <a class="action-btn btn-compare" href="#" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>
-                                                                <a class="action-btn btn-quickview" data-bs-toggle="modal" data-bs-target="#product_quick_view" href="#" title="Quick View"><i class="pe-7s-search"></i></a>
+                                                                <a class="action-btn btn-cart" href="cart/addtocart/<?=$product["id"]?>" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
+                                                                
                                                             </div>
                                                         </div> <!-- end of product-image -->
 

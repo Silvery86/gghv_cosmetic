@@ -1,12 +1,7 @@
 <?php
     class Cart extends Controller{
         function addToCart($params){
-            $products = $this -> model("ProductModel");
-            $result = $products -> getProduct();
-            if(!$result){
-                echo "Error";
-            }
-            $result_data = $products -> data;
+            
             $cart = $this -> model("CartModel");
             $productId = $params;
 

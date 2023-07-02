@@ -3,7 +3,7 @@
     <div class="btn-group">
         <button class="btn-link dropdown-toggle icon-cart">
             <i class="pe-7s-shopbag"></i>
-            <span class="count-style">2</span>
+            <span class="count-style"><?=count($_SESSION["cart"])?></span>
         </button>
         <div class="dropdown-menu">
         
@@ -62,8 +62,8 @@
                     <h4>Total : <span><?=number_format($total)?></span></h4>
                 </div>
                 <div class="shopping-cart-btn">
-                    <a class="default-btn" href="cart.html">view cart</a>
-                    <a class="default-btn" href="checkout.html">checkout</a>
+                    <a class="default-btn" href="viewcart">view cart</a>
+                    <a class="default-btn" href="checkout">checkout</a>
                 </div>
             </div>
         </div>
