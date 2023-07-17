@@ -1943,7 +1943,7 @@ header .list-inline li.list-inline-item button {
 
 header .list-inline li.list-inline-item i {
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: -webkit-transform 0.3s;

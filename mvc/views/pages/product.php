@@ -18,8 +18,8 @@
                                                             <!-- Slides -->
                                                             <div class="swiper-wrapper">
                                                                 <figure class="swiper-slide">
-                                                                    <a href="<?=$data['product'][0]['image']?>" data-size="600x600">
-                                                                        <img src="<?=$data['product'][0]['image']?>" alt="Product Image">
+                                                                    <a href="<?=$data['product'][0]['thumbnail']?>" data-size="600x600">
+                                                                        <img src="<?=$data['product'][0]['thumbnail']?>" alt="Product Image">
                                                                         <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                     </a>
                                                                     <figcaption class="visually-hidden">
@@ -27,8 +27,8 @@
                                                                     </figcaption>
                                                                 </figure>
                                                                 <figure class="swiper-slide">
-                                                                    <a href="<?=$data['product'][0]['image']?>" data-size="600x600">
-                                                                        <img src="<?=$data['product'][0]['image']?>" alt="Product Image">
+                                                                    <a href="<?=$data['product'][0]['thumbnail']?>" data-size="600x600">
+                                                                        <img src="<?=$data['product'][0]['thumbnail']?>" alt="Product Image">
                                                                         <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                     </a>
                                                                     <figcaption class="visually-hidden">
@@ -36,8 +36,8 @@
                                                                     </figcaption>
                                                                 </figure>
                                                                 <figure class="swiper-slide">
-                                                                    <a href="<?=$data['product'][0]['image']?>" data-size="600x600">
-                                                                        <img src="<?=$data['product'][0]['image']?>" alt="Product Image">
+                                                                    <a href="<?=$data['product'][0]['thumbnail']?>" data-size="600x600">
+                                                                        <img src="<?=$data['product'][0]['thumbnail']?>" alt="Product Image">
                                                                         <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
                                                                     </a>
                                                                     <figcaption class="visually-hidden">
@@ -54,13 +54,13 @@
                                                                 <!-- Slides -->
                                                                 <div class="swiper-wrapper">
                                                                     <div class="swiper-slide">
-                                                                        <img src="<?=$data['product'][0]['image']?>" alt="Product Thumbnail Image">
+                                                                        <img src="<?=$data['product'][0]['thumbnail']?>" alt="Product Thumbnail Image">
                                                                     </div>
                                                                     <div class="swiper-slide">
-                                                                        <img src="<?=$data['product'][0]['image']?>" alt="Product Thumbnail Image">
+                                                                        <img src="<?=$data['product'][0]['thumbnail']?>" alt="Product Thumbnail Image">
                                                                     </div>
                                                                     <div class="swiper-slide">
-                                                                        <img src="<?=$data['product'][0]['image']?>" alt="Product Thumbnail Image">
+                                                                        <img src="<?=$data['product'][0]['thumbnail']?>" alt="Product Thumbnail Image">
                                                                     </div>
                                                                    
                                                                 </div>
@@ -76,7 +76,7 @@
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                             <div class="product-details">
-                                                <h3 class="product-name"><?=$data['product'][0]['name']?></h3>
+                                                <h3 class="product-name"><?=$data['product'][0]['title']?></h3>
                                                 <div class="product-ratings d-flex">
                                                     <!-- <ul class="rating d-flex me-4">
                                                         <li><i class="ion ion-md-star-outline"></i></li>
@@ -93,7 +93,7 @@
                                                 <div class="product-price">
                                                     <p class="d-flex align-items-center">
                                                        
-                                                        <span class="price-new"><?=$data['product'][0]['price']?></span>
+                                                        <span class="price-new"><?=number_format($data['product'][0]['price'])?></span>
                                                         <!-- <span class="price-discount">-20%</span> -->
                                                     </p>
                                                 </div>
@@ -194,7 +194,7 @@ $related_product_data = $related_products -> data;
                                                     <div class="product-image">
                                                         
                                                         <a href="<?=$related_product["id"]?>">
-                                                            <img src="<?=$related_product["image"]?>" alt="Fusion Backpack" title="Fusion Backpack">
+                                                            <img src="<?=$related_product["thumbnail"]?>" alt="Fusion Backpack" title="Fusion Backpack">
                                                         </a>
                                                         <div class="action-links">
                                                             <a class="action-btn btn-cart" href="addtocart=<?=$related_product["id"]?>" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -220,9 +220,9 @@ $related_product_data = $related_products -> data;
 	                                                            </div>
 	                                                        </div>
 	                                                    </div>
-                                                        <h4 class="product-name"><a href="single-product.html"><?=$related_product["name"]?></a></h4>
+                                                        <h4 class="product-name"><a href="single-product.html"><?=$related_product["title"]?></a></h4>
                                                         <p class="product-price">
-                                                            <span class="price-new"><?=$related_product["price"]?></span>
+                                                            <span class="price-new"><?=number_format($related_product["price"])?></span>
                                                         </p>
                                                     </div><!-- end of product-caption -->
                                                 </div><!-- end of product-inner -->

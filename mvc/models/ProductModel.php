@@ -24,7 +24,7 @@
          $sql = "SELECT products.*, brands.name as brand_name, categories.name as category_name FROM products  
          LEFT JOIN brands ON products.brand_id = brands.id 
          LEFT JOIN categories ON products.category_id = categories.id 
-         WHERE product.id = $id
+         WHERE products.id = $id
          ";
          $result = $this->ProcessSQL($sql);
 

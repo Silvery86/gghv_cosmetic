@@ -41,8 +41,8 @@
                                                     <div class="product-inner">
                                                         <div class="product-image">
                                                             <div class="label-product label-new">New</div>
-                                                            <a href="single-product.html">
-                                                                <img src="<?=$product["image"]?>" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
+                                                            <a href="products/product/<?=$product["id"]?>">
+                                                                <img src="<?=$product["thumbnail"]?>" alt="Wayfarer Messenger Bag" title="Wayfarer Messenger Bag">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="action-btn btn-cart" href="cart/addtocart/<?=$product["id"]?>" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
@@ -67,9 +67,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <h4 class="product-name"><a href="single-product.html"><?=$product["name"]?></a></h4>
+                                                            <h4 class="product-name"><a href="single-product.html"><?=$product["title"]?></a></h4>
                                                             <p class="product-price">
-                                                                <span class="price-new"><?=$product["price"]?></span>
+                                                                <span class="price-new"><?=number_format($product["price"])?></span>
                                                             </p>
                                                         </div><!-- end of product-caption -->
                                                     </div><!-- end of product-inner -->
