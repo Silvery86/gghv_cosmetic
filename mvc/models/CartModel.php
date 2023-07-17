@@ -9,10 +9,10 @@ class CartModel extends Database{
     {
         
             //lấy thông tin sản phẩm từ CSDL và lưu vào giỏ hàng
-            $sql = "SELECT product.*, brand.name as brand_name, category.name as category_name FROM product  
-            LEFT JOIN brand ON product.brand_id = brand.id 
-            LEFT JOIN category ON product.category_id = category.id 
-            WHERE product.id = $productId
+            $sql = "SELECT products.*, brands.name as brand_name, categories.name as category_name FROM products  
+            LEFT JOIN brands ON products.brand_id = brands.id 
+            LEFT JOIN categories ON products.category_id = categories.id 
+            WHERE products.id = $productId
             ";
             $result = $this->ProcessSQL($sql);
 

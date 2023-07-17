@@ -4,9 +4,9 @@
     function getUser($email, $password)
         {
         
-         $sql = "SELECT user.*, role.id, role.name as role_name FROM user
-         LEFT JOIN role ON user.role_id = role.id
-         where user.email = '$email' AND user.password = '$password'
+         $sql = "SELECT users.*, roles.id, roles.name as role_name FROM users
+         LEFT JOIN roles ON users.role_id = roles.id
+         where users.email = '$email' AND users.password = '$password'
          ";
          
          $result = $this->ProcessSQL($sql);
@@ -29,11 +29,11 @@
 
          
         }
-    function createUser($email,$password,$fullname,$phone){
+    function createUser($fullname,$email,$phone,$password){
        
-        $sql = "INSERT INTO user VALUES(NULL,?,?,NULL,0,3,?,?)";
+        $sql = "INSERT INTO users VALUES(NULL,?,?,?,NULL,?,NULL,NULL,NULL)";
        
-        $data = [$email,$password,$fullname,$phone];
+        $data = [$fullname,$email,$phone,$password];
         print_r($data);
         $result = $this->ProcessSQL($sql,$data);
         if($result == FALSE){

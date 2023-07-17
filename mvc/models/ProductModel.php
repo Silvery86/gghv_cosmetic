@@ -6,9 +6,9 @@
     // Get all record from table and store in $data
      function getProduct()
         {
-         $sql = "SELECT product.*, brand.name as brand_name, category.name as category_name FROM product 
-         LEFT JOIN brand ON product.brand_id = brand.id 
-         LEFT JOIN category ON product.category_id = category.id";
+         $sql = "SELECT products.*, brands.name as brand_name, categories.name as category_name FROM products 
+         LEFT JOIN brands ON products.brand_id = brands.id 
+         LEFT JOIN categories ON products.category_id = categories.id";
          $result = $this->ProcessSQL($sql);
 
          $this->data=NULL;
@@ -21,9 +21,9 @@
 
         function getSingleProduct($id)
         {
-         $sql = "SELECT product.*, brand.name as brand_name, category.name as category_name FROM product  
-         LEFT JOIN brand ON product.brand_id = brand.id 
-         LEFT JOIN category ON product.category_id = category.id 
+         $sql = "SELECT products.*, brands.name as brand_name, categories.name as category_name FROM products  
+         LEFT JOIN brands ON products.brand_id = brands.id 
+         LEFT JOIN categories ON products.category_id = categories.id 
          WHERE product.id = $id
          ";
          $result = $this->ProcessSQL($sql);
@@ -37,11 +37,11 @@
 
         function getRelatedProduct($brand_id, $category_id)
         {
-         $sql = "SELECT product.*, brand.name as brand_name, category.name as category_name FROM product  
-         LEFT JOIN brand ON product.brand_id = brand.id 
-         LEFT JOIN category ON product.category_id = category.id 
-         WHERE brand.id = $brand_id
-         OR category.id = $category_id
+         $sql = "SELECT products.*, brands.name as brand_name, categories.name as category_name FROM products  
+         LEFT JOIN brands ON products.brand_id = brands.id 
+         LEFT JOIN categories ON products.category_id = categories.id 
+         WHERE brands.id = $brand_id
+         OR categories.id = $category_id
          ";
          $result = $this->ProcessSQL($sql);
 

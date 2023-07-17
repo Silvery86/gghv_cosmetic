@@ -24,7 +24,7 @@
                     
                 }
                 $user_model = $this -> model("UserModel");
-                $user_model -> createUser($email,$password,$fullname,$phone);
+                $user_model -> createUser($fullname,$email,$phone,$password);
                 
                 
         }
