@@ -16,18 +16,18 @@
                                 <div class="banner-with-text">
                                     <img src="../../gghv_cosmetic/public/assets/images/backgrounds/bg-banner.jpg" class="visually-hidden" alt="Promo Banner">
                                     <div class="promo-text">
-                                        <h1>Hurry Up!</h1>
-                                        <h2><span>Hurry Up!</span> Unique T-shirts designed by artists</h2>
+                                        <h1>Nhanh Tay!</h1>
+                                        <h2><span>Nhanh Tay!</span>Các Sản Phẩm Chính Hãng Được Cả Thế Giới Tin Dùng</h2>
                                         <ul>
-                                            <li>15 styles in a range of colors</li>                    
+                                            <li>Trẻ hóa da làm mờ vết thâm</li>                    
                                             </br>
-                                            <li>100% cotton, tri-blend & polyester options</li>                                        
+                                            <li>Bí quyết giữ làn da không tuổi chuẩn Hàn</li>                                        
                                             </br>
-                                            <li>Every purchase supports an independent artist</li>                                       
+                                            <li>Sản Phẩm 100% Thiên Nhiên</li>                                       
                                             </br>
-                                            <li>Responsibly produced and locally fulfilled</li>
+                                            <li>Mỗi giao dịch mua đều hỗ trợ một nghệ sĩ độc lập</li>
                                         </ul>  
-                                        <a href="#" class="default-btn large">Shop Now!</a>
+                                        <a href="#" class="default-btn large">Mua Ngay</a>
                                     </div>
                                 </div> <!-- end of promo-banner -->
                             </div>

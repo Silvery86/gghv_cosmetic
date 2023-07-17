@@ -20,13 +20,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="slide-content layer-animation-2">
-                                                <p class="promo-title"><span>limited edition</span> Start Designing Your Own Shirt</p>
-                                                <h1 class="main-title"><span>Make Your Own Shirt</span></h1>
-                                                <p class="subtitle">Easily Create Beautiful Designs</p>
-												<p class="subtitle">High-quality shirts that will last forever</p>
-												<p class="subtitle">Fast Shipping</p>
+                                                <p class="promo-title"><span>Phiên bản giới hạn</span> Lựa chọn sản phẩm của riêng bạn</p>
+                                                <h1 class="main-title"><span>CHĂM DA HỆ VI SINH</span></h1>
+                                                <p class="subtitle">Ẩm mượt chuẩn Spa Hàn</p>
+												<p class="subtitle">Ngăn ngừa lão hóa cải thiện đốm nâu</p>
+												<p class="subtitle">Đảm bảo hàng chính hãng</p>
+                                                <p class="subtitle">Giao hàng siêu tốc</p>
                                                 <div class="slide-button">
-                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Start designing now!</a>
+                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Bắt đầu trải nghiệm ngay từ bây giờ</a>
                                                 </div>
                                             </div> <!-- end of slide-content -->
                                         </div>
@@ -43,13 +44,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="slide-content layer-animation-1">
-												<p class="promo-title"><span>limited edition</span> Start Designing Your Own Shirt</p>
-                                                <h1 class="main-title"><span>Make Your Own Shirt</span></h1>
-                                                <p class="subtitle">Easily Create Beautiful Designs</p>
-												<p class="subtitle">High-quality shirts that will last forever</p>
-												<p class="subtitle">Fast Shipping</p>
+												<p class="promo-title"><span>Phiên bản giới hạn</span>  Lựa chọn sản phẩm của riêng bạn</p>
+                                                <h1 class="main-title"><span>CHĂM DA HỆ VI SINH</span></h1>
+                                                <p class="subtitle">Ẩm mượt chuẩn Spa Hàn</p>
+												<p class="subtitle">Ngăn ngừa lão hóa cải thiện đốm nâu</p>
+                                                <p class="subtitle">Đảm bảo hàng chính hãng</p>
+												<p class="subtitle">Giao hàng siêu tốc</p>
                                                 <div class="slide-button">
-                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Start designing now!</a>
+                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Bắt đầu trải nghiệm ngay từ bây giờ</a>
                                                 </div>
                                             </div> <!-- end of slide-content -->
                                         </div>
@@ -66,13 +68,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="slide-content white-scheme layer-animation-3">
-												<p class="promo-title"><span>limited edition</span> Start Designing Your Own Shirt</p>
-                                                <h1 class="main-title"><span>Make Your Own Shirt</span></h1>
-                                                <p class="subtitle">Easily Create Beautiful Designs</p>
-												<p class="subtitle">High-quality shirts that will last forever</p>
-												<p class="subtitle">Fast Shipping</p>
+												<p class="promo-title"><span>Phiên bản giới hạn</span> Lựa chọn sản phẩm của riêng bạn</p>
+                                                <h1 class="main-title"><span>CHĂM DA HỆ VI SINH</span></h1>
+                                                <p class="subtitle">Ẩm mượt chuẩn Spa Hàn</p>
+												<p class="subtitle">Ngăn ngừa lão hóa cải thiện đốm nâu</p>
+                                                <p class="subtitle">Đảm bảo hàng chính hãng</p>
+												<p class="subtitle">Giao hàng siêu tốc</p>
                                                 <div class="slide-button">
-                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Start designing now!</a>
+                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Bắt đầu trải nghiệm ngay từ bây giờ</a>
                                                 </div>
                                             </div> <!-- end of slide-content -->
                                         </div>

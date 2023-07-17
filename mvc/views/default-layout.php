@@ -68,7 +68,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 order-2 col-sm-12 order-sm-2 col-md-8 order-md-1 align-self-center">
-                            <p>With FREESHIPPING, orders of $500+ get free shipping</p>
+                            <p>Với FREESHIPPING, Giao hàng miễn phí cho đơn hàng từ 1.000.000 trở lên</p>
                         </div>
                     </div>
                 </div> <!-- end of container -->
@@ -247,11 +247,11 @@
                                         <div class="logo mb-half" style="width: 150px; height: 150px;">
                                             <img src="../../../gghv_cosmetic/public/assets/images/gghv-logo.png" alt="Footer Logo">
                                         </div>
-                                        <p>Fulfilling your ideas on demand</p>
+                                        <p>Thực hiện ý tưởng của bạn theo yêu cầu</p>
                                         <div class="footer-contact">
-                                            <p><span>Address: Ha Noi, Viet Nam</span></p>
-                                            <p><span>Phone: 090.999.999.999</span><a href="#"></a></p>
-                                            <p><span>Email:</span><a href="#">gghv-cosmetic@gmail.com</a></p>
+                                            <p><span>ĐỊA CHỈ: Ha Noi, Viet Nam</span></p>
+                                            <p><span>ĐIỆN THOẠI: 090.999.999.999</span><a href="#"></a></p>
+                                            <p><span>EMAIL:</span><a href="#">gghv-cosmetic@gmail.com</a></p>
                                         </div>
                                     </div> <!-- end of widget-content -->
                                 </aside> <!-- end of widget-container -->
@@ -259,15 +259,15 @@
 
                             <div class="col-12 col-sm-12 col-md-6 order-md-3 col-lg-2 order-lg-2">
                                 <aside class="widget-container">
-                                    <h4 class="widgettitle">Products</h4>
+                                    <h4 class="widgettitle">Các Sản Phẩm</h4>
                                     <div class="widget-content">
                                         <div class="widgetized-menu">
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Prices drop</a></li>
-                                                <li><a href="#">New Products</a></li>
-                                                <li><a href="#">Best Sales</a></li>
-                                                <li><a href="#">Contact Us</a></li>
-                                                <li><a href="#">Login</a></li>
+                                                <li><a href="#">Giá Giảm</a></li>
+                                                <li><a href="#">Sản Phẩm Mới</a></li>
+                                                <li><a href="#">Hàng Bán Tốt Nhất</a></li>
+                                                <li><a href="#">Liên Hệ Chúng Tôi</a></li>
+                                                <li><a href="#">Đăng Nhập</a></li>
                                             </ul>
                                         </div>
                                     </div> <!-- end of widget-content -->
@@ -276,15 +276,15 @@
 
                             <div class="col-12 col-sm-12 col-md-6 order-md-4 col-lg-2 order-lg-3">
                                 <aside class="widget-container">
-                                    <h4 class="widgettitle">Our Company</h4>
+                                    <h4 class="widgettitle">Công Ty Chúng Tôi</h4>
                                     <div class="widget-content">
                                         <div class="widgetized-menu">
                                             <ul class="list-unstyled">
-                                                <li><a href="aboutus">About Us</a></li>
-                                                <li><a href="home">Site Map</a></li>
-                                                <li><a href="#">Stores</a></li>
-                                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="aboutus">Về Chúng Tôi</a></li>
+                                                <li><a href="home">Sơ Đồ Trang Web</a></li>
+                                                <li><a href="#">Các Cửa Hàng</a></li>
+                                                <li><a href="#">Điều Khoản &amp; Điều Kiện</a></li>
+                                                <li><a href="#">Tài Khoản Của Tôi</a></li>
                                             </ul>
                                         </div>
                                     </div> <!-- end of widget-content -->
@@ -293,14 +293,16 @@
 
                             <div class="col-12 col-sm-12 col-md-6 order-md-2 col-lg-4 order-lg-4">
                                 <aside class="widget-container">
-                                    <h4 class="widgettitle">Sign up for our newsletter</h4>
+                                    <h4 class="widgettitle">Đăng Ký Nhận Bản Tin Của Chúng Tôi</h4>
                                     <div class="widget-content">
                                         <div class="newsletter-widget">
-                                            <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+                                            <p>Bạn có thể hủy đăng ký bất cứ lúc nào. Vì mục đích đó, vui lòng tìm thông tin liên hệ của chúng tôi trong thông báo pháp lý.
+
+</p>
                                             <form class="mc-subscribe-form">
                                                 <div class="input-group">
-                                                    <input type="email" autocomplete="off" placeholder="Your Email Address" required>
-                                                    <button class="default-btn" type="submit">Sign Up</button>
+                                                    <input type="email" autocomplete="off" placeholder="Địa Chỉ Email Của Bạn" required>
+                                                    <button class="default-btn" type="submit">Đăng Ký</button>
                                                 </div>
                                             </form> <!-- end of form -->
 
@@ -340,7 +342,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. All Right Reserved.</p>
+                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. Tất cả các quyền.</p>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="footer-payment">
