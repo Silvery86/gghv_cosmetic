@@ -2,7 +2,8 @@
     class Logout extends Controller{
         function index(){
             unset($_SESSION["logined"]);
-            session_destroy();
+            unset($_SESSION['cart']);
+            
             
             $product = $this -> model("ProductModel");
             $result = $product -> getProduct();

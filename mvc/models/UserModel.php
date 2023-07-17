@@ -1,12 +1,12 @@
 <?php
     class UserModel extends Database{
     public $user_name;
-    function getUser($username, $password)
+    function getUser($email, $password)
         {
         
-         $sql = "SELECT * FROM user
+         $sql = "SELECT user.*, role.id, role.name as role_name FROM user
          LEFT JOIN role ON user.role_id = role.id
-         where user.name = '$username' AND user.password = '$password'
+         where user.email = '$email' AND user.password = '$password'
          ";
          
          $result = $this->ProcessSQL($sql);
@@ -17,8 +17,9 @@
             if($login_result) //Số bản ghi trả về >0
             {
              $row = $this -> pdo_stm ->fetch();//lấy về 1 dòng dữ liệu từ SELECT (dạng Array)
+             
              $_SESSION["logined"] ="OK";//tạo ra biến $_SESSION["logined"]
-             $_SESSION["user"] = $row["name"];//lấy giá trị cột username
+             $_SESSION["email"] = $row["email"];//lấy giá trị cột username
              return $login_result;
             }
             else
@@ -28,6 +29,17 @@
 
          
         }
+    function createUser($email,$password,$fullname,$phone){
+       
+        $sql = "INSERT INTO user VALUES(NULL,?,?,NULL,0,3,?,?)";
+       
+        $data = [$email,$password,$fullname,$phone];
+        print_r($data);
+        $result = $this->ProcessSQL($sql,$data);
+        if($result == FALSE){
+            die("Lỗi SQL");
+        }
+    }
     
     }
 ?>

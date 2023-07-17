@@ -26,7 +26,6 @@ class CartModel extends Database{
                 'image' => $this->cart_item[0]['image'],
                 'quantity' => $this -> quantity++,
                 'price' => $this->cart_item[0]['price'],
-                
             );
             return $this -> cart_item;
               

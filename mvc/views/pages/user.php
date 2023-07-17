@@ -11,7 +11,10 @@
                                         <div class="row align-items-center no-gutters">
                                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                                <div class="single-info">
-                                                   <p class="user-name">Hello <span><?=$_SESSION['user']?></span></p>
+                                                <?php
+                                                
+                                                ?>
+                                                   <p class="user-name">Hello <span><?=$_SESSION['email']?></span></p>
                                                </div>
                                            </div>
                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
