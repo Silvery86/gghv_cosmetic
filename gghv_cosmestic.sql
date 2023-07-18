@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost
--- Thời gian đã tạo: Th7 18, 2023 lúc 03:45 PM
+-- Thời gian đã tạo: Th7 18, 2023 lúc 04:43 PM
 -- Phiên bản máy phục vụ: 8.0.31
 -- Phiên bản PHP: 7.4.33
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `brands` (
   `id` int NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -37,9 +37,12 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`id`, `name`) VALUES
-(1, 'Senka'),
-(2, 'L\'Oreal'),
-(3, 'Simple');
+(1, 'Skin1004'),
+(2, 'Klairs'),
+(3, 'Nature Republic'),
+(4, 'Nacific'),
+(5, '9 Wishes'),
+(6, 'Dr.G');
 
 -- --------------------------------------------------------
 
@@ -49,7 +52,7 @@ INSERT INTO `brands` (`id`, `name`) VALUES
 
 CREATE TABLE `categories` (
   `id` int NOT NULL,
-  `name` varchar(100) COLLATE utf8mb4_general_ci NOT NULL
+  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -71,12 +74,12 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 
 CREATE TABLE `feedback` (
   `id` int NOT NULL,
-  `firstname` varchar(30) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `lastname` varchar(30) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `email` varchar(150) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `phone_number` varchar(20) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `subject_name` varchar(200) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `note` varchar(500) COLLATE utf8mb4_general_ci DEFAULT NULL
+  `firstname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `lastname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `email` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `phone_number` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `subject_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `note` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -88,8 +91,8 @@ CREATE TABLE `feedback` (
 CREATE TABLE `orders` (
   `id` int NOT NULL,
   `user_id` int NOT NULL,
-  `order_address` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `customer_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `order_address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `customer_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `customer_phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `note` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci,
   `order_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -121,12 +124,12 @@ CREATE TABLE `products` (
   `id` int NOT NULL,
   `category_id` int NOT NULL,
   `brand_id` int NOT NULL,
-  `title` varchar(350) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `title` varchar(350) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `price` int DEFAULT NULL,
   `stock` int NOT NULL,
   `discount` int DEFAULT NULL,
-  `thumbnail` varchar(500) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `description` varchar(500) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `thumbnail` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `description` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `long_description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -138,8 +141,33 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `category_id`, `brand_id`, `title`, `price`, `stock`, `discount`, `thumbnail`, `description`, `long_description`, `created_at`, `updated_at`, `deleted`) VALUES
-(2, 1, 3, 'Nước Tẩy Trang Simple Cấp Ẩm Nhẹ Nhàng Làm Sạch Trang Điểm Micellar Cleasing Water 400Ml', 132000, 99, NULL, 'https://product.hstatic.net/200000061028/product/hi_4_e509d477ec5f421f886a51d66b792ffb_grande.jpg', 'Nước tẩy trang cấp ẩm , làm sạch nhẹ nhàng đến từ thương hiệu Simple chứa Vitamin B3, Vitamin C và nước cất 3 lần tinh khiết giúp nhẹ nhàng tẩy sạch lớp trang điểm, kem chống nắng và bụi bẩn trên da hiệu quả. Đồng thời nước tẩy trang Simple Micellar Cleasing Water còn giúp cung cấp thêm dưỡng chất cần thiết cho làn da thêm ẩm mượt, mịn màng và rạng rỡ', 'Nước Tẩy Trang Simple Cấp Ẩm Nhẹ Nhàng Làm Sạch Trang Điểm Micellar Cleasing Water 400Ml\r\n \r\nNước tẩy trang cấp ẩm , làm sạch nhẹ nhàng đến từ thương hiệu Simple chứa Vitamin B3, Vitamin C và nước cất 3 lần tinh khiết giúp nhẹ nhàng tẩy sạch lớp trang điểm, kem chống nắng và bụi bẩn trên da hiệu quả. Đồng thời nước tẩy trang Simple Micellar Cleasing Water còn giúp cung cấp thêm dưỡng chất cần thiết cho làn da thêm ẩm mượt, mịn màng và rạng rỡ\r\n \r\nSản phẩm không chứa: 2000 hóa chất gây hại cho da, hương liệu nhân tạo, phẩm màu nhân tạo, cồn, dầu khoáng hạn chế làm da khô - căng rát hay kích ứng\r\n \r\n\r\n\r\n \r\n\r\nCÔNG DỤNG CHÍNH – MAIN FUNCTION\r\n \r\nGiúp nhẹ nhàng tẩy sạch lớp trang điểm, kem chống nắng và bụi bẩn trên da hiệu quả\r\nCung cấp thêm dưỡng chất cần thiết cho làn da thêm ẩm mượt, mịn màng và rạng rỡ\r\n\r\n\r\n \r\n\r\nTham khảo thêm các sản phẩm tẩy trang khác tại đây. \r\n\r\nCÁCH DÙNG – DIRECTION FOR USE\r\n \r\n- Cho một lượng nước tẩy trang vừa đủ ra bông tẩy trang. Nhẹ nhàng lau sạch lớp trang điểm và bụi bẩn. Không cần chà xát lên da. Không cần rửa lại với nước\r\n- Để đạt được hiệu quả tốt nhất, sau khi tẩy trang  kết hợp cùng sữa rửa mặt và nước hoa hồng\r\n \r\nThành phần: Aqua, Hexylene Glycol, Glycerin, PEG-6 Caprylic/Capric Glycerides,Phenoxyethanol, Cetrimonium Chloride, Tetrasodium EDTA,Propylene Glycol, Citric Acid, Cetylpyridinium Chloride, Sodium Chloride, Niacinamide, Sodium Ascorbyl, Phosphate, Potassium chloride, Panthenol\r\n \r\nĐối tượng sử dụng: Phù hợp cho mọi loại da, kể cả làn da nhạy cảm \r\n \r\nBảo quản: Bảo quản nơi khô ráo, thoáng mát, tránh ánh sáng trực tiếp\r\n \r\nQuy cách: Chai, 400Ml\r\n \r\nXuất xứ thương hiệu: Anh Quốc\r\n \r\nHSD: 3 năm kể từ ngày sản xuất\r\n \r\nXem thêm các sản phẩm khác cùng với nhiều chương trình khuyến mãi hấp dẫn tại website Guardian\r\n\r\n---\r\n\r\nTHÔNG TIN THÊM - ADDITIONAL INFORMATION\r\n\r\n- Để biết thêm thông tin chi tiết về sản phẩm hoặc chương trình khuyến mãi Quý khách hàng vui lòng liên hệ bộ phận CSKH qua Hotline 19004449 hoặc fanpage Guardian Việt Nam để được hỗ trợ\r\n\r\n- Nếu quý khách hàng có nhu cầu xuất hóa đơn, vui lòng điền thông tin xuất hóa đơn vào mục Ghi chú đơn hàng, Bộ phận CSKH sẽ gửi hóa đơn điện tử vào email Quý Khách hàng đã đăng ký với Guardian\r\n\r\nGuardian xin chân thành cảm ơn Quý khách!', '2023-07-17 13:35:15', '2023-07-17 13:35:15', NULL),
-(3, 1, 1, 'Nước Tẩy Trang Sạch Thoáng Senka All Clear Water Fresh 230Ml', 83000, 99, NULL, 'https://product.hstatic.net/200000061028/product/fresh_2__1__1f2dd9f61ba9480493bee3e66c1276d8_grande.jpg', 'Nước Tẩy Trang Sạch Thoáng All Clear Water Fresh Senka 230Ml\r\nNước Tẩy Trang Sạch Thoáng All clear water Micellar Fresh với công nghệ Nhật Bản nhẹ nhàng làm sạch lớp trang điểm, bụi bẩn và bã nhờn sâu bên trong lỗ chân lông, loại bỏ dầu thừa và không gây kích ứng trên da\r\n', 'MÔ TẢ SẢN PHẨM – DESCRIPTION\r\nNước Tẩy Trang Sạch Thoáng All Clear Water Fresh Senka 230Ml\r\nNước Tẩy Trang Sạch Thoáng All clear water Micellar Fresh với công nghệ Nhật Bản nhẹ nhàng làm sạch lớp trang điểm, bụi bẩn và bã nhờn sâu bên trong lỗ chân lông, loại bỏ dầu thừa và không gây kích ứng trên da\r\n\r\nCÔNG DỤNG CHÍNH – MAIN FUNCTION\r\n\r\n- Không chỉ đóng vai trò làm sạch lớp makeup, sản phẩm còn đảm bảo duy trì lớp màng dưỡng ẩm tự nhiên cho da. Loại bỏ dầu thừa trên da sau mỗi lần sử dụng\r\n- Với chiết xuất từ lá trà xanh và  tơ tằm trắng, sản phẩm làm sạch sâu lớp cặn trang điểm bám trong lỗ chân lông và loại bỏ dầu thừa đáng ghét nữa nhé\r\n- Sản phẩm cũng không hề để lại lớp bóng dầu như các loại tẩy trang khác. Nên dù các nàng có bận rộn đến mức không thể rửa lại ngay với nước sau khi tẩy trang, làn da của bạn cũng sẽ không nhờn dính và không khô căng\r\n- Đặc biệt, sản phẩm còn có hương thơm dịu nhẹ lưu lại cảm giác tươi mát, dễ chịu ngay sau khi sử dụng\r\n \r\nCÁCH DÙNG – DIRECTION FOR USE \r\n \r\n- Lấy một lượng sản phẩm vừa đủ ra bông tẩy trang. Nhẹ nhàng lau sạch lớp trang điểm\r\n \r\nThành phần: Water (Aqua), Dipropylene Glycol, Peg/Ppg-50/40 Dimethyl Ether, Peg-8, Glycerin, Phenoxyethanol, Methylparaben, Sodium Citrate, Potassium Cocoyl Glutamate, Citric Acid, Butylene Glycol, Sodium Metaphosphate, Sericin, Potassium Sorbate, Camellia Sinensis Leaf Extract, Sodium Acetylated Hyaluronate, Sodium Hyaluronate, Xanthan Gum\r\n \r\nQuy cách: Chai, 230Ml\r\n\r\nBảo quản: Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp. Đậy nắp kín sau khi sử dụng\r\n\r\nXuất xứ thương hiệu: Việt Nam\r\n \r\nXuất xứ: Việt Nam \r\n \r\nHSD: 3 năm kể từ ngày sản xuất\r\n \r\nLưu ý: Để xa tầm tay trẻ em. Ngưng sử dụng ngay khi có biểu hiện kích ứng và hỏi ý kiến bác sĩ (nếu cần)\r\n \r\n---\r\n \r\nTHÔNG TIN THÊM - ADDITIONAL INFORMATION\r\n \r\n- Để biết thêm thông tin chi tiết về sản phẩm hoặc chương trình khuyến mãi Quý khách hàng vui lòng liên hệ bộ phận CSKH qua Hotline 19004449 hoặc fanpage https://www.facebook.com/guardianvn để được hỗ trợ\r\n \r\n- Nếu quý khách hàng có nhu cầu xuất hóa đơn, vui lòng điền thông tin xuất hóa đơn vào mục Ghi chú đơn hàng, Bộ phận CSKH sẽ gửi hóa đơn điện tử vào email Quý Khách hàng đã đăng ký với Guardian\r\n \r\nGuardian xin chân thành cảm ơn Quý khách!', '2023-07-18 15:18:29', '2023-07-18 15:18:29', NULL);
+(4, 4, 2, 'Dear, Klairs Mặt nạ giấy Rich Moist Soothing Tencel Sheet Mask 25ml', 48750, 99, NULL, 'https://product.hstatic.net/200000551679/product/dear__klairs_mat_na_giay_rich_moist___1__6553eb586ac74789a78996984ff81186.png', 'Mặt nạ giấy cấp ẩm Rich Moist Soothing Tencel Sheet Mask là dòng mặt nạ đến từ thương hiệu Klairs với chất mặt nạ tencel mỏng nhẹ, giúp ôm sát da và cho da hấp thụ dưỡng chất tốt nhất. Sản phẩm có khả năng cấp ẩm sâu cho da, làm dịu làn da khô ráp, mẩn cảm, dễ kích ứng do thời tiết hanh khô, khó chịu.', NULL, '2023-07-18 16:04:06', '2023-07-18 16:04:06', NULL),
+(5, 3, 2, 'Dear, Klairs Kem chống nắng All-day Airy Sunscreen SPF50+ PA++++ 50g', 360000, 99, NULL, 'https://product.hstatic.net/200000551679/product/dear__klairs_kem_chong_nang_all-day__1__e3018dfb49a0428e927ede8c5e09d04d.png', 'Kem chống nắng Dear, Klairs All-day Airy Sunscreen SPF50+ PA++++ giúp bảo vệ da trước tác hại của tia UVA, UVB. Bổ sung độ ẩm nhẹ cho da mềm mượt và hỗ trợ làm dịu da.', NULL, '2023-07-18 16:04:58', '2023-07-18 16:04:58', NULL),
+(6, 5, 2, 'Dear, Klairs nước hoa hồng Supple Preparation Unscented Toner 180mL', 306750, 99, NULL, 'https://product.hstatic.net/200000551679/product/dear__klairs_nuoc_hoa_hong_unscented__1__caf581f2f86f40a6974f54145bde691d.png', 'Nước hoa hồng không mùi Klairs Supple Preparation Unscented Toner dưỡng ẩm và mềm da chiết xuất từ thực vật, giúp cân bằng độ pH, tăng cường hiệu quả chăm sóc da. Toner có dạng trong suốt, không màu, lỏng, nhẹ, hơi nhớt, thấm rất nhanh trên da. Giúp loại bỏ bụi bẩn và bã nhờn dư thừa trên da sau khi rửa mặt đồng thời cân bằng độ pH để các bước skincare tiếp theo đạt hiệu quả hơn.', NULL, '2023-07-18 16:08:04', '2023-07-18 16:08:04', NULL),
+(7, 1, 2, 'Dear, Klairs Dầu tẩy trang Gentle Black Deep Cleansing Oil 150mL ver 2', 318750, 99, NULL, 'https://product.hstatic.net/200000551679/product/dear__klairs_dau_tay_trang_gentle_black_deep_cleansing_oil_9551b12054e3475886630678f9c2c50e.png', 'Dầu Tẩy Trang Klairs Gentle Black Deep Cleansing Oil giúp làm sạch các lớp trang điểm trên da, kiểm soát sản xuất bã nhờn và cung cấp dinh dưỡng cho làn da, ngăn chặn tình trạng mất nước và lão hóa, cung cấp các hiệu ứng chất chống oxy hóa mạnh mẽ cho da. ', NULL, '2023-07-18 16:08:04', '2023-07-18 16:08:04', NULL),
+(8, 2, 2, 'Dear, Klairs Sữa rửa mặt Rich Moist Foaming Cleanser 100ml', 374250, 99, NULL, 'https://product.hstatic.net/200000551679/product/dear__klairs_sua_rua_mat_rich_moist_foaming_cleanser_100ml_9ec8c09487264d528dda00c3ef45ca5c.png', 'Sữa rửa mặt tạo bọt dưỡng ẩm, dịu nhẹ Dear, Klairs Rich Moist Foaming Cleanser giúp loại bỏ lớp bụi bẩn, bã nhờn trên bề mặt da đồng thời kết cấu dạng bọt hạn chế ma sát gây tổn thương, kích ứng làn da.', NULL, '2023-07-18 16:08:04', '2023-07-18 16:08:04', NULL),
+(13, 3, 5, '9 Wishes Kem chống nắng Sun Moisturizer SPF 50+ PA+++ 50ml', 288000, 99, NULL, 'https://product.hstatic.net/200000551679/product/9_wishes_kem_chong_nang_sun_moisturizer__1__fb62e9b47d87479a8d20e4577c69bc2e.png', 'Kem chống nắng cấp ẩm 9 Wishes Sun Moisturizer SPF50/PA+++ mang đến làn da sáng hồng, đồng thời giúp bảo vệ da khỏi tác động các tia UV cung cấp độ ẩm cần thiết cho da nhờ các chiết xuất từ thiên nhiên.', NULL, '2023-07-18 16:16:07', '2023-07-18 16:16:07', NULL),
+(14, 4, 5, '9 Wishes Mặt nạ giấy Hydra Ampule Sheet Mask 25ml', 52000, 99, NULL, 'https://sammishop.com/products/9-wishes-mat-na-giay-hydra-ampule-sheet-mask-25ml-ip04#lg=1&slide=0', 'Mặt nạ giấy 9 Wishes Hydra Ampule Sheet Mask chiết xuất 51% nước dừa giúp cấp ẩm tức thì và cân bằng tỉ lệ dầu và nước trên da.', NULL, '2023-07-18 16:16:07', '2023-07-18 16:16:07', NULL),
+(15, 5, 5, '9 Wishes Nước hoa hồng Pine Treatment Skin 150ml', 319200, 99, NULL, 'https://product.hstatic.net/200000551679/product/9_wishes_nuoc_hoa_hong_pine_treatment__1__d6d8f88430e74c95b4615ca667e28c13.png', 'Nước hoa hồng 9 Wishes Pine Treatment Skin với 67% chiết xuất lá thông và thành phần được cấp bằng sáng chế HuPura - THA giúp làm sạch sâu và thanh lọc làn da, loại bỏ tế bào chết cùng bã nhờn tích tụ trong lỗ chân lông, đồng thời cân bằng độ ẩm, giúp mang lại làn da thông thoáng và sẵn sàng cho bước skincare tiếp theo.', NULL, '2023-07-18 16:16:07', '2023-07-18 16:16:07', NULL),
+(16, 3, 6, 'Dr.G Kem chống nắng R.E.D Blemish Soothing Up Sun SPF 50+ PA++++ 50ml', 392000, 99, NULL, 'https://product.hstatic.net/200000551679/product/dr.g_kem_chong_nang_r.e.d_blemish_soothing_up_sun_4435a974292a4937809567e65e1a4678.png', 'Kem chống nắng Dr.G R.E.D Blemish Soothing Up Sun SPF 50+ PA++++ là kem chống nắng phổ rộng bảo vệ da trước tác hại của tia UVA, UVB, ánh sáng xanh và bụi mịn.', NULL, '2023-07-18 16:21:41', '2023-07-18 16:21:41', NULL),
+(17, 4, 6, 'Dr.G Mặt nạ giấy R.E.D Blemish Cool Soothing Mask 30g', 55200, 99, NULL, 'https://product.hstatic.net/200000551679/product/dr.g_mat_na_giay_r.e.d_blemish_f0bdaade03824b7eb982aa0b4da32168.png', 'Mặt nạ rau má làm dịu da mụn Dr.G R.E.D Blemish Cool Soothing Mask là mặt nạ kích thích nhiệt giúp làm mát và dịu da nhạy cảm ngay sau khi sử dụng. Mặt nạ Cool Soothing Mask có thành phần thiên nhiên cực kỳ an toàn, có chứa rau má và lô hội. Nếu để tủ lạnh, khi nhiệt độ đủ nhiệt kế trên mask sẽ chuyển màu xanh, nghĩa là bạn có thể sử dụng.', NULL, '2023-07-18 16:21:41', '2023-07-18 16:21:41', NULL),
+(18, 5, 6, 'Dr.G Nước hoa hồng R.E.D Blemish Clear Soothing Toner 300ml', 412000, 99, NULL, 'https://product.hstatic.net/200000551679/product/dr.g_nuoc_hoa_hong_r.e.d_blemish__5__14b95fb03b544c66bdf1f064f378ee9c.png', 'Nước cân bằng Dr.G R.E.D Blemish Clear Soothing Toner giúp dưỡng ẩm và làm dịu làn da đang mẩn đỏ, kích ứng.', NULL, '2023-07-18 16:21:41', '2023-07-18 16:21:41', NULL),
+(19, 1, 6, 'Dr.G Nước tẩy trang PH Cleansing Water 490ml', 336000, 99, NULL, 'https://product.hstatic.net/200000551679/product/dr.g_nuoc_tay_trang_ph_cleansing_6c9851662b19482ebcd130062e6876a5.png', 'Nước tẩy trang Dr.G pH Cleansing Water cho da nhạy cảm, giúp làm sạch sâu, tăng cường độ ẩm cho da và hoàn toàn không gây kích ứng.', NULL, '2023-07-18 16:21:41', '2023-07-18 16:21:41', NULL),
+(20, 2, 6, 'Dr.G Sữa rửa mặt PH Cleansing Gel Foam 200ml', 336000, 99, NULL, 'https://product.hstatic.net/200000551679/product/dr.g_sua_rua_mat_ph_cleansing__5__78a0383c8a154d588365165afad0721d.png', 'Gel rửa mặt tạo bọt Dr.G pH Cleansing Gel Foam phù hợp cho da nhạy cảm, giúp làm sạch sâu, tăng cường độ ẩm cho da và hoàn toàn không gây kích ứng.', NULL, '2023-07-18 16:21:41', '2023-07-18 16:21:41', NULL),
+(21, 3, 4, 'Nacific Kem chống nắng Fresh Herb Origin Sun Block Calendula 50ml', 236000, 99, NULL, 'https://product.hstatic.net/200000551679/product/sammi-07_4468889e7b9442ee9b8c1f7676961727.jpg', 'Kem chống nắng làm dịu da chiết xuất hoa cúc Nacific Fresh Herb Origin Sun Block Calendula SPF 50+/PA++++ với thành phần chính chiết xuất hoa cúc giúp làm dịu, bảo vệ da trước tác động của tia UV. Ngoài ra sản phẩm còn giúp cải thiện lỗ chân lông và mang lại cảm giác tươi mới khi sử dụng.', NULL, '2023-07-18 16:27:25', '2023-07-18 16:27:25', NULL),
+(22, 4, 4, 'Nacific Mặt nạ Salicylic Acid Clarifying Mask Pack 30g', 33600, 99, NULL, 'https://product.hstatic.net/200000551679/product/sammi-17_e68ac9397c1e471bbeaf82d373f92341.jpg', 'Mặt nạ Nacific Salicylic Acid Clarifying Mask Pack được làm từ 100% cotton và chứa thành phần axit salicylic (BHA) và chiết xuất thực vật. Lớp vải của mặt nạ mỏng, ôm khít da, cung cấp khả năng thẩm thấu sâu của các thành phần hoạt tính , thúc đẩy quá trình tái tạo da, giúp làm đều màu ,làm sạch và se khít lỗ chân lông, bình thường hóa hoạt động của tuyến bã nhờn. Lý tưởng cho da dầu và da có vấn đề về mụn.', NULL, '2023-07-18 16:27:25', '2023-07-18 16:27:25', NULL),
+(23, 5, 4, 'Nacific Nước hoa hồng Real Floral Toner Calendula 180ml', 316000, 99, NULL, 'https://product.hstatic.net/200000551679/product/sammi-01_fe32b1fd340048028eaa01673a6d1af3.jpg', 'Nước hoa hồng làm dịu da chiết xuất hoa cúc Nacific Real Floral Toner Calendula với thành phần chính chiết xuất hoa cúc và phức hợp 7 loại thảo mộc có nguồn gốc từ Jeju giúp làm dịu da hiệu quả, từ đó chăm sóc và cải thiện các vấn đề về lỗ chân lông, mang lại làn da tươi sáng mịn màng.\r\n\r\n', NULL, '2023-07-18 16:27:25', '2023-07-18 16:27:25', NULL),
+(24, 2, 4, 'Nacific Sữa rửa mặt Fresh Herb Origin Cleansing Foam Calendula 150ml', 220000, 99, NULL, 'https://product.hstatic.net/200000551679/product/sammi-08_3bed9d6c1d4f497caacb6c817df5926f.jpg', 'Sữa rửa mặt tạo bọt làm dịu da chiết xuất hoa cúc Nacific Fresh Herb Origin Cleansing Foam Calendula với thành phần chính chiết xuất từ hoa cúc và keo ong giúp làm dịu da, bảo vệ da trước các tác nhân gây hại, khả năng tạo bọt mềm mịn, siêu nhỏ, giúp tăng cường việc làm sạch da từ sâu trong lỗ chân lông nhưng không làm khô da.', NULL, '2023-07-18 16:27:25', '2023-07-18 16:27:25', NULL),
+(25, 3, 3, 'Nature Republic Sáp chống nắng California Aloe Fresh Powdery Sun Stick SPF50+PA++++', 476000, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-2-01_370fecd795144024ab4f61668ceca3e7.png', 'Nature Republic Sáp chống nắng Nature Republic California Aloe Fresh Powdery Sun Stick SPF50+PA+++ với thành phần chiết xuất từ Lô hội vùng California dịu mát da, Hoa dâm bụt Hawaiian, nước biển sâu tinh khiết... giúp làm sáng da, cải thiện nếp nhăn, bảo vệ da tối ưu. Dạng sáp lăn tiện lợi, dễ dàng sử dụng, không gây bóng dính trên da.', NULL, '2023-07-18 16:35:41', '2023-07-18 16:35:41', NULL),
+(26, 4, 3, 'Nature Republic Mặt nạ giấy Real Nature Orange Mask Sheet 23ml', 15200, 99, NULL, 'https://product.hstatic.net/200000551679/product/real_nature_organe_mask_sheet_-_thumbnail_674e4e216cbd462dbecbbdeba01e9eec.jpg', 'Mặt nạ giấy dưỡng ẩm, dưỡng sáng Nature Republic Real Nature Orange Mask Sheet chứa chiết xuất từ Cam cung cấp độ ẩm cần thiết, cải thiện là da xỉn màu trở nên tươi sáng, mịn màng.', NULL, '2023-07-18 16:35:41', '2023-07-18 16:35:41', NULL),
+(27, 5, 3, 'Nature Republic Nước hoa hồng Vitapair C Toner 300ml', 316000, 99, NULL, 'https://product.hstatic.net/200000551679/product/vitapair_c_toner_-_thumbnail_b7cd72bcd02b48b5aee27a9aaab3860d.jpg', 'Nước hoa hồng dưỡng sáng da Nature Republic Vitapair C Toner chứa 10% chiết xuất từ quả chanh xanh vùng Jeju với hàm lượng Vitamin C cao giúp hỗ trợ dưỡng sáng da. Ngoài ra, có tác dụng loại bỏ tế bào chết trên da mà không gây kích ứng, nhờ đó kích thích sản sinh tế bào da mới sáng khỏe. Sản phẩm có khả năng thẩm thấu nhanh, không gây nhờn rít. ', NULL, '2023-07-18 16:35:41', '2023-07-18 16:35:41', NULL),
+(28, 1, 3, 'Nature Republic Nước tẩy trang Good Skin AHA Ampoule Cleansing Water 500 ml', 174000, 99, NULL, 'https://product.hstatic.net/200000551679/product/good_skin_aha_ampoule_cleansing_water_-_thumbnail_1b65efafc8984f308a46b28023ccc70e.jpg', 'Nước tẩy trang Nature Republic Good Skin AHA Ampoule Cleansing Water với công nghệ micellar tiên tiến cùng thành phần AHA tẩy tế bào chết nhẹ nhàng, chỉ trong 1 bước làn da sạch sâu mà vẫn ẩm mịn, thông thoáng và sáng khỏe.', NULL, '2023-07-18 16:35:41', '2023-07-18 16:35:41', NULL),
+(29, 2, 3, 'Nature Republic Sữa rửa mặt Soothing & Moisture Aloe Vera Foam Cleanser 150ml', 100000, 99, NULL, 'https://product.hstatic.net/200000551679/product/soothing___moisture_aloe_vera_foam_cleanser_-_thumbnail_7c2c08f8f1834b2e9d289f8f29e61701.jpg', 'Sữa rửa mặt dịu nhẹ Nature Republic Soothing & Moisture Aloe Vera Foam Cleanser giúp làm sạch sâu mà không gây tổn thương da. Chiết xuất nha đam giúp làm dịu mát da, cung cấp độ ẩm giúp da trở nên mềm mại mà không hề gây khô căng sau khi sử dụng.', NULL, '2023-07-18 16:35:41', '2023-07-18 16:35:41', NULL),
+(30, 3, 1, 'Skin1004 Kem chống nắng Madagascar Centella Air-Fit SunCream Plus 50ml', 318750, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01_0b263e704c4440ffbf8fbbbba8460068.png', 'Kem chống nắng Skin1004 Madagascar Centella Air-Fit SunCream Plus là kem chống nắng chiết xuất rau má từ Madagascar. Với thành phần chọn lọc kỹ lưỡng, cùng công thức được nghiên cứu chuyên sâu, đây là sản phẩm có thể phát huy được mọi ưu điểm và cải thiện đáng kể những nhược điểm của một loại kem chống nắng vật lý thông thường.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
+(31, 4, 1, 'Skin1004 Mặt nạ giấy Madagascar Centella Watergel Sheet Ampoule Mask 25ml', 49500, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__5__90f6ad4669f144ffa0433134e7099e99.png', 'Mặt nạ làm dịu, ngừa mụn chiết xuất rau má Skin1004 Madagascar Centella Watergel Sheet Ampoule Mask với công nghệ độc quyền tạo kết cấu mặt nạ có nguồn gốc từ than tre. Kết hợp chiết xuất 51% từ rau má giúp làm dịu làn da, phục hồi và tái tạo da đang kích ứng, kiểm soát lượng dầu thừa hiệu quả.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
+(32, 5, 1, 'Skin1004 Nước hoa hồng Madagascar Centella Tone Brightening Boosting Toner 210ml', 420000, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__8__0d21c63d26734ae484c056e440efef71.png', 'Nước hoa hồng sáng da Skin1004 Madagascar Centella Tone Brightening Boosting Toner chiết xuất rau má  đến 90% tăng cường khả năng chăm sóc và làm dịu da từ sâu bên trong. Giúp dưỡng trắng, kháng viêm cho da nhạy cảm, đồng thời hỗ trợ làm dịu da hiệu quả.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
+(33, 1, 1, 'Skin1004 Tẩy trang Madagascar Centella Light Cleansing Oil 200ml', 408750, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__12__1ed2485f3c014b3088d91d3002011e31_acbe098824ae44138c38ee1870bf23d5.png', 'Dầu Tẩy Trang Skin1004 Madagascar Centella Light Cleansing Oil giúp làm sạch sâu làn da và loại bỏ lớp trang điểm cứng đầu với chiết xuất rau má Madagascar tinh khiết kết hợp cùng 6 loại dầu quý được chắt lọc kỹ lưỡng, mang lại làn da sạch tận sâu lỗ chân lông và mềm mịn ngay tức thì.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
+(34, 2, 1, 'Skin1004 Sữa rửa mặt Madagascar Centella Ampoule Foam 125ml', 281250, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__11__c69fc79e887746f19ffc4bda8406819b.png', 'Sữa rửa mặt Skin1004 Madagascar Centella Ampoule Foam với lớp bọt mềm mịn giúp lấy sạch bụi bẩn, bã nhờn, dầu thừa từ sâu lỗ chân lông. Sữa rửa mặt giúp làm sạch da mà không làm da mất nước, lưu giữ được độ ẩm mịn, mềm mại trên da. Với độ pH chuẩn 5.5,bảo vệ lớp màng tế bào mỗi ngày với công thức an toàn, hỗ trợ điều trị mụn tốt hơn.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL);
 
 -- --------------------------------------------------------
 
@@ -149,7 +177,7 @@ INSERT INTO `products` (`id`, `category_id`, `brand_id`, `title`, `price`, `stoc
 
 CREATE TABLE `roles` (
   `id` int NOT NULL,
-  `name` varchar(20) COLLATE utf8mb4_general_ci NOT NULL
+  `name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -171,7 +199,7 @@ CREATE TABLE `users` (
   `fullname` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `email` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `phone_number` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `address` varchar(200) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `address` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `password` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `role_id` int DEFAULT '2',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -252,7 +280,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `categories`
@@ -282,7 +310,7 @@ ALTER TABLE `order_details`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT cho bảng `roles`
