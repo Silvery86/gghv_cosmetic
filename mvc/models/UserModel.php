@@ -4,7 +4,7 @@
     function getUser($email, $password)
         {
         
-         $sql = "SELECT users.*, roles.id, roles.name as role_name FROM users
+         $sql = "SELECT users.*, roles.id as role_id, roles.name as role_name FROM users
          LEFT JOIN roles ON users.role_id = roles.id
          where users.email = '$email' AND users.password = '$password'
          ";
@@ -20,6 +20,8 @@
              
              $_SESSION["logined"] ="OK";//tạo ra biến $_SESSION["logined"]
              $_SESSION["email"] = $row["email"];//lấy giá trị cột username
+             $_SESSION["user-id"] = $row["id"];
+             $_SESSION["full-name"] = $row["fullname"];
              return $login_result;
             }
             else
@@ -34,7 +36,7 @@
         $sql = "INSERT INTO users VALUES(NULL,?,?,?,NULL,?,NULL,NULL,NULL)";
        
         $data = [$fullname,$email,$phone,$password];
-        print_r($data);
+        
         $result = $this->ProcessSQL($sql,$data);
         if($result == FALSE){
             die("Lỗi SQL");

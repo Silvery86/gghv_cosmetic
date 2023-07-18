@@ -11,7 +11,7 @@
             }
         }
         function check(){
-            $fullname = "";
+                $fullname = "";
                 $email = "";
                 $phone = "";
                 $password = "";
@@ -26,7 +26,7 @@
                 $user_model = $this -> model("UserModel");
                 $user_model -> createUser($fullname,$email,$phone,$password);
                 
-                
+                header("Location:"."http://localhost/gghv_cosmetic/login");
         }
         
     }

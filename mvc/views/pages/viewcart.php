@@ -35,10 +35,10 @@
                                                             ?>
                                                             <tr>
                                                                 <td>
-                                                                    <a href="single-product.html"><img src="<?=$product["image"]?>" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
+                                                                    <a href="single-product.html"><img src="<?=$product["thumbnail"]?>" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="single-product.html"><?=$product["name"]?></a>
+                                                                    <a href="single-product.html"><?=$product["title"]?></a>
                                                                    
                                                                 </td>
                                                                 <td><?=$product["id"]?></td>
@@ -57,8 +57,8 @@
                                                                         </span>
                                                                     </div>
                                                                 </td>
-                                                                <td><?=$product["price"]?></td>
-                                                                <td><?=$product["price"] * $product["quantity"]?></td>
+                                                                <td><?=number_format($product["price"])?></td>
+                                                                <td><?=number_format($product["price"] * $product["quantity"])?></td>
                                                             </tr>
                                                         <?php 
                                                         } 
@@ -170,12 +170,12 @@
                                                         <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><strong>Sub-Total:</strong></td>
-                                                                    <td><?=number_format($total)?></td>
+                                                                    <td><strong>Shipping:</strong></td>
+                                                                    <td><?=0?></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><strong>Total:</strong></td>
-                                                                    <td><span class="color-primary"><?=number_format($total)?></span></td>
+                                                                    <td><span class="color-primary"><?=number_format($_SESSION["total"])?></span></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -184,7 +184,7 @@
                                             </div>
 
                                             <div class="cart-button-wrapper d-flex justify-content-between mt-4">
-                                                <a href="shop-grid.html" class="btn btn-secondary dark">Continue Shopping</a>
+                                                <a href="products" class="btn btn-secondary dark">Continue Shopping</a>
                                                 <a href="checkout.html" class="btn btn-secondary dark align-self-end">Checkout</a>
                                             </div>
                                         </div>

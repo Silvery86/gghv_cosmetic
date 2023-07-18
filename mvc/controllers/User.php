@@ -6,6 +6,7 @@
                 $email = $_REQUEST["email"];
                 $pass = md5($_REQUEST["password"]);
                 $result = $user_model -> getUser($email,$pass);
+                echo "<pre>";
                 
                 if($result>0){
                     $this -> view("default-layout",

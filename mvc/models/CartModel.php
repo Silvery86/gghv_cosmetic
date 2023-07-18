@@ -22,8 +22,8 @@ class CartModel extends Database{
             
             $_SESSION['cart'][$productId] = array(
                 'id' => $productId,
-                'name' => $this->cart_item[0]['name'],
-                'image' => $this->cart_item[0]['image'],
+                'title' => $this->cart_item[0]['title'],
+                'thumbnail' => $this->cart_item[0]['thumbnail'],
                 'quantity' => $this -> quantity++,
                 'price' => $this->cart_item[0]['price'],
             );
