@@ -28,6 +28,7 @@
                                                         </thead>
                                                         <tbody>
                                                             <?php
+                                                            if(isset($_SESSION["cart"])){
                                                             $total = 0;   
                                                             foreach($_SESSION["cart"] as $product)
                                                             {
@@ -61,9 +62,16 @@
                                                                 <td><?=number_format($product["price"] * $product["quantity"])?></td>
                                                             </tr>
                                                         <?php 
-                                                        } 
+                                                            }
+                                                        }else{
                                                         ?>
                                                             
+                                                                <p> Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+                                                                <a href="products"> Vào Danh sách sản phẩm</a>
+                                                                
+                                                        <?php
+                                                        } 
+                                                        ?>    
                                                         </tbody>
                                                     </table>
                                                 </div>
