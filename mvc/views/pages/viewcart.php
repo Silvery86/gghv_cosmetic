@@ -10,20 +10,20 @@
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="section-title">
-                                                <h2>Shopping Cart</h2>
+                                                <h2>Giỏ hàng</h2>
                                             </div>
 
-                                            <form action="#">
+                                            
                                                 <div class="table-responsive">
                                                     <table class="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <td>Image</td>
-                                                                <td>Product Name</td>
-                                                                <td>Model</td>
-                                                                <td>Quantity</td>
-                                                                <td>Unit Price</td>
-                                                                <td>Total</td>
+                                                                <td>Ảnh</td>
+                                                                <td>Tên sản phẩm</td>
+                                                                <td>Mã</td>
+                                                                <td>Số lượng</td>
+                                                                <td>Giá</td>
+                                                                <td>Tổng</td>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -44,19 +44,21 @@
                                                                 </td>
                                                                 <td><?=$product["id"]?></td>
                                                                 <td>
+                                                                    <form action="cart/updateCart/<?=$product["id"]?>" name="quantity-form" method="post">
                                                                     <div class="input-group btn-block">
-                                                                        <div class="cart-input">
-                                                                            <input class="cart-input-box" type="text" value="<?=$product["quantity"]?>">
-                                                                            <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                            <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
-                                                                            <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                            <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                                                            <div class="cart-input">
+                                                                                <input class="cart-input-box" type="text" name="quantity" id="quantity"  value="<?=$product["quantity"]?>">
+                                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                                                            </div>
+                                                                            <span class="input-group-btn">
+                                                                                <button type="submit" name="update-btn" id="update-btn" data-bs-toggle="tooltip" data-direction="top" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
+                                                                                <button type="button" data-bs-toggle="tooltip" data-direction="top" class="btn btn-danger pull-right" data-original-title="Remove"><a href="cart/deleteCart/<?=$product["id"]?>" style="color: white;"><i class="fa fa-times-circle"></a></i></button>
+                                                                            </span>
                                                                         </div>
-                                                                        <span class="input-group-btn">
-                                                                            <button type="submit" data-bs-toggle="tooltip" data-direction="top" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
-                                                                            <button type="button" data-bs-toggle="tooltip" data-direction="top" class="btn btn-danger pull-right" data-original-title="Remove"><i class="fa fa-times-circle"></i></button>
-                                                                        </span>
-                                                                    </div>
+                                                                    </form>
                                                                 </td>
                                                                 <td><?=number_format($product["price"])?></td>
                                                                 <td><?=number_format($product["price"] * $product["quantity"])?></td>
@@ -75,9 +77,9 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                            </form>
+                                            
 
-                                            <div class="cart-accordion-wrapper mt-full">
+                                            <!-- <div class="cart-accordion-wrapper mt-full">
                                                 <h2>What would you like to do next?</h2>
                                                 <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
                                                 <div id="cart_accordion" class="mt-4" role="tablist">
@@ -170,7 +172,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="cart-amount-wrapper">
                                                 <div class="row">
@@ -178,11 +180,15 @@
                                                         <table class="table table-bordered">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><strong>Shipping:</strong></td>
+                                                                    <td><strong>Tổng tiền:</strong></td>
+                                                                    <td><?=number_format($_SESSION["total"])?></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>Phí vận chuyển:</strong></td>
                                                                     <td><?=0?></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><strong>Total:</strong></td>
+                                                                    <td><strong>Thanh toán:</strong></td>
                                                                     <td><span class="color-primary"><?=number_format($_SESSION["total"])?></span></td>
                                                                 </tr>
                                                             </tbody>
@@ -192,8 +198,8 @@
                                             </div>
 
                                             <div class="cart-button-wrapper d-flex justify-content-between mt-4">
-                                                <a href="products" class="btn btn-secondary dark">Continue Shopping</a>
-                                                <a href="checkout.html" class="btn btn-secondary dark align-self-end">Checkout</a>
+                                                <a href="products" class="btn btn-secondary dark">Tiếp tục mua hàng</a>
+                                                <a href="checkout" class="btn btn-secondary dark align-self-end">Thanh toán</a>
                                             </div>
                                         </div>
                                     </div>

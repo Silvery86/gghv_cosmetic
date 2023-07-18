@@ -23,7 +23,7 @@
                 $fullname = $_REQUEST["full-name"];
               
                 $phone = $_REQUEST["phone"];
-                $address = join("-",array($_REQUEST["address"],$_REQUEST["city"],$_REQUEST["country"]));
+                $address = join("-",array($_REQUEST["address"],$_REQUEST["city"]));
                 $note = $_REQUEST["note"];
                 $orderdata = $_SESSION["cart"];
                             

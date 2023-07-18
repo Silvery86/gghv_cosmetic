@@ -15,20 +15,20 @@
                                         {
                                         ?>
                                             <div class="user-actions user-login">
-                                                <h3>Please login to place order <a id="show_login" href="login">Click here to login.</a></h3>                                                                                
+                                                <h3>Hãy đăng nhập để đặt hàng <a id="show_login" href="login">Đăng nhập tại đây!</a></h3>                                                                                
                                             </div> <!-- end of user-actions -->
                                             <div class="user-actions user-register">
-                                                <h3>Don’t have account? <a id="show_login" href="register">Register here.</a></h3>                                                                                
+                                                <h3>Bạn chưa có tài khoản? <a id="show_login" href="register">Hãy đăng ký ngay</a></h3>                                                                                
                                             </div> <!-- end of user-actions -->
                                         <?php
                                         }else{
                                         ?>
                                         <div class="user-actions user-login">
-                                                <h3> Hello <b><?=$_SESSION["email"]?></b></h3>
+                                                <h3> Xin chào <b><?=$_SESSION["full-name"]?></b></h3>
                         
                                             </div> <!-- end of user-actions -->
                                         
-                                            <div class="user-actions user-coupon">
+                                            <!-- <div class="user-actions user-coupon">
                                                 <h3>Have A Coupon? <span id="show_coupon">Click Here To Enter Your Code.</span></h3>
                                                 <div id="checkout_coupon" class="display-content">
                                                     <div class="coupon-info">
@@ -44,7 +44,7 @@
                                                         </form>
                                                     </div>
                                                 </div>
-                                            </div> <!-- end of user-actions -->
+                                            </div> end of user-actions -->
                                         </div>
                                     </div> <!-- end of row -->
                                 </div> <!-- end of user-actions -->
@@ -54,48 +54,42 @@
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-7">
                                             <div class="checkout-form">
                                                 <div class="section-title left-aligned">
-                                                    <h2>Billing Details</h2>
+                                                    <h2>Thông tin giao hàng</h2>
                                                 </div>
 
                                                 <form action="checkout/checkoder" name="checkout-form" id="checkout-form" method="post">
                                                     <div class="form-row mb-3">
                                                        
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
-                                                            <label for="last_name">Full Name <span class="text-danger">*</span></label>
+                                                            <label for="last_name">Tên người nhận <span class="text-danger">*</span></label>
                                                             <input type="text" class="form-control" id="full-name" name="full-name" required>
                                                         </div>
                                                     </div>
                                                     
                                                     <div class="form-row mb-3">
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
-                                                            <label for="p_address">Address <span class="text-danger">*</span></label>
+                                                            <label for="p_address">Địa chỉ giao hàng <span class="text-danger">*</span></label>
                                                             <input type="text" class="form-control" id="address" name="address" required>
                                                         </div>
                                                     </div>
                                                     <div class="form-row mb-3">
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
-                                                            <label for="city_name">City <span class="text-danger">*</span></label>
+                                                            <label for="city_name">Thành phố <span class="text-danger">*</span></label>
                                                             <input type="text" class="form-control" id="city" name="city" required>
                                                         </div>
                                                         
                                                     </div>
+                                                   
                                                     <div class="form-row mb-3">
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
-                                                            <label for="city_name">Country <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="country" name="country" required>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    <div class="form-row mb-3">
-                                                        <div class="form-group col-12 col-sm-12 col-md-12">
-                                                            <label for="tel_number">Telephone <span class="text-danger">*</span></label>
+                                                            <label for="tel_number">Số điện thoại <span class="text-danger">*</span></label>
                                                             <input type="tel" class="form-control" id="phone" name="phone" required>
                                                         </div>                                                      
                                                     </div> 
                                                     <div class="form-row">
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
-                                                            <label for="order_notes">Order Notes</label>
-                                                            <textarea class="form-control" id="note" name="note" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                                            <label for="order_notes">Ghi chú</label>
+                                                            <textarea class="form-control" id="note" name="note" placeholder="Ghi chú thông tin về đơn hàng, như yêu cầu, địa chỉ,...."></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-row">
@@ -103,11 +97,9 @@
                                                         <div class="custom-radio">
                                                             <input class="form-check-input" type="radio" name="payment" id="cash_delivery_payment" value="cash">
                                                             <span class="checkmark"></span>
-                                                            <label class="form-check-label" for="cash_delivery_payment">Cash on Delivery</label>
+                                                            <label class="form-check-label" for="cash_delivery_payment">Thanh toán khi nhận hàng</label>
 
-                                                            <div class="payment-info" id="cash_pay">
-                                                                <p>Pay with cash upon delivery.</p>
-                                                            </div>
+                                                            
                                                         </div>
                                                         <!-- <div class="custom-radio">
                                                             <input class="form-check-input" type="radio" name="payment" id="paypal_payment" value="paypal">
@@ -128,8 +120,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-row justify-content-end">
-                                                        <input type="submit" name="submit-btn" id="submit-btn" class="btn btn-secondary dark" value="Continue to Payment">
+                                                    <div class="form-row justify-content-center">
+                                                        <input type="submit" name="submit-btn" id="submit-btn" class="btn btn-secondary dark" value="Đặt hàng">
                                                     </div>
                                                     
                                                    
@@ -140,7 +132,7 @@
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-5">
                                             <div class="order-summary">
                                                 <div class="section-title left-aligned">
-                                                    <h2>Your Order</h2>
+                                                    <h2>Đơn hàng của bạn</h2>
                                                 </div>
                                                 <?php
                                                 if(isset($_SESSION["cart"])==false || count($_SESSION["cart"])==0)//nếu chưa có giỏ hàng
@@ -172,7 +164,7 @@
                                                             </div>
                                                             <div class="flex-grow-1">
                                                                 <h5><?=$productId["title"]?></h5>
-                                                                <p class="product-quantity">Quantity: <?=$productId["quantity"]?></p>
+                                                                <p class="product-quantity">Số lượng: <?=$productId["quantity"]?></p>
                                                                  <!-- end of checkout-payment -->
                                                                 <p class="product-final-price"><?=number_format($productId["price"])?></p>
                                                             </div>
@@ -189,12 +181,16 @@
                                                     <div class="table-responsive">
                                                         <table class="table table-bordered">
                                                             <tbody>
+                                                            <tr class="cart-subtotal">
+                                                                    <th>Tổng tiền</th>
+                                                                    <td class="text-center"><?=number_format($total)?></td>
+                                                                </tr>     
                                                                 <tr class="cart-subtotal">
-                                                                    <th>Shipping</th>
+                                                                    <th>Phí vận chuyển</th>
                                                                     <td class="text-center">0</td>
                                                                 </tr>            
                                                                 <tr class="order-total">
-                                                                    <th>Total</th>
+                                                                    <th>Thanh toán</th>
                                                                     <td class="text-center"><strong><span class="color-primary"><?=number_format($total)?></span></strong></td>
                                                                 </tr>
                                                             </tbody>

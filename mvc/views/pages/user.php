@@ -68,7 +68,12 @@
                                                                 </thead>
                                                                 <tbody>
                                                                 <?php
-                                                               
+                                                                
+                                                                if(!$data["order"][0]["product_id"]){
+                                                                ?>
+                                                                <h1>Bạn không có đơn hàng nào! <a href="products">Đặt hàng tại đây</a></h1>
+                                                                <?php    
+                                                                }else{
                                                                 foreach($data["order"] as $order){
                                                                 $total = $order["product_quantity"] * $order["product_price"];
                                                                 ?>
@@ -81,6 +86,7 @@
                                                                     </tr>
                                                                 <?php
                                                                 }
+                                                            }
                                                                 ?>
                                                                 </tbody>
                                                             </table>

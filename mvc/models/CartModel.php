@@ -30,6 +30,12 @@ class CartModel extends Database{
             return $this -> cart_item;
               
     }
+    function delCart($productId){
+        unset($_SESSION["cart"][$productId]);
+    }
+    function updateCart($productId,$newQuantity){
+        $_SESSION["cart"][$productId]["quantity"] = $newQuantity;
+    }
 
 }
 

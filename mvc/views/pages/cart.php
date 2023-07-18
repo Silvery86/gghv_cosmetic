@@ -74,8 +74,8 @@
                     <h4>Total : <span><?=number_format($total)?></span></h4>
                 </div>
                 <div class="shopping-cart-btn">
-                    <a class="default-btn" href="viewcart">view cart</a>
-                    <a class="default-btn" href="checkout">checkout</a>
+                    <a class="default-btn" href="viewcart">Giỏ hàng</a>
+                    <a class="default-btn" href="checkout">Thanh toán</a>
                 </div>
             </div>
         </div>
