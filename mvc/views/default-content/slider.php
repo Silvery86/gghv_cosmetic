@@ -20,13 +20,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="slide-content layer-animation-2">
-                                                <p class="promo-title"><span>limited edition</span> Start Designing Your Own Shirt</p>
-                                                <h1 class="main-title"><span>Make Your Own Shirt</span></h1>
-                                                <p class="subtitle">Easily Create Beautiful Designs</p>
-												<p class="subtitle">High-quality shirts that will last forever</p>
-												<p class="subtitle">Fast Shipping</p>
+                                                <p class="promo-title">
+                                                <h1 class="main-title"><span></span></h1>
+                                                <p class="subtitle"></p>
+												<p class="subtitle"></p>
+												<p class="subtitle"></p>
+                                                <p class="subtitle"></p>
                                                 <div class="slide-button">
-                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Start designing now!</a>
+                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now"></a>
                                                 </div>
                                             </div> <!-- end of slide-content -->
                                         </div>
@@ -43,13 +44,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="slide-content layer-animation-1">
-												<p class="promo-title"><span>limited edition</span> Start Designing Your Own Shirt</p>
-                                                <h1 class="main-title"><span>Make Your Own Shirt</span></h1>
-                                                <p class="subtitle">Easily Create Beautiful Designs</p>
-												<p class="subtitle">High-quality shirts that will last forever</p>
-												<p class="subtitle">Fast Shipping</p>
+												<p class="promo-title">
+                                                <h1 class="main-title"><span></span></h1>
+                                                <p class="subtitle"></p>
+												<p class="subtitle"></p>
+                                                <p class="subtitle"></p>
+												<p class="subtitle"></p>
                                                 <div class="slide-button">
-                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Start designing now!</a>
+                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now"></a>
                                                 </div>
                                             </div> <!-- end of slide-content -->
                                         </div>
@@ -66,13 +68,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="slide-content white-scheme layer-animation-3">
-												<p class="promo-title"><span>limited edition</span> Start Designing Your Own Shirt</p>
-                                                <h1 class="main-title"><span>Make Your Own Shirt</span></h1>
-                                                <p class="subtitle">Easily Create Beautiful Designs</p>
-												<p class="subtitle">High-quality shirts that will last forever</p>
-												<p class="subtitle">Fast Shipping</p>
+												<p class="promo-title">
+                                                <h1 class="main-title">
+                                                <p class="subtitle"></p>
+												<p class="subtitle"></p>
+                                                <p class="subtitle"></p>
+												<p class="subtitle"></p>
                                                 <div class="slide-button">
-                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now">Start designing now!</a>
+                                                    <a class="text-btn" href="shop-grid.html" title="Shop Now"></a>
                                                 </div>
                                             </div> <!-- end of slide-content -->
                                         </div>
