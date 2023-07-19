@@ -53,7 +53,7 @@
                             
                         </div>
                         <div class="shopping-cart-delete">
-                            <a href="#"><i class="ion ion-md-close"></i></a>
+                            <a href="cart/deleteCart/<?=$productId["id"]?>"><i class="ion ion-md-close"></i></a>
                         </div>
                     </li>
                     <?php

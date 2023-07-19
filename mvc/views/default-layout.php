@@ -295,6 +295,10 @@
             </div>
         </div>
     </div>
+    <div id="to_top">
+            <i class="ion ion-ios-arrow-forward"></i>
+            <i class="ion ion-ios-arrow-forward"></i>
+        </div>
     <!-- End of Photoswipe -->
     <?php 
     $jsTags = $assets -> registerJS('frontend');

@@ -60,32 +60,39 @@
                                                                 <thead>
                                                                     <tr>
                                                                         <th>Order No.</th>
-                                                                        <th>Product name</th>
-                                                                        <th>Price</th>
-                                                                        <th>Quantity</th>
-                                                                        <th>Total</th>                
+                                                                        <th>Customer name</th>
+                                                                        <th>Address</th>
+                                                                        <th>Note</th>
+                                                                        <th>Total</th>
+                                                                        <th>Action</th>                 
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                 <?php
                                                                 
-                                                                if(!$data["order"][0]["product_id"]){
+                                                                if(!$data["order"][0]["order_id"]){
                                                                 ?>
                                                                 <h1>Bạn không có đơn hàng nào! <a href="products">Đặt hàng tại đây</a></h1>
                                                                 <?php    
                                                                 }else{
-                                                                foreach($data["order"] as $order){
-                                                                $total = $order["product_quantity"] * $order["product_price"];
+                                                                
+                                                                    
+
+                                                                    foreach($data["order"] as $order){
+                                                                    
+                                                                
                                                                 ?>
                                                                     <tr>
-                                                                        <td><?=$order["id"]?></td>
-                                                                        <td><?=$order["product_name"]?></td>
-                                                                        <td><?=number_format($order["product_price"])?></td>
-                                                                        <td><?=$order["product_quantity"]?></td>
-                                                                        <td><?=number_format($total)?></td>
+                                                                        <td><?=$order["order_id"]?></td>
+                                                                        <td><?=$order["customer_name"]?></td>
+                                                                        <td><?=$order["customer_address"]?></td>
+                                                                        <td><?=$order["note"]?></td>
+                                                                        <td><?=number_format($order["total_money"])?></td>
+                                                                        <td><a class="btn btn-secondary" href="user/showorder/<?=$order["order_id"]?>">show</a></td>
                                                                     </tr>
                                                                 <?php
-                                                                }
+                                                                    }
+                                                                
                                                             }
                                                                 ?>
                                                                 </tbody>

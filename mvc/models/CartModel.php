@@ -32,6 +32,12 @@ class CartModel extends Database{
     }
     function delCart($productId){
         unset($_SESSION["cart"][$productId]);
+        
+        
+        if($_SESSION["cart"] == NULL){
+            $_SESSION["total"] = 0;
+            
+        }
     }
     function updateCart($productId,$newQuantity){
         $_SESSION["cart"][$productId]["quantity"] = $newQuantity;
