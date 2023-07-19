@@ -81,7 +81,7 @@
                             <div class="header-search-area">
                                 <form action="#">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search entire store here ...">
+                                        <input type="text" class="form-control" placeholder="Tìm Kiếm ...">
                                         <div class="input-group-append">
                                             <button class="header-search-btn" type="submit"><i class="pe-7s-search"></i></button>
                                         </div>
@@ -149,8 +149,8 @@
                                                     <h4>Total : <span>$320.00</span></h4>
                                                 </div>
                                                 <div class="shopping-cart-btn">
-                                                    <a class="default-btn" href="cart.html">view cart</a>
-                                                    <a class="default-btn" href="checkout.html">checkout</a>
+                                                    <a class="default-btn" href="cart.html">Giỏ Hàng</a>
+                                                    <a class="default-btn" href="checkout.html">Thanh Toán</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,11 +163,11 @@
                                             <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
                                             <div class="dropdown-menu">
                                                 <ul>
-                                                   <li><a href="register.html">Register</a></li>
-                                                   <li><a href="login.html">Login</a></li>
-                                                   <li><a href="my-account.html">My Account</a></li>
-                                                   <li><a href="wishlist.html">Wishlist</a></li>
-                                                   <li><a href="checkout.html">Checkout</a></li>
+                                                   <li><a href="register.html">Đăng Ký</a></li>
+                                                   <li><a href="login.html">Đăng Nhập</a></li>
+                                                   <li><a href="my-account.html">Tài Khoản</a></li>
+                                                   <li><a href="wishlist.html">Yêu Thích</a></li>
+                                                   <li><a href="checkout.html">Thanh toán</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -187,8 +187,8 @@
                 <div class="container">
                     <nav id="main_nav" class="stellarnav black-scheme">
                         <ul>
-                            <li><a href="home"><span>Home</span></a></li>
-                            <li><a href="products"><span>Products</span></a></li>
+                            <li><a href="home"><span>TRANG CHỦ</span></a></li>
+                            <li><a href="products"><span>SẢN PHẨM</span></a></li>
                             <!-- <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Products</span></a>
                                 <ul class="mega-container">
                                     <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
@@ -210,8 +210,8 @@
                                     </li>
                                 </ul>
                             </li> -->
-                            <li><a href="aboutus"><span>About Us</span></a></li>
-                            <li><a href="contact"><span>Contact Us</span></a></li>
+                            <li><a href="aboutus"><span>VỀ CHÚNG TÔI</span></a></li>
+                            <li><a href="contact"><span>LIÊN HỆ</span></a></li>
                         </ul>
                     </nav>
                 </div> <!-- end of container -->

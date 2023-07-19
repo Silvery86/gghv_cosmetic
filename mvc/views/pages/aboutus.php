@@ -89,7 +89,7 @@
                          </div>
                          <p class="lead">GGHV Cosmetic nghiên cứu các tiêu chuẩn cao nhất cho các sản phẩm dưỡng da. Chúng tôi tìm kiếm các nguyên liệu từ khắp các đại dương, sa mạc và rừng trên toàn thế giới để mang đến cho bạn những sản phẩm chất lượng nhất.</p>
                          <p>Bắt đầu cho cuộc hành trình này, chúng tôi phát hiện ra một loại nguyên liệu đỉnh cao là Rau má từ vùng đất Madagascar. Rau má là một loài thực vật phát triển tự nhiên mạnh mẽ và không bị can thiệp bởi bất kì chất hóa học nào. Chiết xuất từ Rau má là thành phần cốt lõi của các sản phẩm dưỡng da được yêu thích nhất của GGHV Cosmetic.</p>
-                         <a class="btn btn-primary" href="shop-grid.html">Shop now</a>
+                         <a class="btn btn-primary" href="shop-grid.html">Mua Ngay</a>
                      </div>
                  </div>
              </div>
@@ -190,7 +190,7 @@
                              <div class="team-wrapper">
                                  <div class="team-media">
                                      <a href="#">
-                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-4.jpg" alt="Team Image">
+                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-2.jpg" alt="Team Image">
                                      </a>
                                      <div class="team-socials">
                                          <div class="chain-animation">
@@ -221,7 +221,7 @@
                              <div class="team-wrapper">
                                  <div class="team-media">
                                      <a href="#">
-                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-2.jpg" alt="Team Image">
+                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-3.jpg" alt="Team Image">
                                      </a>
                                      <div class="team-socials">
                                          <div class="chain-animation">
@@ -252,7 +252,7 @@
                              <div class="team-wrapper">
                                  <div class="team-media">
                                      <a href="#">
-                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-3.jpg" alt="Team Image">
+                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-4.jpg" alt="Team Image">
                                      </a>
                                      <div class="team-socials">
                                          <div class="chain-animation">
@@ -283,7 +283,7 @@
                              <div class="team-wrapper">
                                  <div class="team-media">
                                      <a href="#">
-                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-3.jpg" alt="Team Image">
+                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-5.jpg" alt="Team Image">
                                      </a>
                                      <div class="team-socials">
                                          <div class="chain-animation">
@@ -314,7 +314,7 @@
                              <div class="team-wrapper">
                                  <div class="team-media">
                                      <a href="#">
-                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-3.jpg" alt="Team Image">
+                                         <img src="../../gghv_cosmetic/public/assets/images/about/team-6.jpg" alt="Team Image">
                                      </a>
                                      <div class="team-socials">
                                          <div class="chain-animation">
