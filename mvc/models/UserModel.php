@@ -2,6 +2,8 @@
     class UserModel extends Database{
     public $user_name;
     public $userdata;
+
+    public $admindata;
     function getUser($email, $password)
         {
         
@@ -65,6 +67,25 @@
              return $login_result;
             }
     }
+    function getAllOrder(){
+        $sql = "SELECT orders.id as order_id, orders.order_address as customer_address,
+         orders.customer_name, orders.customer_phone, orders.total_money, orders.note, 
+         users.id as user_id, users.email as user_email FROM orders
+         LEFT JOIN users ON  orders.user_id = users.id        
+         ";
+         $result = $this->ProcessSQL($sql);
+         if($result == FALSE)
+            die("Lỗi SQL");
+         $login_result = $this -> pdo_stm->rowCount()>0;
+           
+            if($login_result) //Số bản ghi trả về >0
+            {
+             $this -> admindata = $this -> pdo_stm ->fetchAll();
+             return $login_result;
+            }else{
+             return $login_result;
+            }
+    }
 
     function getUserOrderDetail($userId,$orderId){
         $sql = "SELECT users.id, users.email, users.phone_number, orders.order_address as customer_address,
@@ -84,6 +105,30 @@
             if($login_result) //Số bản ghi trả về >0
             {
              $this -> userdata = $this -> pdo_stm ->fetchAll();
+             return $login_result;
+            }else{
+             return $login_result;
+            }
+    }
+
+    function getAllOrderDetail($orderId){
+        $sql = "SELECT users.id, users.email, users.phone_number, orders.order_address as customer_address,
+         orders.id as order_id, orders.customer_name, orders.customer_phone, orders.total_money as order_total,
+         order_details.product_id as product_id, order_details.price as product_price, order_details.num as product_quantity,
+         products.title as product_name, products.thumbnail as product_thumbnail FROM users
+         LEFT JOIN orders ON users.id = orders.user_id
+         LEFT JOIN order_details ON orders.id = order_details.order_id
+         LEFT JOIN products ON order_details.product_id = products.id
+         where orders.id = '$orderId'
+         ";
+         $result = $this->ProcessSQL($sql);
+         if($result == FALSE)
+            die("Lỗi SQL");
+         $login_result = $this -> pdo_stm->rowCount()>0;
+           
+            if($login_result) //Số bản ghi trả về >0
+            {
+             $this -> admindata = $this -> pdo_stm ->fetchAll();
              return $login_result;
             }else{
              return $login_result;
