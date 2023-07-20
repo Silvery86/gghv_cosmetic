@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost
--- Thời gian đã tạo: Th7 18, 2023 lúc 04:43 PM
+-- Thời gian đã tạo: Th7 20, 2023 lúc 01:35 PM
 -- Phiên bản máy phục vụ: 8.0.31
 -- Phiên bản PHP: 7.4.33
 
@@ -42,7 +42,10 @@ INSERT INTO `brands` (`id`, `name`) VALUES
 (3, 'Nature Republic'),
 (4, 'Nacific'),
 (5, '9 Wishes'),
-(6, 'Dr.G');
+(6, 'Dr.G'),
+(7, 'Bioderma'),
+(8, 'Cocoon'),
+(9, 'Prettyskin');
 
 -- --------------------------------------------------------
 
@@ -167,7 +170,20 @@ INSERT INTO `products` (`id`, `category_id`, `brand_id`, `title`, `price`, `stoc
 (31, 4, 1, 'Skin1004 Mặt nạ giấy Madagascar Centella Watergel Sheet Ampoule Mask 25ml', 49500, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__5__90f6ad4669f144ffa0433134e7099e99.png', 'Mặt nạ làm dịu, ngừa mụn chiết xuất rau má Skin1004 Madagascar Centella Watergel Sheet Ampoule Mask với công nghệ độc quyền tạo kết cấu mặt nạ có nguồn gốc từ than tre. Kết hợp chiết xuất 51% từ rau má giúp làm dịu làn da, phục hồi và tái tạo da đang kích ứng, kiểm soát lượng dầu thừa hiệu quả.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
 (32, 5, 1, 'Skin1004 Nước hoa hồng Madagascar Centella Tone Brightening Boosting Toner 210ml', 420000, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__8__0d21c63d26734ae484c056e440efef71.png', 'Nước hoa hồng sáng da Skin1004 Madagascar Centella Tone Brightening Boosting Toner chiết xuất rau má  đến 90% tăng cường khả năng chăm sóc và làm dịu da từ sâu bên trong. Giúp dưỡng trắng, kháng viêm cho da nhạy cảm, đồng thời hỗ trợ làm dịu da hiệu quả.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
 (33, 1, 1, 'Skin1004 Tẩy trang Madagascar Centella Light Cleansing Oil 200ml', 408750, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__12__1ed2485f3c014b3088d91d3002011e31_acbe098824ae44138c38ee1870bf23d5.png', 'Dầu Tẩy Trang Skin1004 Madagascar Centella Light Cleansing Oil giúp làm sạch sâu làn da và loại bỏ lớp trang điểm cứng đầu với chiết xuất rau má Madagascar tinh khiết kết hợp cùng 6 loại dầu quý được chắt lọc kỹ lưỡng, mang lại làn da sạch tận sâu lỗ chân lông và mềm mịn ngay tức thì.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
-(34, 2, 1, 'Skin1004 Sữa rửa mặt Madagascar Centella Ampoule Foam 125ml', 281250, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__11__c69fc79e887746f19ffc4bda8406819b.png', 'Sữa rửa mặt Skin1004 Madagascar Centella Ampoule Foam với lớp bọt mềm mịn giúp lấy sạch bụi bẩn, bã nhờn, dầu thừa từ sâu lỗ chân lông. Sữa rửa mặt giúp làm sạch da mà không làm da mất nước, lưu giữ được độ ẩm mịn, mềm mại trên da. Với độ pH chuẩn 5.5,bảo vệ lớp màng tế bào mỗi ngày với công thức an toàn, hỗ trợ điều trị mụn tốt hơn.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL);
+(34, 2, 1, 'Skin1004 Sữa rửa mặt Madagascar Centella Ampoule Foam 125ml', 281250, 99, NULL, 'https://product.hstatic.net/200000551679/product/1-01__11__c69fc79e887746f19ffc4bda8406819b.png', 'Sữa rửa mặt Skin1004 Madagascar Centella Ampoule Foam với lớp bọt mềm mịn giúp lấy sạch bụi bẩn, bã nhờn, dầu thừa từ sâu lỗ chân lông. Sữa rửa mặt giúp làm sạch da mà không làm da mất nước, lưu giữ được độ ẩm mịn, mềm mại trên da. Với độ pH chuẩn 5.5,bảo vệ lớp màng tế bào mỗi ngày với công thức an toàn, hỗ trợ điều trị mụn tốt hơn.', NULL, '2023-07-18 16:43:03', '2023-07-18 16:43:03', NULL),
+(35, 3, 7, 'Bioderma Kem chống nắng Photoderm Max Aquafluide SPF50+ 40ml new', 412250, 99, NULL, 'https://product.hstatic.net/200000551679/product/bioderma_photoderm_max_aquafluide_spf50__40ml_1d3b84b13f72427db61e72b5336f5b25.png', 'Kem chống nắng Bioderma Photoderm Max Aquafluide SPF50+ PA++++ là kem chống nắng khô thoáng và giảm bóng nhờn giúp bảo vệ da khỏi tác hại của tia UVA/UVB với chỉ số chống nắng cao.', NULL, '2023-07-20 13:13:10', '2023-07-20 13:13:10', NULL),
+(36, 5, 7, 'Bioderma Nước hoa hồng Sensibio Tonique 250ml', 361250, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-5-08_1f04cf335a8540699746813aa8400eb0.png', 'Nước hoa hồng Bioderma Sensibio Tonique giúp cân bằng độ pH sinh lí tự nhiên trên da, dưỡng ẩm và làm dịu da nhạy cảm, kích ứng với thành phần chính là nước, chiết xuất dưa leo, Allantoin giúp làm dịu da, cấp nước và giảm thiểu tình trạng kích ứng hiệu quả.', NULL, '2023-07-20 13:13:10', '2023-07-20 13:13:10', NULL),
+(37, 1, 7, 'Bioderma Nước tẩy trang hồng Sensibio H2O 100 ml', 191250, 99, NULL, 'https://product.hstatic.net/200000551679/product/bioderma_nuoc_tay_trang_hong_sensibio_h2o_100_ml___3__7b8111e8706348ec9ad0c6a3ede77892.png', 'Nước tẩy trang Bioderma Sensibio H2O là dung dịch làm sạch và tẩy trang đầu tiên trên thế giới ứng dụng công nghệ micellar, giúp làm sạch đến 99% bụi bẩn, dầu thừa và lớp trang điểm, đồng thời vẫn tôn trọng hàng rào bảo vệ da tuyệt đối. Sản phẩm không cần rửa lại bằng nước. Ngoài ra, Sensibio H2O làm giảm cảm giác khô căng, khó chịu và cải thiện ngưỡng dung nạp của da. Là giả pháp hiệu quả lâu dài cho làn da.', NULL, '2023-07-20 13:13:10', '2023-07-20 13:13:10', NULL),
+(38, 2, 7, 'Bioderma Sữa rửa mặt Sensibio Gel Moussant', 378250, 99, NULL, 'https://product.hstatic.net/200000551679/product/bioderma_sua_rua_mat_sensibio_gel_moussant__1__1f3a68fa10e3472dbd80c1f2a23679f0.png', 'Sữa rửa mặt Sensibio Gel Moussant với công nghệ micellar giúp làm sạch sâu và 100% an toàn cho da nhạy cảm. Với các thành phần sinh học được nghiên cứu kỹ lưỡng giúp tăng độ dung nạp của làn da. Bên cạnh khả năng làm sạch, làm dịu da và dưỡng ẩm, Sensibio Gel Moussant còn giúp làm sạch sâu nhưng vẫn củng cố hàng rào bảo vệ da vững chắc.', NULL, '2023-07-20 13:13:10', '2023-07-20 13:13:10', NULL),
+(39, 3, 8, 'Cocoon Kem chống nắng bí đao Winter Melon Sunscreen 50ml', 355500, 99, NULL, 'https://product.hstatic.net/200000551679/product/kem_chong_nang_cocoon_2760ebaa20c7442db71acf75df66d4df.png', 'Kem chống nắng bí đao Cocoon Winter Melon Sunscreen với công thức đột phá kết hợp các màng lọc thế hệ mới, chiết xuất bí đao và các thành phần chống oxi hoá, kem chống nắng bí đao mang lại khả năng bảo vệ phổ rộng chống lại bức xạ UVA và UVB là nguyên nhân gây ra tác hại lên da như bỏng rát, cháy nắng, kích ứng, lão hoá và tổn thương tế bào da.', NULL, '2023-07-20 13:22:06', '2023-07-20 13:22:06', NULL),
+(40, 4, 8, 'Mặt nạ hoa hồng Cocoon True Rose Face Mask', 130500, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-9-06_9c0cdc71626448ad9a6f06c03487c9f3.png', 'Mặt nạ hoa hồng Cocoon True Rose Face Mask thành phần từ cánh hoa hồng hữu cơ được nghiền nhỏ hòa quyện trong lớp gel mượt mà, kết hợp cùng nam châm dưỡng ẩm Pentavitin và HA giúp làm dịu, cấp ẩm và làm mềm tức thì, mang lại làn da đầy đặn, mịn màng và tươi mới.', NULL, '2023-07-20 13:22:06', '2023-07-20 13:22:06', NULL),
+(41, 5, 8, 'Cocoon Tinh chất hoa hồng Rose Serum 30ml', 238500, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-9-14_4ae96bc4ebd145a5990562cd7b7d1e08.png', 'Tinh chất Cocoon Rose Serum với kết cấu mọng nước, tinh chất hoa hồng sẽ thẩm thấu nhanh và mang các dưỡng chất ngậm nước đi sâu vào các tầng da, giúp dưỡng ẩm sâu, phục hồi những tổn thương do sự mất nước gây ra, đồng thời trả lại sự đầy đặn và tươi mới vốn có của làn da. Đây là cách nhanh nhất để da trở nên căng mọng và ẩm mịn.', NULL, '2023-07-20 13:22:06', '2023-07-20 13:22:06', NULL),
+(42, 1, 8, 'Nước tẩy trang Cocoon bí đao Winter Melon Micellar Water', 265500, 99, NULL, 'https://product.hstatic.net/200000551679/product/chua_co_ten_57bd3a4997324e4085a7_4317c18d37db492bb93924e184e75213.png', 'Nước tẩy trang Cocoon chiết xuất bí đao làm sạch da Winter Melon Micellar Water ứng dụng công nghệ Micellar với thành phần từ thiên nhiên như bí đao, rau má, tràm trà và Betaine từ củ cải đường giúp làm sạch lớp trang điểm, khói bụi trên da một cách nhẹ nhàng, thông thoáng lỗ chân lông, và kiểm soát dầu nhờn hiệu quả.', NULL, '2023-07-20 13:22:06', '2023-07-20 13:22:06', NULL),
+(43, 2, 8, 'Prettyskin Sữa rửa mặt tẩy da chết Cocoon Scrub Foam 150ml', 82500, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-3-09_8f1373afa7f9410cabf630e2634dfca3.png', 'Sữa rửa mặt tẩy da chết Prettyskin Cocoon Pore Scrub Foam là sản phẩm đến từ thương hiệu Pretty Skin. Với chiết xuất kén tằm giúp làm sạch da, loại bỏ bụi bẩn nằm sâu dưới da. Đồng thời loại bỏ mụn đầu đen và lấy đi tế bào chết giúp da mịn màng, săn khít.', NULL, '2023-07-20 13:22:06', '2023-07-20 13:22:06', NULL),
+(44, 4, 9, 'Prettyskin Mặt nạ giấy Total Solution Essential Sheet mask', 9000, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-3-01_df5a944bd0394a0caec92f1839075472.png', 'Mặt nạ giấy Prettyskin Total Solution Essential Sheet Mask không hề gây kích ứng da, giúp cho làn da mềm mại và ẩm mịn với các tinh chất từ thiên nhiên. Mặt nạ mỏng nhẹ, ôm sát khuôn mặt giúp các dưỡng chất thấm đều vào da.', NULL, '2023-07-20 13:34:35', '2023-07-20 13:34:35', NULL),
+(45, 3, 9, 'Prettyskin Kem chống nắng No-Sebum Tone Up Sun Cream 70ml', 162000, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-3-16_31d6db2b86b44254b802616066de964f.png', 'Kem chống nắng Prettyskin No-Sebum Tone Up Sun Cream là kem chống nắng vật lý phổ rộng có tác dụng nhanh (ngay khi apply lên da), có chỉ số chống nắng cao SPF 50+, PA++++ mang lại khả năng chống nắng cao lên đến 8h đồng hồ. Đồng thời bảo vệ da khỏi các tác động của tia UVA, UVB, tia hồng ngoại và ánh sáng xanh.\r\n\r\n', NULL, '2023-07-20 13:34:35', '2023-07-20 13:34:35', NULL),
+(46, 5, 9, 'Prettyskin Nước hoa hồng Pure Brightening Diamond Toner 150ml (IP02)', 210000, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-3-02_6727323fe80646a387af232e025d6238.png', 'Nước hoa hồng Prettyskin Pure Brightening Diamond Toner là nước hoa hồng dưỡng ẩm, giúp cân bằng lượng nước và dầu cho da, mang lại một làn da tươi mát trắng sáng và tràn đầy sức sống. Với chiết xuất bột ngọc trai, bột kim cương, Niaxiamide, lá trà, lô hội, rau má Centella Asiatica, vừa giúp cân bằng độ ẩm cho da, vừa có hiệu quả dưỡng trắng và làm dịu da hiệu quả.', NULL, '2023-07-20 13:34:35', '2023-07-20 13:34:35', NULL),
+(47, 1, 9, 'Prettyskin Nước tẩy trang The Pure Jeju Cica Cleansing Water 500ml (IP02)', 210000, 99, NULL, 'https://product.hstatic.net/200000551679/product/untitled-3-07_805f32693f4a41998661da3fe701d50a.png', 'Nước tẩy trang rau má Pretty Skin The Pure Jeju Cica Cleansing Water với chiết xuất từ rau má Centella Asiatica từ đảo Jeju xinh đẹp, chiết xuất rễ cây bạch vi, lá cây phỷ, dầu và lá cây tràm trà. Tất cả các thành phần này đều có công dụng chống khuẩn, kháng viêm vô cùng hiệu quả.', NULL, '2023-07-20 13:34:35', '2023-07-20 13:34:35', NULL);
 
 -- --------------------------------------------------------
 
@@ -280,13 +296,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT cho bảng `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `feedback`
@@ -310,7 +326,7 @@ ALTER TABLE `order_details`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT cho bảng `roles`
