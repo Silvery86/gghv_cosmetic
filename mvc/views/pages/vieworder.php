@@ -10,7 +10,7 @@
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="section-title">
-                                                <h2>Giỏ hàng</h2>
+                                                <h2>Đơn hàng số: <?=$data["order"][0]["order_id"]?></h2>
                                             </div>
 
                                             
@@ -28,40 +28,25 @@
                                                         </thead>
                                                         <tbody>
                                                             <?php
-                                                            if(isset($_SESSION["cart"])){
+                                                            
+                                                            if(isset($data["order"])){
                                                             $total = 0;   
-                                                            foreach($_SESSION["cart"] as $product)
+                                                            foreach($data["order"] as $product)
                                                             {
-                                                            $total += $product["price"]*$product["quantity"];
+                                                            $total += $product["product_price"]*$product["product_quantity"];
                                                             ?>
                                                             <tr>
                                                                 <td>
-                                                                    <a href="single-product.html"><img src="<?=$product["thumbnail"]?>" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
+                                                                    <a href="single-product.html"><img src="<?=$product["product_thumbnail"]?>" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
                                                                 </td>
                                                                 <td>
-                                                                    <a href="single-product.html"><?=$product["title"]?></a>
+                                                                    <a href="single-product.html"><?=$product["product_name"]?></a>
                                                                    
                                                                 </td>
-                                                                <td><?=$product["id"]?></td>
-                                                                <td>
-                                                                    <form action="cart/updateCart/<?=$product["id"]?>" name="quantity-form" method="post">
-                                                                    <div class="input-group btn-block">
-                                                                            <div class="cart-input">
-                                                                                <input class="cart-input-box" type="text" name="quantity" id="quantity"  value="<?=$product["quantity"]?>">
-                                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
-                                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
-                                                                            </div>
-                                                                            <span class="input-group-btn">
-                                                                                <button type="submit" name="update-btn" id="update-btn" data-bs-toggle="tooltip" data-direction="top" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
-                                                                                <button type="button" data-bs-toggle="tooltip" data-direction="top" class="btn btn-danger pull-right" data-original-title="Remove"><a href="cart/deleteCart/<?=$product["id"]?>" style="color: white;"><i class="fa fa-times-circle"></a></i></button>
-                                                                            </span>
-                                                                        </div>
-                                                                    </form>
-                                                                </td>
-                                                                <td><?=number_format($product["price"])?></td>
-                                                                <td><?=number_format($product["price"] * $product["quantity"])?></td>
+                                                                <td><?=$product["product_id"]?></td>
+                                                                <td><?=$product["product_quantity"]?></td>
+                                                                <td><?=number_format($product["product_price"])?></td>
+                                                                <td><?=number_format($product["product_price"] * $product["product_quantity"])?></td>
                                                             </tr>
                                                         <?php 
                                                             }
@@ -181,7 +166,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td><strong>Tổng tiền:</strong></td>
-                                                                    <td><?=number_format($_SESSION["total"])?></td>
+                                                                    <td><?=number_format($product["order_total"])?></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><strong>Phí vận chuyển:</strong></td>
@@ -189,7 +174,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td><strong>Thanh toán:</strong></td>
-                                                                    <td><span class="color-primary"><?=number_format($_SESSION["total"])?></span></td>
+                                                                    <td><span class="color-primary"><?=number_format($product["order_total"])?></span></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -198,8 +183,8 @@
                                             </div>
 
                                             <div class="cart-button-wrapper d-flex justify-content-between mt-4">
-                                                <a href="products" class="btn btn-secondary dark">Tiếp tục mua hàng</a>
-                                                <a href="checkout" class="btn btn-secondary dark align-self-end">Thanh toán</a>
+                                                <a href="products" class="btn btn-secondary dark">Trở lại</a>
+                                                
                                             </div>
                                         </div>
                                     </div>

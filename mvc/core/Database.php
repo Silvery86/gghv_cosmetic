@@ -2,6 +2,8 @@
 class Database{
     public $conn = NULL; 
 	public $pdo_stm = NULL;
+
+    public $lastId = NULL;
    
     protected $servername = "localhost";
     protected $username = "root";
@@ -29,6 +31,13 @@ class Database{
             else
                 $result = $this->pdo_stm->execute();
             return $result;
-        }    
+        } 
+    function getInsertId() {
+        $lastId = $this -> conn -> lastInsertId();
+        if(isset($lastId)){
+            return $lastId;
+        }
+
+    }   
 }
 ?>

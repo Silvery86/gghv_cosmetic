@@ -9,14 +9,21 @@
     ============================================ -->
 <!--    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">-->
 
-    <link rel="stylesheet" type="text/css" href="../../public/assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../../public/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../public/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../public/assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../public/assets/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" type="text/css" href="../../public/assets/css/plugins.css">
     <link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../../public/assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="../../public/assets/css/landing-page.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/landing-page.css"> -->
+
+    <?php 
+    use app\core\View;
+    $assets = new View();
+    $cssTags = $assets -> registerCSS('sub-frontend');
+    
+    ?>
 
 </head>
 
@@ -136,7 +143,19 @@
                 </div> <!-- end of container -->
             </div> <!-- end of header-top -->
 
-
+            <div class="main-nav-area">
+                <div class="container">
+                    <nav id="main_nav" class="stellarnav black-scheme">
+                        <ul>
+                            <li><a href="home"><span>Trang chủ</span></a></li>
+                            <li><a href="products"><span>Sản phẩm</span></a></li>
+                            
+                            <li><a href="aboutus"><span>About</span></a></li>
+                            <li><a href="contact"><span>Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end of container -->
+            </div>
 
             
         </header>
@@ -525,13 +544,20 @@
             </div>
         </div>
     </div>
+    <div id="to_top">
+            <i class="ion ion-ios-arrow-forward"></i>
+            <i class="ion ion-ios-arrow-forward"></i>
+    </div>
     <!-- End of Photoswipe -->
-    <script src="../../public/assets/js/jquery.1.12.4.min.js" defer=""></script>
+    <!-- <script src="../../public/assets/js/jquery.1.12.4.min.js" defer=""></script>
     <script src="../../public/assets/js/popper.min.js" defer=""></script>
     <script src="../../public/assets/js/bootstrap.min.js" defer=""></script>
     <script src="../../public/assets/js/plugins.js" defer=""></script>
     <script src="../../public/assets/js/main.js" defer=""></script>
-    <script src="../../public/assets/js/modernizr-2.8.3.min.js" defer=""></script>
+    <script src="../../public/assets/js/modernizr-2.8.3.min.js" defer=""></script> -->
+    <?php 
+    $jsTags = $assets -> registerJS('sub-frontend');
+    ?>
 </body>
 
 </html>

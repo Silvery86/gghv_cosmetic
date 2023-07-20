@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12">
                             <div class="section-title type-2 pt-full top-bordered">
-                                <h2>Follow us On Instagram</h2>
+                                <h2>Theo Dõi Chúng Tôi Trên Instagram</h2>
                                 <p class="subtitle"></p>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                                 </div> <!-- end of swiper-wrapper -->
                             </div> <!-- end of instagram-carousel -->
                             <div class="follow-link">
-                                <a href="https://www.instagram.com/themeitems/" target="_blank">Follow us On Instagram</a>
+                                <a href="https://www.instagram.com/themeitems/" target="_blank">Theo Dõi Chúng Tôi Trên Instagram</a>
                             </div>
                         </div>
                     </div> <!-- end of row -->

@@ -26,23 +26,23 @@
                                                     <div class="form-group row">
                                                         <label for="f-name" class="col-12 col-sm-12 col-md-4 col-form-label">Full Name</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="text" class="form-control" id="full-name" name="full-name" required="">
+                                                            <input type="name" class="form-control" id="full-name" name="full-name" required="">
                                                         </div>
                                                     </div>                                                    
                                                     <div class="form-group row">
                                                         <label for="email" class="col-12 col-sm-12 col-md-4 col-form-label">Email Address</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="text" class="form-control" id="email" name="email" required="">
+                                                            <input type="email" class="form-control" id="email" name="email" required="">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label for="phone" class="col-12 col-sm-12 col-md-4 col-form-label">Phone Number</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="text" class="form-control" id="phone" name="phone" required="">
+                                                            <input type="phone" class="form-control" id="phone" name="phone" required="">
                                                         </div>
                                                     </div>                                               
                                                     <div class="form-group row">
-                                                        <label for="newpassword" class="col-12 col-sm-12 col-md-4 col-form-label">New Password</label>
+                                                        <label for="newpassword" class="col-12 col-sm-12 col-md-4 col-form-label">Password</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                                                             <input type="password" class="form-control" id="password" name="password" required="">
                                                             <button class="pass-show-btn" type="button">Show</button>

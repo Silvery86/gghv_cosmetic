@@ -22,13 +22,25 @@ class CartModel extends Database{
             
             $_SESSION['cart'][$productId] = array(
                 'id' => $productId,
-                'name' => $this->cart_item[0]['name'],
-                'image' => $this->cart_item[0]['image'],
+                'title' => $this->cart_item[0]['title'],
+                'thumbnail' => $this->cart_item[0]['thumbnail'],
                 'quantity' => $this -> quantity++,
                 'price' => $this->cart_item[0]['price'],
             );
             return $this -> cart_item;
               
+    }
+    function delCart($productId){
+        unset($_SESSION["cart"][$productId]);
+        
+        
+        if($_SESSION["cart"] == NULL){
+            $_SESSION["total"] = 0;
+            
+        }
+    }
+    function updateCart($productId,$newQuantity){
+        $_SESSION["cart"][$productId]["quantity"] = $newQuantity;
     }
 
 }

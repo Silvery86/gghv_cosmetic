@@ -34,29 +34,26 @@
             {
                 ?>
                 <ul class="list-unstyled">
-                <?php
-                
+                <?php                
                 $_SESSION['total'] = NULL;
                 foreach($_SESSION["cart"] as $productId)
                 {
-                    $_SESSION['total'] += $productId["price"] * $productId["quantity"];
-                    
-                    
+                    $_SESSION['total'] += $productId["price"] * $productId["quantity"];                    
                 ?>
                     <li class="single-cart-item media">
                         <div class="shopping-cart-img me-4">
                             <a href="#">
-                                <img class="img-fluid" alt="Cart Item" src="<?=$productId["image"]?>">
+                                <img class="img-fluid" alt="Cart Item" src="<?=$productId["thumbnail"]?>">
                                 <span class="product-quantity"><?=$productId["quantity"]?></span>
                             </a>
                         </div>
                         <div class="shopping-cart-title flex-grow-1">
-                            <h4><a href="#"><?=$productId["name"]?></a></h4>
+                            <h4><a href="#"><?=$productId["title"]?></a></h4>
                             <p class="cart-price"><?=number_format($productId["price"])?></p>
                             
                         </div>
                         <div class="shopping-cart-delete">
-                            <a href="#"><i class="ion ion-md-close"></i></a>
+                            <a href="cart/deleteCart/<?=$productId["id"]?>"><i class="ion ion-md-close"></i></a>
                         </div>
                     </li>
                     <?php
@@ -77,8 +74,8 @@
                     <h4>Total : <span><?=number_format($total)?></span></h4>
                 </div>
                 <div class="shopping-cart-btn">
-                    <a class="default-btn" href="viewcart">view cart</a>
-                    <a class="default-btn" href="checkout">checkout</a>
+                    <a class="default-btn" href="viewcart">Giỏ hàng</a>
+                    <a class="default-btn" href="checkout">Thanh toán</a>
                 </div>
             </div>
         </div>

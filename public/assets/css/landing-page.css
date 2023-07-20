@@ -10,3 +10,26 @@ header.header-type-2 .main-nav-area.sticky:hover {
     background: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a.curPage {
+    color: red !important;
+    font-weight: 400 !important;
+}
+
+body {
+    
+    
+    font-weight:400;
+   
+    
+    font-family: 'Open Sans',  sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans',  sans-serif;
+}

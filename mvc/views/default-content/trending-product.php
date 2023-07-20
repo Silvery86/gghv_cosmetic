@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12">
                             <div class="section-title">
-                                <h2>New Trending Products</h2>
+                                <h2>Sản phẩm mới ra mắt</h2>
                                 <p class="subtitle"></p>
                             </div>
                         </div>

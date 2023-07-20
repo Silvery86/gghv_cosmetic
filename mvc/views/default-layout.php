@@ -28,7 +28,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 order-2 col-sm-12 order-sm-2 col-md-8 order-md-1 align-self-center">
-                            <p>With FREESHIPPING, orders of $500+ get free shipping</p>
+                            <p>Với FREESHIPPING, Giao hàng miễn phí cho đơn hàng từ 1.000.000 trở lên</p>
                         </div>
                     </div>
                 </div> <!-- end of container -->
@@ -69,16 +69,16 @@
                                                     {
                                                     ?>
                                                         <ul>
-                                                     <li><a href="register">Register</a></li>
-                                                        <li><a href="login">Login</a></li>
+                                                     <li><a href="register">Đăng ký</a></li>
+                                                        <li><a href="login">Đăng nhập</a></li>
                                                         
                                                         </ul>
                                                     <?php
                                                     }else{
                                                     ?>
                                                         <ul>
-                                                        <li><a href="user">My Account</a></li>
-                                                        <li><a href="logout">Logout</a></li>
+                                                        <li><a href="user">Tài khoản của bạn</a></li>
+                                                        <li><a href="logout">Đăng xuất</a></li>
                                                         
                                                         </ul>
                                                     <?php
@@ -104,31 +104,11 @@
                 <div class="container">
                     <nav id="main_nav" class="stellarnav black-scheme">
                         <ul>
-                            <li><a href="home"><span>Home</span></a></li>
-                            <li><a href="products"><span>Products</span></a></li>
-                            <!-- <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Products</span></a>
-                                <ul class="mega-container">
-                                    <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
-                                        <ul>
-                                            <li><a href="cart.html">Cart Page</a><li>
-                                            <li><a href="checkout.html">Checkout Page</a></li>
-                                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="last"><a href="#" class="mega-menu-title"><h3>Shop pages 04</h3></a>
-                                        <ul>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="fullwidth-banner">
-                                        <a href="#"><img src="assets/images/banners/menu-banner.jpg" alt="Menu Banner"></a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li><a href="aboutus"><span>About Us</span></a></li>
-                            <li><a href="contact"><span>Contact Us</span></a></li>
+                            <li><a href="home"><span>Trang chủ</span></a></li>
+                            <li><a href="products"><span>Sản phẩm</span></a></li>
+                            
+                            <li><a href="aboutus"><span>About</span></a></li>
+                            <li><a href="contact"><span>Contact</span></a></li>
                         </ul>
                     </nav>
                 </div> <!-- end of container -->
@@ -164,11 +144,11 @@
                                         <div class="logo mb-half" style="width: 150px; height: 150px;">
                                             <img src="../../../gghv_cosmetic/public/assets/images/gghv-logo.png" alt="Footer Logo">
                                         </div>
-                                        <p>Fulfilling your ideas on demand</p>
+                                        <p>Thực hiện ý tưởng của bạn theo yêu cầu</p>
                                         <div class="footer-contact">
-                                            <p><span>Address: Ha Noi, Viet Nam</span></p>
-                                            <p><span>Phone: 090.999.999.999</span><a href="#"></a></p>
-                                            <p><span>Email:</span><a href="#">gghv-cosmetic@gmail.com</a></p>
+                                            <p><span>ĐỊA CHỈ: Ha Noi, Viet Nam</span></p>
+                                            <p><span>ĐIỆN THOẠI: 090.999.999.999</span><a href="#"></a></p>
+                                            <p><span>EMAIL:</span><a href="#">gghv-cosmetic@gmail.com</a></p>
                                         </div>
                                     </div> <!-- end of widget-content -->
                                 </aside> <!-- end of widget-container -->
@@ -176,15 +156,15 @@
 
                             <div class="col-12 col-sm-12 col-md-6 order-md-3 col-lg-2 order-lg-2">
                                 <aside class="widget-container">
-                                    <h4 class="widgettitle">Products</h4>
+                                    <h4 class="widgettitle">Các Sản Phẩm</h4>
                                     <div class="widget-content">
                                         <div class="widgetized-menu">
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Prices drop</a></li>
-                                                <li><a href="#">New Products</a></li>
-                                                <li><a href="#">Best Sales</a></li>
-                                                <li><a href="#">Contact Us</a></li>
-                                                <li><a href="#">Login</a></li>
+                                                <li><a href="#">Giá Giảm</a></li>
+                                                <li><a href="#">Sản Phẩm Mới</a></li>
+                                                <li><a href="#">Hàng Bán Tốt Nhất</a></li>
+                                                <li><a href="#">Liên Hệ Chúng Tôi</a></li>
+                                                <li><a href="#">Đăng Nhập</a></li>
                                             </ul>
                                         </div>
                                     </div> <!-- end of widget-content -->
@@ -193,15 +173,15 @@
 
                             <div class="col-12 col-sm-12 col-md-6 order-md-4 col-lg-2 order-lg-3">
                                 <aside class="widget-container">
-                                    <h4 class="widgettitle">Our Company</h4>
+                                    <h4 class="widgettitle">Công Ty Chúng Tôi</h4>
                                     <div class="widget-content">
                                         <div class="widgetized-menu">
                                             <ul class="list-unstyled">
-                                                <li><a href="aboutus">About Us</a></li>
-                                                <li><a href="home">Site Map</a></li>
-                                                <li><a href="#">Stores</a></li>
-                                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="aboutus">Về Chúng Tôi</a></li>
+                                                <li><a href="home">Sơ Đồ Trang Web</a></li>
+                                                <li><a href="#">Các Cửa Hàng</a></li>
+                                                <li><a href="#">Điều Khoản &amp; Điều Kiện</a></li>
+                                                <li><a href="#">Tài Khoản Của Tôi</a></li>
                                             </ul>
                                         </div>
                                     </div> <!-- end of widget-content -->
@@ -210,14 +190,16 @@
 
                             <div class="col-12 col-sm-12 col-md-6 order-md-2 col-lg-4 order-lg-4">
                                 <aside class="widget-container">
-                                    <h4 class="widgettitle">Sign up for our newsletter</h4>
+                                    <h4 class="widgettitle">Đăng Ký Nhận Bản Tin Của Chúng Tôi</h4>
                                     <div class="widget-content">
                                         <div class="newsletter-widget">
-                                            <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+                                            <p>Bạn có thể hủy đăng ký bất cứ lúc nào. Vì mục đích đó, vui lòng tìm thông tin liên hệ của chúng tôi trong thông báo pháp lý.
+
+                                            </p>
                                             <form class="mc-subscribe-form">
                                                 <div class="input-group">
-                                                    <input type="email" autocomplete="off" placeholder="Your Email Address" required>
-                                                    <button class="default-btn" type="submit">Sign Up</button>
+                                                    <input type="email" autocomplete="off" placeholder="Địa Chỉ Email Của Bạn" required>
+                                                    <button class="default-btn" type="submit">Đăng Ký</button>
                                                 </div>
                                             </form> <!-- end of form -->
 
@@ -257,11 +239,13 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. All Right Reserved.</p>
+                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. Tất cả các quyền.</p>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="footer-payment">
-                                <a href="#"><img src="../../../gghv_cosmetic/public/assets/images/icons/payment.png" alt="Payment Icons"></a>
+                                <a href="#"><img src="../../../gghv_cosmetic/public/assets/images/icons/mastercard.png" alt="Payment Icons"></a>
+                                <a href="#"><img src="../../../gghv_cosmetic/public/assets/images/icons/paypal.png" alt="Payment Icons"></a>
+                                <a href="#"><img src="../../../gghv_cosmetic/public/assets/images/icons/visa.png" alt="Payment Icons"></a>
                             </div>
                         </div>
                     </div> <!-- end of row -->
@@ -270,216 +254,7 @@
         </footer>
         <!-- End of Footer -->
 
-        <!-- Quick View Content Start -->
-        <div class="product-quick-view">
-            <div class="container">
-                <!-- Start of Modal -->
-                <div class="modal fade" id="product_quick_view">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                            </div> <!-- end of modal-header -->
-
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 col-lg-7">
-                                        <div class="product-gallery">
-                                            <div class="gallery-with-thumbs" data-nav-center="false">
-                                                <div class="product-image-container">
-                                                    <div class="product-full-image main-slider image-popup">
-
-                                                        <!-- Slides -->
-                                                        <div class="swiper-wrapper">
-                                                            <figure class="swiper-slide">
-                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-1.jpg" data-size="600x600">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-1.jpg" alt="Product Image">
-                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
-                                                                </a>
-                                                                <figcaption class="visually-hidden">
-                                                                    <span>Product Image</span>
-                                                                </figcaption>
-                                                            </figure>
-                                                            <figure class="swiper-slide">
-                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-2.jpg" data-size="600x600">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-2.jpg" alt="Product Image">
-                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
-                                                                </a>
-                                                                <figcaption class="visually-hidden">
-                                                                    <span>Product Image</span>
-                                                                </figcaption>
-                                                            </figure>
-                                                            <figure class="swiper-slide">
-                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-3.jpg" data-size="600x600">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-3.jpg" alt="Product Image">
-                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
-                                                                </a>
-                                                                <figcaption class="visually-hidden">
-                                                                    <span>Product Image</span>
-                                                                </figcaption>
-                                                            </figure>
-                                                            <figure class="swiper-slide">
-                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-4.jpg" data-size="600x600">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-4.jpg" alt="Product Image">
-                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
-                                                                </a>
-                                                                <figcaption class="visually-hidden">
-                                                                    <span>Product Image</span>
-                                                                </figcaption>
-                                                            </figure>
-                                                            <figure class="swiper-slide">
-                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-5.jpg" data-size="600x600">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-5.jpg" alt="Product Image">
-                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
-                                                                </a>
-                                                                <figcaption class="visually-hidden">
-                                                                    <span>Product Image</span>
-                                                                </figcaption>
-                                                            </figure>
-                                                            <figure class="swiper-slide">
-                                                                <a href="../../../gghv_cosmetic/public/assets/images/products/single/product-6.jpg" data-size="600x600">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-6.jpg" alt="Product Image">
-                                                                    <div class="image-overlay"><i class="fa fa-search-plus"></i></div>
-                                                                </a>
-                                                                <figcaption class="visually-hidden">
-                                                                    <span>Product Image</span>
-                                                                </figcaption>
-                                                            </figure>
-                                                        </div>
-                                                    </div> <!-- end of product-full-image -->
-                                                </div>
-                                                
-                                                <div class="product-thumb-container">
-                                                    <div class="product-thumb-image pos-r">
-                                                        <div class="nav-slider">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-wrapper">
-                                                                <div class="swiper-slide">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-1.jpg" alt="Product Thumbnail Image">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-2.jpg" alt="Product Thumbnail Image">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-3.jpg" alt="Product Thumbnail Image">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-4.jpg" alt="Product Thumbnail Image">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-5.jpg" alt="Product Thumbnail Image">
-                                                                </div>
-                                                                <div class="swiper-slide">
-                                                                    <img src="../../../gghv_cosmetic/public/assets/images/products/single/product-thumb-6.jpg" alt="Product Thumbnail Image">
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Navigation -->
-                                                            <div class="swiper-arrow next"><i class="fa fa-angle-down"></i></div>
-                                                            <div class="swiper-arrow prev"><i class="fa fa-angle-up"></i></div>
-                                                        </div>
-                                                    </div> <!-- end of product-thumb-image -->
-                                                </div>
-                                            </div> <!-- end of gallery-with-thumbs -->
-                                        </div> <!-- end of product-gallery -->
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-5">
-                                        <div class="product-details">
-                                            <h3 class="product-name">Cas Meque Metus</h3>
-                                            <div class="product-ratings">
-                                                <ul class="rating d-flex">
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star"></i></li>
-                                                    <li><i class="fa fa-star-o"></i></li>
-                                                    <li><i class="fa fa-star-o"></i></li>
-                                                    <li><i class="fa fa-star-o"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-price">
-                                                <p class="d-flex align-items-center">
-                                                    <span class="price-old">$54.65</span>
-                                                    <span class="price-new">$43.72</span>
-                                                    <span class="price-discount">-20%</span>
-                                                </p>
-                                            </div>
-                                            <div class="product-description">
-                                                <p>Regular fit, round neckline, short sleeves. Made of extra long staple pima cotton.</p>
-                                            </div>
-                                            <form action="#" class="product-actions">
-                                                <h3>Available Options</h3>
-                                                <div class="product-size-color d-flex">
-                                                    <div class="product-size">
-                                                        <label>Size</label>
-                                                        <select class="nice-select">
-                                                            <option>S</option>
-                                                            <option>M</option>
-                                                            <option>L</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="product-color">
-                                                        <label>color</label>
-                                                        <ul class="color-list">
-                                                           <li>
-                                                                <a class="white" href="#"></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="orange active" href="#"></a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="paste" href="#"></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-stock">
-                                                    <label>Quantity</label>
-                                                    <ul class="d-flex flex-wrap align-items-center">
-                                                        <li class="box-quantity">
-                                                            <div class="cart-input">
-                                                                <input class="cart-input-box" type="text" value="0">
-                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" class="default-btn">Add to Cart</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="wishlist-compare">
-                                                    <button class="btn-wishlist" type="button" title="Add to Wishlist">Add to Wishlist</button>
-                                                    <button class="btn-compare" type="button" title="Add to Compare">Add to Compare</button>
-                                                </div>
-                                            </form>
-                                        </div> <!-- end of product-details -->
-                                    </div>
-                                </div> <!-- end of row -->
-                            </div> <!-- end of modal-body -->
-
-                            <div class="modal-footer justify-content-start">
-                                <div class="social-sharing d-flex align-items-center">
-                                    <span>Share</span>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" class="bg-facebook" data-bs-toggle="tooltip" data-position="top" data-original-title="Facebook" target="_blank"><i class="fa fa-facebook"></i><span>Share</span></a></li>
-                                        <li class="list-inline-item"><a href="#" class="bg-twitter" data-bs-toggle="tooltip" data-position="top" data-original-title="Twitter" target="_blank"><i class="fa fa-twitter"></i><span>Tweet</span></a></li>
-                                        <li class="list-inline-item"><a href="#" class="bg-gplus" data-bs-toggle="tooltip" data-position="top" data-original-title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i><span>Google+</span></a></li>
-                                        <li class="list-inline-item"><a href="#" class="bg-pinterest" data-bs-toggle="tooltip" data-position="top" data-original-title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
-                                    </ul>
-                                </div>
-                            </div> <!-- end of modal-footer -->
-                        </div> <!-- end of modal-content -->
-                    </div> <!-- end of modal-dialog -->
-                </div> <!-- end of modal -->
-            </div> <!-- end of container -->
-        </div>
-        <!-- Quick View Content End -->
-
-        <!-- Start of Scroll to Top -->
-        <div id="to_top">
-            <i class="ion ion-ios-arrow-forward"></i>
-            <i class="ion ion-ios-arrow-forward"></i>
-        </div>
-        <!-- End of Scroll to Top -->
+     
     </div>
     <!-- End of Whole Site Wrapper -->
 
@@ -520,6 +295,10 @@
             </div>
         </div>
     </div>
+    <div id="to_top">
+            <i class="ion ion-ios-arrow-forward"></i>
+            <i class="ion ion-ios-arrow-forward"></i>
+        </div>
     <!-- End of Photoswipe -->
     <?php 
     $jsTags = $assets -> registerJS('frontend');

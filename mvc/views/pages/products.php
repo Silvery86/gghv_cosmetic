@@ -33,16 +33,14 @@
                                                             <option value="sales">Name (A - Z)</option>
                                                             <option value="sales">Name (Z - A)</option>
                                                             <option value="rating">Price (Low > High)</option>
-                                                            <option value="date">Rating (Lowest)</option>
-                                                            <option value="price-asc">Model (A - Z)</option>
-                                                            <option value="price-asc">Model (Z - A)</option>
+                                                            
                                                         </select>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div> <!-- end of row -->
-
+                                    
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12">
                                             <div class="shop-products-wrapper">
@@ -54,7 +52,7 @@
                                                         <div class="row">
                                                             <?php 
                                                            
-                                                            foreach ($data["product"] as $product)
+                                                            foreach ($data["products_list"] as $product)
                                                             {
                                                            
                                                             ?>
@@ -108,14 +106,43 @@
                                                             <p>Showing 10 to 18 of 27 (3 Pages)</p>
                                                         </div>
                                                     </div>
+                                                    <?php 
+                                                       $link = "";
+                                                       $urlArr = explode("/", filter_var(trim($_GET["url"],"/")));
+                                                       if(count($urlArr) > 1){
+                                                         $link = "";
+                                                       }else{
+                                                         $link = "products/page/";
+                                                       }
+                                                       
+                                                    ?>
                                                     <div class="col-12 order-1 col-sm-12 col-md-6 order-md-2 col-lg-6">
-                                                        <ul class="pagination">
-                                                            <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-left"></i> <span>Previous</span></a></li>
-                                                            <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                                            <li class="page-item active"><span class="page-link">2</span></li>
-                                                            <li class="page-item"><a href="#" class="page-link">3</a></li>
-                                                            <li class="page-item"><a href="#" class="page-link"><span>Next</span> <i class="fa fa-angle-right"></i></a></li>
-                                                        </ul>
+                                                       
+                                                            <ul class="pagination">
+                                                                <li class="page-item"><a href='<?=$link?>1'> Đầu </a></li>
+                                                        
+                                                            <?php
+                                                            
+                                                            //tính vị trí trang trước
+                                                            $page = (($data["current_page"]-1)>0)?($data["current_page"]-1):1;
+                                                            ?> 
+                                                            |<li class="page-item"><a href="<?=$link?><?=$page?>"> <i class="fa fa-angle-left"></i> </a></li> 
+                                                            <?php
+                                                            for($page=1; $page<=$data["total_pages"]; $page++)
+                                                            {
+                                                                $CSS_curPage = ($page==$data["current_page"])?" class='curPage' ": "";
+                                                            
+                                                            ?>
+                                                            |<li class="page-item"><a href="<?=$link?><?=$page?>" <?=$CSS_curPage?>> <?=$page?> </a> </li>
+                                                            <?php
+                                                            }
+                                                            //tính vị trí trang tiếp
+                                                            $page = (($data["current_page"]+1)<=$data["total_pages"])?($data["current_page"]+1):$data["total_pages"];
+                                                            ?>
+                                                            |<li class="page-item"><a href="<?=$link?><?=$page?>"> <i class="fa fa-angle-right"></i></a></li>
+                                                            |<li class="page-item"><a href="<?=$link?><?=$data["total_pages"]?>"> Cuối </a></li>
+                                                            </ul>
+                                                        
                                                     </div>
                                                 </div>
                                             </div> <!-- end of pagination-area -->
