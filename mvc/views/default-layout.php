@@ -15,7 +15,7 @@
     $cssTags = $assets -> registerCSS('frontend');
     
     ?>
-
+    
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 order-2 col-sm-12 order-sm-2 col-md-8 order-md-1 align-self-center">
-                            <p>Với FREESHIPPING, Giao hàng miễn phí cho đơn hàng từ 1.000.000 trở lên</p>
+                            <p>Giao hàng miễn phí cho đơn hàng từ 1.000.000 trở lên</p>
                         </div>
                     </div>
                 </div> <!-- end of container -->
@@ -69,17 +69,16 @@
                                                     {
                                                     ?>
                                                         <ul>
-                                                     <li><a href="register">Đăng ký</a></li>
-                                                        <li><a href="login">Đăng nhập</a></li>
-                                                        
+                                                            <li><a href="register">Đăng ký</a></li>
+                                                            <li><a href="login">Đăng nhập</a></li>
+                                                               
                                                         </ul>
                                                     <?php
                                                     }else{
                                                     ?>
                                                         <ul>
-                                                        <li><a href="user">Tài khoản của bạn</a></li>
-                                                        <li><a href="logout">Đăng xuất</a></li>
-                                                        
+                                                            <li><a href="user">Tài khoản của bạn</a></li>
+                                                            <li><a href="logout">Đăng xuất</a></li>                                                        
                                                         </ul>
                                                     <?php
                                                     }
@@ -239,7 +238,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. Tất cả các quyền.</p>
+                        <p class="copyright-text">Copyright © 2023 <a href="#" rel="nofollow">GGHV Cosmetic</a>. All Right Reserved.</p>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="footer-payment">
@@ -258,47 +257,12 @@
     </div>
     <!-- End of Whole Site Wrapper -->
 
-    <!-- Initializing Photoswipe -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div id="to_top">
             <i class="ion ion-ios-arrow-forward"></i>
             <i class="ion ion-ios-arrow-forward"></i>
         </div>
+
     <!-- End of Photoswipe -->
     <?php 
     $jsTags = $assets -> registerJS('frontend');

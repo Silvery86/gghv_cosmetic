@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promo Banner Section</title>
-</head>
-<body>
+
     <!-- Start of Promo Banner Section -->
     <section class="promo-banner-section bg-img-wrapper">
                 <div class="image-placeholder pos-r">
@@ -36,5 +28,3 @@
                 </div> <!-- end of image-placeholder -->
             </section>
             <!-- End of Promo Banner Section -->
-</body>
-</html>

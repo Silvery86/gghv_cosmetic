@@ -63,13 +63,14 @@
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
                                                             <label for="last_name">Tên người nhận <span class="text-danger">*</span></label>
                                                             <input type="text" class="form-control" id="full-name" name="full-name" required>
+                                                            <div id="email_error" style="color:red"></div>
                                                         </div>
                                                     </div>
                                                     
                                                     <div class="form-row mb-3">
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
                                                             <label for="p_address">Địa chỉ giao hàng <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="address" name="address" required>
+                                                            <input type="text" class="form-control" id="address" name="address" required onchange="validateName(this)">
                                                         </div>
                                                     </div>
                                                     <div class="form-row mb-3">
@@ -83,7 +84,8 @@
                                                     <div class="form-row mb-3">
                                                         <div class="form-group col-12 col-sm-12 col-md-12">
                                                             <label for="tel_number">Số điện thoại <span class="text-danger">*</span></label>
-                                                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                                                            <input type="tel" class="form-control" id="phone" name="phone" required onblur="validatePhone(this)">
+                                                            <div id="phone_error" style="color:red"></div>
                                                         </div>                                                      
                                                     </div> 
                                                     <div class="form-row">

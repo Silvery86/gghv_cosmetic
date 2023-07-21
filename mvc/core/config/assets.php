@@ -13,6 +13,7 @@ return [
 			"../../public/assets/css/landing-page.css",
 		],
 		'js'  => [
+			"../../public/assets/js/form_check.js",
 			"../../public/assets/js/jquery.1.12.4.min.js",
 			"../../public/assets/js/popper.min.js",
 			"../../public/assets/js/bootstrap.min.js",
@@ -22,7 +23,7 @@ return [
 		],
 	],
 	'frontend' => [
-		'css' => [
+		'css' => [				
 				"../../gghv_cosmetic/public/assets/css/bootstrap.min.css",
 				"../../gghv_cosmetic/public/assets/css/ionicons.min.css",
 				"../../gghv_cosmetic/public/assets/css/font-awesome.min.css",
@@ -33,6 +34,7 @@ return [
 				"../../gghv_cosmetic/public/assets/css/landing-page.css",
 				],
 		'js'  => [
+				"../../gghv_cosmetic/public/assets/js/form_check.js",
 				"../../gghv_cosmetic/public/assets/js/modernizr-2.8.3.min.js",
 				"../../gghv_cosmetic/public/assets/js/jquery.1.12.4.min.js",
 				"../../gghv_cosmetic/public/assets/js/popper.min.js",

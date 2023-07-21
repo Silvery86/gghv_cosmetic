@@ -10,7 +10,7 @@
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12">
                                             <div class="section-title">
-                                                <h2>Log in to your account</h2>
+                                                <h2>Đăng nhập tài khoản</h2>
                                             </div>
                                         </div>
                                     </div> <!-- end of row -->
@@ -21,24 +21,24 @@
                                                 
                                                 <form name="login_form" method="post" action="user">
                                                     <div class="form-group row align-items-center mb-4">
-                                                        <label for="email" class="col-12 col-sm-12 col-md-4 col-form-label">Email address</label>
+                                                        <label for="email" class="col-12 col-sm-12 col-md-4 col-form-label">Email:</label>
                                                         <div class="col-12 col-sm-12 col-md-8">
                                                             <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row align-items-center mb-4">
-                                                        <label for="c-password" class="col-12 col-sm-12 col-md-4 col-form-label">Password</label>
+                                                        <label for="c-password" class="col-12 col-sm-12 col-md-4 col-form-label">Mật khẩu:</label>
                                                         <div class="col-12 col-sm-12 col-md-8">
                                                             <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-                                                            <button class="pass-show-btn" type="button">Show</button>
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="login-box mt-5 text-center">
-                                                        <p><a href="#">Forgot your password?</a></p>
-                                                        <button type="submit" class="default-btn tiny-btn mt-4">Sign In</button>
+                                                        <p><a href="#">Quên mật khẩu?</a></p>
+                                                        <button type="submit" class="default-btn tiny-btn mt-4">Đăng nhập</button>
                                                     </div>
                                                     <div class="text-center mt-half pt-half top-bordered">
-                                                        <p>No account? <a href="register">Create one here</a>.</p>
+                                                        <p>Bạn chưa có tài khoản? <a href="register">Đăng ký tại đây!</a>.</p>
                                                     </div>
                                                 </form>
                                             </div>

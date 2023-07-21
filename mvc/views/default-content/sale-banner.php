@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sale Section</title>
-</head>
-<body>
+
     <!-- Start of Banner Section -->
     <div class="banner-section mt-30 mb-half">
                 <div class="container">
@@ -36,5 +28,3 @@
                 </div> <!-- end of container -->
             </div>
             <!-- End of Banner Section -->
-</body>
-</html>

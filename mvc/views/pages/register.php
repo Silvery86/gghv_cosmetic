@@ -1,3 +1,4 @@
+
 <div id="content" class="main-content-wrapper">
             
             <!-- Start of Login Wrapper -->
@@ -26,39 +27,39 @@
                                                     <div class="form-group row">
                                                         <label for="f-name" class="col-12 col-sm-12 col-md-4 col-form-label">Họ và tên:</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="name" class="form-control" id="full-name" name="full-name" required="">
+                                                            <input type="name" class="form-control" id="full-name" name="full-name" onchange="validateName(this)">
+                                                            <div id="name_error" style="color:red"></div>
                                                         </div>
-                                                        <div id="name_error" style="color:red"></div>
                                                     </div>                                                    
                                                     <div class="form-group row">
                                                         <label for="email" class="col-12 col-sm-12 col-md-4 col-form-label">Email:</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="email" class="form-control" id="email" name="email" required="">
+                                                            <input type="email" class="form-control" id="email" name="email" onblur="validateEmail(this)">
+                                                            <div id="email_error" style="color:red"></div>
                                                         </div>
-                                                        <div id="email_error" style="color:red"></div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label for="phone" class="col-12 col-sm-12 col-md-4 col-form-label">Số điện thoại:</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="phone" class="form-control" id="phone" name="phone" required="">
+                                                            <input type="phone" class="form-control" id="phone" name="phone" required="" onblur="validatePhone(this)">
+                                                            <div id="phone_error" style="color:red"></div>
                                                         </div>
-                                                        <div id="phone_error" style="color:red"></div>
                                                     </div>                                               
                                                     <div class="form-group row">
                                                         <label for="newpassword" class="col-12 col-sm-12 col-md-4 col-form-label">Mật khẩu</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="password" class="form-control" id="password" name="password" required="">
+                                                            <input type="password" class="form-control" id="password" name="password" required="" onblur="validatePassword(this)">
                                                             <button class="pass-show-btn" type="button">Show</button>
+                                                            <div id="password_error" style="color:red"></div>
                                                         </div>
-                                                        <div id="password_error" style="color:red"></div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label for="c-password" class="col-12 col-sm-12 col-md-4 col-form-label">Xác nhận mật khẩu</label>
                                                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                                                            <input type="password" class="form-control" id="c-password" name="c-password" required="">
+                                                            <input type="password" class="form-control" id="c-password" name="c-password" required="" onblur="validateCPassword(this)">
                                                             <button class="pass-show-btn" type="button">Show</button>
+                                                            <div id="c_password_error" style="color:red"></div>
                                                         </div>
-                                                        <div id="c_password_error" style="color:red"></div>
                                                     </div>                                                  
                                                     
                                                     <div class="register-box d-flex justify-content-center mt-half">
